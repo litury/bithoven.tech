@@ -24,15 +24,15 @@
 }
 
 .auth__link-wallet_subject_metamask::after {
-	background-image: url('../images/auth/metaMask.png');
+	background-image: url('../images/auth/meta-mask.png');
 }
 
 .auth__link-wallet_subject_binance::after {
-	background-image: url('../images/auth/binanceWallet.png');
+	background-image: url('../images/auth/binance-wallet.png');
 }
 
 .auth__link-wallet_subject_coinbase::after {
-	background-image: url('../images/auth/coinbaseWallet.png');
+	background-image: url('../images/auth/coinbase-wallet.png');
 }
 
 .auth__link-wallet_subject_all::after {
