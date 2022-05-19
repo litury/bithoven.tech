@@ -1,0 +1,22 @@
+.aut-form {
+	background-color: rgba(45, 48, 71, 1);
+	border-radius: 20px;
+	padding: 50px 30px;
+	max-width: 411px;
+	width: 100%;
+}
+
+.aut-form__wrap {
+	display: grid;
+	grid-row-gap: 40px;
+	grid-column-gap: 60px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 50px;
+}
+
+.aut-form__parag {
+	color: rgba(143, 147, 164, 1);
+	margin-bottom: 22px;
+}
+
+

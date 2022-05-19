@@ -2,16 +2,19 @@
  * base
  */
 
-@import "base/normalize.css";
-@import "base/global.css";
 @import "base/fonts.css";
+@import "base/global.css";
+@import "base/pages.css";
+
 
 /**
  * components
  */
-
+@import "components/aut.css";
 @import "components/title.css";
-@import "components/linkWallet.css";
-@import "components/btnText.css";
-@import "components/authorization.css";
+@import "components/parag.css";
+@import "components/aut-form.css";
+@import "components/link-wallet.css";
+@import "components/link-button.css";
+
 

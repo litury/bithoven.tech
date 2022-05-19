@@ -1,0 +1,15 @@
+.aut {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.aut__title {
+	max-width: 683px;
+}
+
+.aut__parag {
+	max-width: 510px;
+}

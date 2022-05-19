@@ -1,0 +1,39 @@
+.link-wallet {
+	display: inline-block;
+	padding-top: 70px;
+	position: relative;
+	cursor: pointer;
+}
+
+.link-wallet:hover {
+	color: rgba(249, 229, 49, 1);
+}
+
+.link-wallet::after {
+	content: " ";
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	width: 60px;
+	top: 0;
+	left: 30%;
+}
+
+.aut-form__link-wallet_subject_metamask::after {
+	background-image: url('../images/aut/metaMask.png');
+}
+
+.aut-form__link-wallet_subject_binance::after {
+	background-image: url('../images/aut/binanceWallet.png');
+}
+
+.aut-form__link-wallet_subject_coinbase::after {
+	background-image: url('../images/aut/coinbaseWallet.png');
+}
+
+.aut-form__link-wallet_subject_all::after {
+	background-image: url('../images/aut/dots.svg');
+}

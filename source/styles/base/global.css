@@ -1,9 +1,4 @@
-html,
-body {
-	height: 100%;
-}
-
-body {
+.body {
 	background-color: rgba(33, 35, 57, 1);
 	color: rgba(255, 255, 255, 1);
 	font-family: 'FuturaPT';
@@ -13,11 +8,15 @@ body {
 	text-align: center;
 }
 
+@media (min-width: 1530px) {
+	.body {
+		font-size: 18px;
+	}
+}
 
 .container {
-	max-width: 1950px;
+	max-width: 1530px;
+	min-width: 350px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
-
