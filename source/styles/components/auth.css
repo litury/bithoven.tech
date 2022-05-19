@@ -1,4 +1,4 @@
-.authoriz {
+.auth {
 	padding: 100px 0 50px 0;
 	display: flex;
 	flex-direction: column;
@@ -6,10 +6,10 @@
 	gap: 40px;
 }
 
-.authoriz__title {
+.auth__title {
 	max-width: 683px;
 }
 
-.authoriz__paragraph {
+.auth__paragraph {
 	max-width: 504px;
 }

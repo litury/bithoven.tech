@@ -1,13 +1,13 @@
-.authoriz__aut-form {
+.auth__auth-form {
 	background-color: rgba(45, 48, 71, 1);
 	border-radius: 20px;
 	padding: 50px 30px;
 	max-width: 411px;
 	width: 100%;
-	
+
 }
 
-.authoriz__wrap {
+.auth__wrap {
 	display: grid;
 	grid-row-gap: 40px;
 	grid-column-gap: 60px;
@@ -15,7 +15,7 @@
 	margin-bottom: 50px;
 }
 
-.authoriz__paragraph {
+.auth__text {
 	color: rgba(143, 147, 164, 1);
 	margin-bottom: 22px;
 }

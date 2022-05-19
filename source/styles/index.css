@@ -2,19 +2,18 @@
  * base
  */
 
+@import "base/page.css";
 @import "base/fonts.css";
 @import "base/global.css";
-@import "base/pages.css";
-
 
 /**
  * components
  */
-@import "components/authoriz.css";
+@import "components/auth.css";
 @import "components/title.css";
 @import "components/paragraph.css";
-@import "components/authoriz__aut-form.css";
-@import "components/authoriz__link-wallet.css";
+@import "components/auth__auth-form.css";
+@import "components/auth__link-wallet.css";
 @import "components/button.css";
 
 
