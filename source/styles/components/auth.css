@@ -13,3 +13,67 @@
 .auth__paragraph {
 	max-width: 504px;
 }
+
+.auth__auth-form {
+	background-color: rgba(45, 48, 71, 1);
+	border-radius: 20px;
+	padding: 50px 30px;
+	max-width: 411px;
+	width: 100%;
+
+}
+
+.auth__wrap {
+	display: grid;
+	grid-row-gap: 40px;
+	grid-column-gap: 60px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 50px;
+}
+
+.auth__link-wallet {
+	display: inline-block;
+	padding-top: 70px;
+	position: relative;
+	cursor: pointer;
+}
+
+.auth__link-wallet:hover {
+	color: rgba(249, 229, 49, 1);
+}
+
+.auth__link-wallet::after {
+	content: " ";
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	width: 60px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.auth__link-wallet_subject_metamask::after {
+	background-image: url('../images/auth/meta-mask.png');
+}
+
+.auth__link-wallet_subject_binance::after {
+	background-image: url('../images/auth/binance-wallet.png');
+}
+
+.auth__link-wallet_subject_coinbase::after {
+	background-image: url('../images/auth/coinbase-wallet.png');
+}
+
+.auth__link-wallet_subject_all::after {
+	background-image: url('../images/auth/dots.svg');
+}
+
+.auth__text {
+	color: rgba(143, 147, 164, 1);
+	margin-bottom: 22px;
+}
+
