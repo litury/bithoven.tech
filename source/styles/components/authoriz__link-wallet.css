@@ -1,15 +1,15 @@
-.link-wallet {
+.authoriz__link-wallet {
 	display: inline-block;
 	padding-top: 70px;
 	position: relative;
 	cursor: pointer;
 }
 
-.link-wallet:hover {
+.authoriz__link-wallet:hover {
 	color: rgba(249, 229, 49, 1);
 }
 
-.link-wallet::after {
+.authoriz__link-wallet::after {
 	content: " ";
 	background-color: white;
 	background-position: center center;
@@ -19,21 +19,22 @@
 	position: absolute;
 	width: 60px;
 	top: 0;
-	left: 30%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.aut-form__link-wallet_subject_metamask::after {
+.authoriz__link-wallet_subject_metamask::after {
 	background-image: url('../images/aut/metaMask.png');
 }
 
-.aut-form__link-wallet_subject_binance::after {
+.authoriz__link-wallet_subject_binance::after {
 	background-image: url('../images/aut/binanceWallet.png');
 }
 
-.aut-form__link-wallet_subject_coinbase::after {
+.authoriz__link-wallet_subject_coinbase::after {
 	background-image: url('../images/aut/coinbaseWallet.png');
 }
 
-.aut-form__link-wallet_subject_all::after {
+.authoriz__link-wallet_subject_all::after {
 	background-image: url('../images/aut/dots.svg');
 }

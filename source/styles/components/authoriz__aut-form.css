@@ -1,4 +1,4 @@
-.aut-form {
+.authoriz__aut-form {
 	background-color: rgba(45, 48, 71, 1);
 	border-radius: 20px;
 	padding: 50px 30px;
@@ -6,7 +6,7 @@
 	width: 100%;
 }
 
-.aut-form__wrap {
+.authoriz__wrap {
 	display: grid;
 	grid-row-gap: 40px;
 	grid-column-gap: 60px;
@@ -14,7 +14,7 @@
 	margin-bottom: 50px;
 }
 
-.aut-form__parag {
+.authoriz__paragraph {
 	color: rgba(143, 147, 164, 1);
 	margin-bottom: 22px;
 }

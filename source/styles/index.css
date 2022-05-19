@@ -10,11 +10,11 @@
 /**
  * components
  */
-@import "components/aut.css";
+@import "components/authoriz.css";
 @import "components/title.css";
-@import "components/parag.css";
-@import "components/aut-form.css";
-@import "components/link-wallet.css";
-@import "components/link-button.css";
+@import "components/paragraph.css";
+@import "components/authoriz__aut-form.css";
+@import "components/authoriz__link-wallet.css";
+@import "components/button.css";
 
 
