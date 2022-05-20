@@ -8,7 +8,7 @@
 			display: flex;
 			justify-content: center;
 			margin-bottom: 18px;
-			gap: 50px;
+			gap: 40px;
 		}
 
 		.interesting__title {
@@ -20,7 +20,7 @@
 
 		.interesting__button {
 			font-size: 14px;
-			padding: 10px 19px;
+			padding: 10px 30px;
 		}
 
 		.interesting__content {
@@ -40,20 +40,10 @@
 		.card__img_media_decktop {
 			display: none;
 		}
-
 	}
 
 
-
-
-
-
-
-
-
-
-
-	@media (min-width: 1220px) {
+	@media (min-width: 1200px) {
 		.interesting {
 			padding: 50px 0;
 		}

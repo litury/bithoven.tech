@@ -22,8 +22,6 @@
 		position: relative;
 	}
 
-
-
 	.card__text::before {
 		content: " ";
 		background-position: center center;
@@ -41,9 +39,9 @@
 		padding: 5px 13px 5px 24px;
 	}
 
-.card__link_size_small::before {
-	left: 13%;
-}
+	.card__link_size_small::before {
+		left: 13%;
+	}
 
 	.card__title {
 		font-size: 20px;
@@ -58,9 +56,6 @@
 
 	}
 }
-
-
-
 
 
 @media (min-width: 1220px) {
