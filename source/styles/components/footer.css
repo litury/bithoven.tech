@@ -131,7 +131,7 @@
 
 		.footer {
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			padding: 50px 0 50px;
 		}
 
@@ -144,7 +144,7 @@
 
 		.footer__lang_media_desktop {
 			position: absolute;
-			right: 10%;
+			right: 5%;
 		}
 
 		.footer__lang_media_desktop::after {

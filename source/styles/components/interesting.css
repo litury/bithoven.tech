@@ -1,0 +1,19 @@
+.interesting {
+	padding: 50px 0 50px;
+}
+
+.interesting__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
+.interesting__title {
+	font-weight: 600;
+}
+
+.interesting__content {
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+}

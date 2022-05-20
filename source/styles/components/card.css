@@ -1,0 +1,42 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 410px;
+	padding: 30px 33px;
+	background: linear-gradient(119.35deg, #4D506C 49.8%, #212339 100.05%);
+	border-radius: 20px;
+}
+
+.card__top {
+	display: flex;
+	gap: 20px;
+}
+
+.card__text {
+	padding-left: 28px;
+	position: relative;
+}
+
+.card__text::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 16px;
+	position: absolute;
+	width: 16px;
+	top: 10%;
+	left: 0;
+	background-image: url('../images/interesting/clock.svg');
+}
+
+.card__title {
+	font-size: 30px;
+	text-align: left;
+}
+
+.card__img {
+	display: block;
+
+}
+

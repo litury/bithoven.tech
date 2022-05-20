@@ -9,14 +9,14 @@
 	margin: 0;
 }
 
-@media (min-width: 1530px) {
+@media (min-width: 1330px) {
 	.body {
 		font-size: 18px;
 	}
 }
 
 .container {
-	max-width: 1530px;
+	max-width: 1330px;
 	min-width: 325px;
 	margin: 0 auto;
 	padding: 0 15px;

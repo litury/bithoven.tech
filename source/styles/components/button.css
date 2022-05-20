@@ -5,12 +5,15 @@
 	padding: 9px 43px;
 	border: none;
 	display: inline-block;
+	text-decoration: none;
+	outline: transparent;
 }
 
 .button_form_clear {
 	border: 1px solid #FFFFFF;
+	background-color: transparent;
 	border-radius: 50px;
-	font-size: 18px;
+	color: rgba(255, 255, 255, 1);
 }
 
 .button_form_none {
