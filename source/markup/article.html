@@ -12,6 +12,7 @@
 
 <body class="page__body">
 	<section class="content">
+
 		<div class="content__top">
 			<a class="link content_link" href="#">
 				Главная
@@ -25,10 +26,10 @@
 		</div>
 
 		<h1 class="title">
-			Что такое фан-токен ФК «Порту» (PORTO)?
+			Что такое фантокен ФК «Порту» (PORTO)?
 		</h1>
 
-		<div class="card">
+		<div class="card content__card">
 			<div class="card__top">
 				<p class="text card__text">
 					4 минуты
@@ -39,43 +40,52 @@
 				</a>
 			</div>
 
-			<div class="card__content">
-				<img class="card__img" src="assets/images/content/portu-logo.png" alt="логотип порту">
+			<div class="card__content card__content_name_portu">
+
 			</div>
 
 			<div class="content__button-wrap">
-				<a class="button" href="#">
+				<a class="button content__button" href="#">
 					Altcoin
 				</a>
 			</div>
 		</div>
 
+
+
 		<nav class="content__nav">
+			<button class="button_form_none  content__nav-button">
+				Содержание
+			</button>
 			<ul class="menu content__menu">
 				<li class="content__item">
 					<a class="link content__link" href="#">
 						Введение
 					</a>
 				</li>
-
+				<div class="line content__line">
+				</div>
 				<li class="content__item">
 					<a class="link content__link" href="#">
 						Что такое фан- токены Binance?
 					</a>
 				</li>
-
+				<div class="line content__line">
+				</div>
 				<li class="content__item">
 					<a class="link content__link" href="#">
 						Что такое фан-токен ФК «Порту» (PORTO) и как он работает?
 					</a>
 				</li>
-
+				<div class="line content__line">
+				</div>
 				<li class="content__item">
 					<a class="link content__link" href="#">
 						Резюме
 					</a>
 				</li>
-
+				<div class="line content__line">
+				</div>
 				<li class="content__item">
 					<a class="link content__link" href="#">
 						Как купить PORTO на Binance?
@@ -83,24 +93,6 @@
 				</li>
 			</ul>
 		</nav>
-
-		<div class="content__social">
-			<button>
-				10 Нравится
-			</button>
-
-			<button>
-				Не нравится
-			</button>
-
-			<button>
-				Обсудить
-			</button>
-
-			<button>
-				Поделиться
-			</button>
-		</div>
 
 		<div class="content__text">
 			<p class="text">
@@ -137,7 +129,8 @@
 			</p>
 		</div>
 
-		<!-- <img class="content__adt" src="assets/images/content/adt.png" alt="реклама"> -->
+		<div class="card__content card__content_name_adt">
+		</div>
 
 		<h2>
 			Что такое фан-токены Binance?
@@ -183,7 +176,8 @@
 			</p>
 		</div>
 
-		<!-- <img class="content__img" src="assets/images/content/porto-info.png" alt="токен порту"> -->
+		<div class="card__content card__content_name_porto-info">
+		</div>
 
 		<div class="content__text">
 			<p class="text">
@@ -219,9 +213,12 @@
 			</p>
 		</div>
 
-		<!-- <img class="content__video" src="assets/images/content/video.png" alt="видео про токен порту"> -->
+		<div class="card__content card__content_name_video">
+		</div>
+
 		<div class="content__buy">
-			<h2 class="title">
+
+			<h2>
 				Как купить PORTO на Binance?
 			</h2>
 
@@ -248,9 +245,12 @@
 				</p>
 			</div>
 
-			<div class="content__buysell">
-				<img class="content__img" src="assets/images/content/bay.png" alt="как купить токен порту">
-				<img class="content__img" src="assets/images/content/sell.png" alt="как продать токен порту">
+			<div class="content__card-wrap">
+				<div class="card__content card__content_name_bay">
+				</div>
+
+				<div class="card__content card__content_name_sell">
+				</div>
 			</div>
 		</div>
 
@@ -269,6 +269,45 @@
 				</p>
 			</div>
 		</div>
+
+		<div class="content__social">
+			<button class="button_form_none button_form_none">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M14.6 8L21 8C21.5304 8 22.0391 8.21071 22.4142 8.58579C22.7893 8.96086 23 9.46957 23 10L23 12.104C23.0003 12.3654 22.9493 12.6242 22.85 12.866L19.754 20.38C19.6787 20.5632 19.5507 20.72 19.3862 20.8304C19.2217 20.9408 19.0281 20.9998 18.83 21L2 21C1.73478 21 1.48043 20.8946 1.29289 20.7071C1.10535 20.5196 0.999998 20.2652 0.999998 20L0.999999 10C0.999999 9.73478 1.10536 9.48043 1.29289 9.29289C1.48043 9.10536 1.73478 9 2 9L5.482 9C5.6421 9.00004 5.79986 8.96164 5.94203 8.88803C6.0842 8.81442 6.20662 8.70776 6.299 8.577L11.752 0.850999C11.8209 0.753312 11.9226 0.68356 12.0385 0.654389C12.1545 0.625218 12.277 0.638562 12.384 0.691999L14.198 1.6C14.7085 1.85516 15.1163 2.27731 15.3537 2.79632C15.5911 3.31532 15.6438 3.89992 15.503 4.453L14.6 8ZM7 10.588L7 19L18.16 19L21 12.104L21 10L14.6 10C14.2954 9.99996 13.9948 9.93034 13.7212 9.79646C13.4476 9.66258 13.2082 9.46797 13.0213 9.22749C12.8343 8.987 12.7048 8.70699 12.6425 8.40882C12.5803 8.11065 12.5869 7.8022 12.662 7.507L13.565 3.959C13.5933 3.84833 13.5828 3.73131 13.5353 3.62743C13.4878 3.52354 13.4062 3.43905 13.304 3.388L12.643 3.058L7.933 9.73C7.683 10.084 7.363 10.374 7 10.588ZM5 11L3 11L3 19L5 19L5 11Z"
+						fill="#8F93A4" />
+				</svg>
+				10
+			</button>
+
+			<button class="button_form_none">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M14.6 16L21 16C21.5304 16 22.0391 15.7893 22.4142 15.4142C22.7893 15.0391 23 14.5304 23 14L23 11.896C23.0003 11.6346 22.9493 11.3758 22.85 11.134L19.754 3.62C19.6787 3.43675 19.5507 3.27999 19.3862 3.16961C19.2217 3.05923 19.0281 3.0002 18.83 3L2 3C1.73478 3 1.48043 3.10535 1.29289 3.29289C1.10535 3.48043 0.999998 3.73478 0.999998 4L0.999997 14C0.999997 14.2652 1.10535 14.5196 1.29289 14.7071C1.48043 14.8946 1.73478 15 2 15L5.482 15C5.64209 15 5.79986 15.0384 5.94203 15.112C6.0842 15.1856 6.20662 15.2922 6.299 15.423L11.752 23.149C11.8209 23.2467 11.9226 23.3164 12.0385 23.3456C12.1545 23.3748 12.277 23.3614 12.384 23.308L14.198 22.4C14.7085 22.1448 15.1163 21.7227 15.3537 21.2037C15.5911 20.6847 15.6438 20.1001 15.503 19.547L14.6 16ZM7 13.412L7 5L18.16 5L21 11.896L21 14L14.6 14C14.2954 14 13.9948 14.0697 13.7212 14.2035C13.4476 14.3374 13.2082 14.532 13.0213 14.7725C12.8343 15.013 12.7048 15.293 12.6425 15.5912C12.5802 15.8893 12.5869 16.1978 12.662 16.493L13.565 20.041C13.5933 20.1517 13.5828 20.2687 13.5353 20.3726C13.4878 20.4765 13.4062 20.561 13.304 20.612L12.643 20.942L7.933 14.27C7.683 13.916 7.363 13.626 7 13.412ZM5 13L3 13L3 5L5 5L5 13Z"
+						fill="#8F93A4" />
+				</svg>
+
+			</button>
+
+			<button class="button_form_none">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
+						fill="#8F93A4" />
+				</svg>
+
+			</button>
+
+			<button class="button_form_none">
+				<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M10 11.5H8C6.3596 11.4994 4.75023 11.9471 3.34588 12.7949C1.94152 13.6427 0.795601 14.8582 0.0320014 16.31C0.010538 16.0405 -0.000137283 15.7703 1.33261e-06 15.5C1.33261e-06 9.977 4.477 5.5 10 5.5V0L20.5 8.5L10 17V11.5ZM8 9.5H12V12.808L17.321 8.5L12 4.192V7.5H10C8.85025 7.49871 7.71379 7.74582 6.66839 8.22442C5.62299 8.70302 4.69332 9.40182 3.943 10.273C5.23432 9.76122 6.61096 9.49892 8 9.5Z"
+						fill="#8F93A4" />
+				</svg>
+
+			</button>
+		</div>
+
 	</section>
 
 	<section class="interesting container">
@@ -349,7 +388,7 @@
 			</div>
 		</div>
 
-		<div class="interesting__line">
+		<div class="line interesting__line">
 		</div>
 	</section>
 

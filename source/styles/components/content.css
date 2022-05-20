@@ -1,8 +1,6 @@
-
-
 .content h1 {
 	text-align: left;
-	margin-bottom: 30px;
+	font-size: 30px;
 }
 
 .content h2 {
@@ -11,10 +9,112 @@
 }
 
 .content__text {
-text-align: left;
-margin-bottom: 35px;
+	text-align: left;
+	margin-bottom: 35px;
 }
 
 .content__text p:not(:last-child) {
 	margin-bottom: 30px;
+}
+
+.content {
+	padding: 50px 15px
+}
+
+.content__top {
+	max-width: 328px;
+	text-align: left;
+	padding-left: 52px;
+	position: relative;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+.content__top::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 30px;
+	position: absolute;
+	width: 30px;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	background-image: url('../images/content/arov-mob.png');
+	border-radius: 50%;
+}
+
+.content__card {
+	background: none;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.content__button-wrap {
+	text-align: left;
+	font-size: 12px;
+}
+
+.content__button {
+	padding: 4px 9px;
+}
+
+.content__nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	font-size: 18px;
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.content__nav-button {
+	opacity: 0.5;
+	position: relative;
+	padding-right: 15px;
+}
+
+.content__nav-button::after {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 6px;
+	border-radius: 50%;
+	position: absolute;
+	width: 9px;
+	top: 30%;
+	right: 0;
+	background-image: url('../images/footer/arrow.svg');
+}
+
+.content__menu {
+	display: none;
+}
+
+.content__link {
+	color: rgba(143, 147, 164, 1);
+	font-size: 18px;
+}
+
+.content__line {
+	background-color: #fff;
+	opacity: 0.5;
+	width: 100%;
+	height: 1px;
+	margin: 15px 0;
+}
+
+.content__buy {
+margin-bottom: 35px;
+}
+
+.content__card-wrap {
+	display: flex;
+	gap: 8px;
+}
+
+.content__social {
+	display: flex;
 }
