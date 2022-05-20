@@ -9,11 +9,12 @@
 /**
  * components
  */
-@import "components/auth.css";
 @import "components/title.css";
 @import "components/paragraph.css";
-@import "components/auth__auth-form.css";
-@import "components/auth__link-wallet.css";
 @import "components/button.css";
+@import "components/list.css";
+@import "components/link.css";
+@import "components/text.css";
 
-
+@import "components/auth.css";
+@import "components/footer.css";
