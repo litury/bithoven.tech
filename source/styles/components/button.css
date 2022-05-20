@@ -7,6 +7,21 @@
 	display: inline-block;
 }
 
+.button_form_clear {
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+	font-size: 18px;
+}
+
+.button_form_none {
+	background-color: transparent;
+	border-radius: 0;
+	color: rgba(255, 255, 255, 1);
+	padding: 0;
+	border: none;
+	display: inline-block;
+}
+
 .button:hover {
 	cursor: pointer;
 }

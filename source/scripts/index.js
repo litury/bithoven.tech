@@ -4,4 +4,3 @@ const menu = document.querySelectorAll('.footer__menu');
 
 
 
-

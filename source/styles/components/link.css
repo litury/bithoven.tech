@@ -1,5 +1,38 @@
 .link {
- text-decoration: none;
- color: inherit;
- outline: transparent;
+	text-decoration: none;
+	color: inherit;
+	outline: transparent;
+}
+
+.link_level_new {
+	padding: 5px 21px 7px 29px;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Futura PT';
+	font-weight: 450;
+	background-color: #60AD76;
+	opacity: 0.5;
+	border-radius: 50px;
+}
+
+.link_level_advanced {
+		padding: 5px 21px 7px 29px;
+		font-size: 14px;
+		color: rgba(255, 255, 255, 1);
+		font-family: 'Futura PT';
+		font-weight: 450;
+		background-color: #B18E1B;
+		opacity: 0.5;
+		border-radius: 50px;
+}
+
+.link_level_pro {
+		padding: 5px 21px 7px 29px;
+		font-size: 14px;
+		color: rgba(255, 255, 255, 1);
+		font-family: 'Futura PT';
+		font-weight: 450;
+		background-color: #602E3D;
+		opacity: 0.5;
+		border-radius: 50px;
 }
