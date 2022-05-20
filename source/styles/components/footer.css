@@ -34,7 +34,7 @@
 	}
 
 
-	@media (max-width: 375px) {
+	@media (max-width: 575px) {
 
 		.footer__text_media_desktop,
 		.footer__social_media_desktop,
@@ -121,7 +121,7 @@
 
 	}
 
-	@media (min-width: 1200px) {
+	@media (min-width: 1220px) {
 
 		.footer__load,
 		.footer__social,

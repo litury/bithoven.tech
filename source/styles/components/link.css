@@ -6,7 +6,6 @@
 
 .link_level_new {
 	padding: 5px 21px 7px 29px;
-	font-size: 14px;
 	color: rgba(255, 255, 255, 1);
 	font-family: 'Futura PT';
 	font-weight: 450;
@@ -32,7 +31,6 @@
 
 .link_level_advanced {
 	padding: 5px 21px 7px 29px;
-	font-size: 14px;
 	color: rgba(255, 255, 255, 1);
 	font-family: 'Futura PT';
 	font-weight: 450;
@@ -58,7 +56,6 @@
 
 .link_level_pro {
 	padding: 5px 21px 7px 29px;
-	font-size: 14px;
 	color: rgba(255, 255, 255, 1);
 	font-family: 'Futura PT';
 	font-weight: 450;
@@ -66,3 +63,4 @@
 	opacity: 0.8;
 	border-radius: 50px;
 }
+

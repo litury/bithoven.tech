@@ -1,42 +1,107 @@
-.card {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	max-width: 410px;
-	padding: 30px 33px;
-	background: linear-gradient(119.35deg, #4D506C 49.8%, #212339 100.05%);
-	border-radius: 20px;
+@media (max-width: 575px) {
+	.card {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		max-width: 328px;
+		width: 100%;
+		padding: 15px;
+		background: linear-gradient(119.35deg, #4D506C 49.8%, #212339 100.05%);
+		border-radius: 20px;
+		font-size: 12px;
+	}
+
+	.card__top {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+
+	.card__text {
+		padding-left: 18px;
+		position: relative;
+	}
+
+
+
+	.card__text::before {
+		content: " ";
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 12px;
+		position: absolute;
+		width: 12px;
+		top: 10%;
+		left: 0;
+		background-image: url('../images/interesting/clock-smal.svg');
+	}
+
+	.card__link_size_small {
+		font-size: 12px;
+		padding: 5px 13px 5px 24px;
+	}
+
+.card__link_size_small::before {
+	left: 13%;
 }
 
-.card__top {
-	display: flex;
-	gap: 20px;
+	.card__title {
+		font-size: 20px;
+		text-align: left;
+	}
+
+	.card__img {
+		display: block;
+		max-width: 298px;
+		width: 100%;
+		height: 135px;
+
+	}
 }
 
-.card__text {
-	padding-left: 28px;
-	position: relative;
+
+
+
+
+@media (min-width: 1220px) {
+	.card {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		max-width: 410px;
+		padding: 30px 33px;
+		background: linear-gradient(119.35deg, #4D506C 49.8%, #212339 100.05%);
+		border-radius: 20px;
+	}
+
+	.card__top {
+		display: flex;
+		gap: 20px;
+	}
+
+	.card__text {
+		padding-left: 28px;
+		position: relative;
+	}
+
+	.card__text::before {
+		content: " ";
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 16px;
+		position: absolute;
+		width: 16px;
+		top: 10%;
+		left: 0;
+		background-image: url('../images/interesting/clock.svg');
+	}
+
+	.card__title {
+		font-size: 30px;
+		text-align: left;
+	}
+
+	.card__img {
+		display: block;
+	}
 }
-
-.card__text::before {
-	content: " ";
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 16px;
-	position: absolute;
-	width: 16px;
-	top: 10%;
-	left: 0;
-	background-image: url('../images/interesting/clock.svg');
-}
-
-.card__title {
-	font-size: 30px;
-	text-align: left;
-}
-
-.card__img {
-	display: block;
-
-}
-
