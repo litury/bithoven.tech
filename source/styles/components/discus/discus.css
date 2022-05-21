@@ -1,0 +1,74 @@
+@media (min-width: 1220px) {
+	.discus {
+		max-width: 462px;
+		width: 100%;
+		text-align: left;
+		background-color: rgba(53, 55, 80, 1);
+		position: absolute;
+		bottom: 0;
+		right: -20%;
+		height: 1061px;
+	}
+
+
+	.discus__wrap {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		padding: 70px 40px 23px;
+
+	}
+
+	.discus_title {
+		font-size: 32px;
+	}
+
+	.discus__input {
+		margin-bottom: 50px;
+		padding: 0 68px 0 40px;
+	}
+
+	.discus__inform {
+		opacity: 0.5;
+		border: 1px solid #8F93A4;
+		border-radius: 20px;
+		padding: 19px 25px;
+		max-width: 291px;
+		width: 100%;
+		text-align: left;
+	}
+
+
+	.discus__nav-button {
+		font-size: 20px;
+		padding-left: 40px;
+	}
+
+	.discus__line {
+		background-color: #fff;
+		width: 100%;
+		height: 1px;
+		margin: 23px 0 39px;
+	}
+
+	.discus__cite {
+		margin-bottom: 24px;
+		display: flex;
+		align-items: center;
+		gap: 14px;
+	}
+
+	.discus__quote {
+		display: flex;
+		flex-direction: column;
+		max-width: 325px;
+		font-size: 18px;
+		padding: 10px 40px;
+	}
+
+	.discus__button-svg {
+		padding-left: 40px;
+	}
+
+}
+

@@ -4,6 +4,10 @@
 	outline: transparent;
 }
 
+.link_color_yellow {
+	color: #F9E531;
+}
+
 .link_level_new {
 	padding: 5px 21px 7px 29px;
 	color: rgba(255, 255, 255, 1);

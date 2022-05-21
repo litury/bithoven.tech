@@ -9,16 +9,20 @@
 /**
  * components
  */
-@import "components/title.css";
-@import "components/paragraph.css";
-@import "components/button.css";
-@import "components/list.css";
-@import "components/link.css";
-@import "components/text.css";
-@import "components/card.css";
-@import "components/discus.css";
 
-@import "components/auth.css";
-@import "components/interesting.css";
-@import "components/content.css";
-@import "components/footer.css";
+@import "components/button.css";
+@import "components/card.css";
+@import "components/input.css";
+@import "components/link.css";
+@import "components/list.css";
+@import "components/paragraph.css";
+@import "components/quote.css";
+@import "components/text.css";
+@import "components/title.css";
+
+
+@import "components/auth/auth.css";
+@import "components/content/content.css";
+@import "components/discus/discus.css";
+@import "components/interesting/interesting.css";
+@import "components/footer/footer.css";
