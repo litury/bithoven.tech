@@ -1,129 +1,133 @@
-@media (max-width: 575px) {
-	.card {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-		max-width: 328px;
-		width: 100%;
-		padding: 15px;
-		background: linear-gradient(119.35deg, #4D506C 49.8%, #212339 100.05%);
-		border-radius: 20px;
-		font-size: 12px;
-	}
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 328px;
+	width: 100%;
+	padding: 15px;
+	background: linear-gradient(119.35deg, #4D506C 49.8%, #212339 100.05%);
+	border-radius: 20px;
+	font-size: 12px;
+}
 
-	.card__top {
-		display: flex;
-		gap: 20px;
-		align-items: center;
+.card__top {
+	display: flex;
+	gap: 20px;
+	align-items: center;
 
-	}
+}
 
-	.card__text {
-		padding-left: 18px;
-		position: relative;
-	}
+.card__text {
+	padding-left: 18px;
+	position: relative;
+}
 
-	.card__text::before {
-		content: " ";
-		background-position: center center;
-		background-repeat: no-repeat;
-		height: 12px;
-		position: absolute;
-		width: 12px;
-		top: 10%;
-		left: 0;
-		background-image: url('../images/interesting/clock-smal.svg');
-	}
+.card__text::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 12px;
+	position: absolute;
+	width: 12px;
+	top: 10%;
+	left: 0;
+	background-image: url('../images/interesting/clock-smal.svg');
+}
 
-	.card__link_size_small {
-		font-size: 12px;
-		padding: 5px 13px 5px 24px;
-	}
+.card__link_size_small {
+	font-size: 12px;
+	padding: 5px 13px 5px 24px;
+}
 
-	.card__link_size_small::before {
-		left: 13%;
-	}
+.card__link_size_small::before {
+	left: 13%;
+}
 
-	.card__title {
-		font-size: 20px;
-		text-align: left;
-	}
+.card__title {
+	font-size: 20px;
+	text-align: left;
+}
 
-	.card__content_name_portu {
-		background-image: url('../images/content/portu-logo.png');
-		max-width: 334px;
-		width: 100%;
-		height: 132px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		top: 10%;
-		left: 0;
-	}
+.card__img_name_portu {
+	background-image: url('../images/content/portu-logo.png');
+	max-width: 334px;
+	width: 100%;
+	height: 132px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 10%;
+	left: 0;
+}
 
-	.card__content_name_adt {
-		background-image: url('../images/content/adt.png');
-		max-width: 328px;
-		width: 100%;
-		height: 52px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		top: 10%;
-		left: 0;
-	}
+.card__img_name_adt {
+	background-image: url('../images/content/adt.png');
+	max-width: 328px;
+	width: 100%;
+	height: 52px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 10%;
+	left: 0;
+}
 
-	.card__content_name_porto-info {
-		background-image: url('../images/content/porto-info.png');
-		max-width: 328px;
-		width: 100%;
-		height: 156px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		top: 10%;
-		left: 0;
-		margin-bottom: 17px;
-	}
+.card__img_name_porto-info {
+	background-image: url('../images/content/porto-info.png');
+	max-width: 328px;
+	width: 100%;
+	height: 156px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 10%;
+	left: 0;
+	margin-bottom: 17px;
+}
 
-	.card__content_name_video {
-		background-image: url('../images/content/video.png');
-		max-width: 328px;
-		width: 100%;
-		height: 156px;
-		background-size: 100%;
-		top: 10%;
-		left: 0;
-		margin-bottom: 17px;
-	}
+.card__img_name_video {
+	background-image: url('../images/content/video.png');
+	max-width: 328px;
+	width: 100%;
+	height: 156px;
+	background-size: 100%;
+	top: 10%;
+	left: 0;
+	margin-bottom: 17px;
+}
 
-	.card__content_name_bay {
-		background-image: url('../images/content/bay.png');
-		background-position: center center;
-		background-repeat: no-repeat;
-		width: 100%;
+.card__img_name_bay {
+	background-image: url('../images/content/bay.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
 
-		background-size: 100%;
-		top: 10%;
-		left: 0;
-		margin-bottom: 17px;
-		border-radius: 20px;
-		max-width: 160px;
-		height: 219px;
-	}
+	background-size: 100%;
+	top: 10%;
+	left: 0;
+	margin-bottom: 17px;
+	border-radius: 20px;
+	max-width: 160px;
+	height: 219px;
+}
 
-	.card__content_name_sell {
-		background-image: url('../images/content/sell.png');
-		width: 100%;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		top: 10%;
-		left: 0;
-		margin-bottom: 17px;
-		border-radius: 20px;
-		max-width: 160px;
-		height: 219px;
+.card__img_name_sell {
+	background-image: url('../images/content/sell.png');
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 10%;
+	left: 0;
+	margin-bottom: 17px;
+	border-radius: 20px;
+	max-width: 160px;
+	height: 219px;
+}
+
+@media (max-width: 1200px) {
+	.card__img_media_decktop {
+		display: none;
 	}
 }
 
@@ -166,7 +170,7 @@
 		text-align: left;
 	}
 
-	.card__content_name_portu {
+	.card__img_name_portu {
 		background-image: url('../images/content/portu-logo.png');
 		max-width: 630px;
 		width: 100%;
@@ -178,7 +182,7 @@
 		left: 0;
 	}
 
-	.card__content_name_adt {
+	.card__img_name_adt {
 		background-image: url('../images/content/adt.png');
 		max-width: 635px;
 		width: 100%;
@@ -190,7 +194,7 @@
 		left: 0;
 	}
 
-	.card__content_name_porto-info {
+	.card__img_name_porto-info {
 		background-image: url('../images/content/porto-info.png');
 		max-width: 630px;
 		width: 100%;
@@ -203,7 +207,7 @@
 		margin-bottom: 17px;
 	}
 
-	.card__content_name_video {
+	.card__img_name_video {
 		background-image: url('../images/content/video.png');
 		max-width: 630px;
 		width: 100%;
@@ -214,7 +218,7 @@
 		margin-bottom: 17px;
 	}
 
-	.card__content_name_bay {
+	.card__img_name_bay {
 		background-image: url('../images/content/bay.png');
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -229,7 +233,7 @@
 		height: 411px;
 	}
 
-	.card__content_name_sell {
+	.card__img_name_sell {
 		background-image: url('../images/content/sell.png');
 		width: 100%;
 		background-position: center center;
