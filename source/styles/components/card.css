@@ -54,7 +54,8 @@
 		max-width: 334px;
 		width: 100%;
 		height: 132px;
-
+		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: 100%;
 		top: 10%;
 		left: 0;
@@ -65,7 +66,8 @@
 		max-width: 328px;
 		width: 100%;
 		height: 52px;
-
+		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: 100%;
 		top: 10%;
 		left: 0;
@@ -76,7 +78,8 @@
 		max-width: 328px;
 		width: 100%;
 		height: 156px;
-
+		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: 100%;
 		top: 10%;
 		left: 0;
@@ -96,7 +99,8 @@
 
 	.card__content_name_bay {
 		background-image: url('../images/content/bay.png');
-
+		background-position: center center;
+		background-repeat: no-repeat;
 		width: 100%;
 
 		background-size: 100%;
@@ -111,7 +115,8 @@
 	.card__content_name_sell {
 		background-image: url('../images/content/sell.png');
 		width: 100%;
-
+		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: 100%;
 		top: 10%;
 		left: 0;
@@ -159,5 +164,82 @@
 	.card__title {
 		font-size: 30px;
 		text-align: left;
+	}
+
+	.card__content_name_portu {
+		background-image: url('../images/content/portu-logo.png');
+		max-width: 630px;
+		width: 100%;
+		height: 250px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		top: 10%;
+		left: 0;
+	}
+
+	.card__content_name_adt {
+		background-image: url('../images/content/adt.png');
+		max-width: 635px;
+		width: 100%;
+		height: 100px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		top: 10%;
+		left: 0;
+	}
+
+	.card__content_name_porto-info {
+		background-image: url('../images/content/porto-info.png');
+		max-width: 630px;
+		width: 100%;
+		height: 300px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		top: 10%;
+		left: 0;
+		margin-bottom: 17px;
+	}
+
+	.card__content_name_video {
+		background-image: url('../images/content/video.png');
+		max-width: 630px;
+		width: 100%;
+		height: 300px;
+		background-size: 100%;
+		top: 10%;
+		left: 0;
+		margin-bottom: 17px;
+	}
+
+	.card__content_name_bay {
+		background-image: url('../images/content/bay.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 100%;
+
+		background-size: 100%;
+		top: 10%;
+		left: 0;
+		margin-bottom: 17px;
+		border-radius: 20px;
+		max-width: 301px;
+		height: 411px;
+	}
+
+	.card__content_name_sell {
+		background-image: url('../images/content/sell.png');
+		width: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		top: 10%;
+		left: 0;
+		margin-bottom: 17px;
+		border-radius: 20px;
+		max-width: 301px;
+		height: 411px;
 	}
 }
