@@ -86,9 +86,9 @@
 
 .education__button-wrap {
 	position: absolute;
-	bottom: 35%;
-	left: 7%;
-	font-size: 10px;
+	bottom: 41%;
+	left: 4%;
+		font-size: 10px;
 }
 
 .education__link {
@@ -113,14 +113,14 @@
 }
 
 .education__nav {
-	display: flex;
-	max-width: 229px;
-	width: 100%;
+display: flex;
+max-width: 229px;
+width: 100%;
 }
 
 .education__menu {
 	display: flex;
-	margin: 0 30px;
+margin: 0 30px;
 	gap: 20px;
 	font-family: 'NeueMachina';
 }

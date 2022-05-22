@@ -1,0 +1,110 @@
+.education-2__card {
+	padding: 51px 9px;
+	min-height: 167px;
+}
+
+.education-2__img,
+.education-2__text {
+	display: none;
+}
+
+.education-2__button-wrap {
+	bottom: 80%;
+	left: 3%;
+}
+
+.education-2__top {
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+}
+
+.education-2__wrap {
+	height: inherit;
+	display: block;
+}
+
+.education-2__img_binance {
+	background-image: url('../images/education-2/bnb-mob.png');
+}
+
+.education-2__img_meanbnb {
+	background-image: url('../images/education-2/bnbmean.png');
+}
+
+.education-2__img_bitok {
+	background-image: url('../images/education-2/btc-mob.png');
+}
+
+.education-2__button:not(:last-child) {
+	margin-right: 5px;
+}
+
+.education-2__card_size_big {
+	min-height: 300px;
+}
+
+.education-2__nav {
+	margin: 0 auto;
+	max-width: 220px;
+	text-align: center;
+}
+
+.education-2__button-wrap--top {
+	bottom: 41%;
+	left: 7%;
+}
+
+
+@media (min-width: 1220px) {
+	.education-2__card {
+		padding: 51px 30px;
+		min-height: 320px;
+	}
+
+	.education-2__button-wrap {
+		position: absolute;
+		bottom: 10%;
+		left: 3%;
+		font-size: 14px;
+	}
+
+	.education-2__top {
+		bottom: 70%;
+		left: 3%;
+	}
+
+	.education__inner {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 35px;
+	}
+
+	.div1 {
+		grid-area: 1 / 1 / 2 / 3;
+
+	}
+
+	.div2 {
+		grid-area: 1 / 3 / 3 / 4;
+		height: 670px;
+
+	}
+
+	.div3 {
+		grid-area: 2 / 1 / 4 / 2;
+		height: 670px;
+	}
+
+	.div4 {
+		grid-area: 2 / 2 / 3 / 3;
+	}
+
+	.div5 {
+		grid-area: 3 / 2 / 4 / 4;
+	}
+
+
+
+}
