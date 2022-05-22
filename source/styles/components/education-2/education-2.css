@@ -24,6 +24,10 @@
 	display: block;
 }
 
+.education__inner-bottom {
+	display: none;
+}
+
 .education-2__img_binance {
 	background-image: url('../images/education-2/bnb-mob.png');
 }
@@ -50,6 +54,14 @@
 	text-align: center;
 }
 
+.education-2__inner {
+	padding-top: 15px;
+}
+
+.education-2__title {
+	font-size: 18px;
+}
+
 .education-2__column {
 	margin-bottom: 30px;
 }
@@ -73,6 +85,10 @@
 		font-size: 14px;
 	}
 
+	.education-2__title {
+		font-size: 30px;
+	}
+
 	.education-2__top {
 		bottom: 71%;
 		left: 3%;
@@ -90,6 +106,20 @@
 	.education-2__img_mean {
 		background-image: url('../images/education-2/mean-binance.png');
 	}
+
+	.education-2__img_cir {
+		background-image: url('../images/education-2/ellips.png');
+		max-width: 323px;
+	}
+
+	.education-2__img_meta {
+		background-image: url('../images/education-2/slider.png');
+	}
+
+	.education-2__img_portu {
+		background-image: url('../images/education-2/porto.png');
+	}
+
 
 	.education-2__img_bitok {
 		height: inherit;
@@ -110,9 +140,7 @@
 
 	.education__inner {
 		display: grid;
-	
-		gap: 35px;
-
+		gap: 30px;
 	}
 
 	.div1 {
@@ -140,6 +168,7 @@
 		grid-area: 3 / 2 / 4 / 4;
 		min-height: 218px;
 	}
+
 
 
 
