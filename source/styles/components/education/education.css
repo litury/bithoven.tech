@@ -1,49 +1,122 @@
 .education {
-	padding: 25px 0;
+	padding: 25px 19px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	text-align: left;
+	align-items: center;
 }
 
 .education__card {
 	display: flex;
-	max-width: 1296px;
+	max-width: 328px;
 	width: 100%;
-	flex-direction: row;
+	flex-direction: column;
+	min-height: 349px;
+	position: relative;
+	padding: 15px;
 }
-
-.education__card:not(:last-child) {
-	margin-bottom: 30px;
-}
-
 
 .education__img {
-	max-width: 430px;
+	max-width: 298px;
 	width: 100%;
-	height: 259px;
-	background-image: url('../images/education/bitcoin.png');
+	height: 135px;
 	border-radius: 20px;
-
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	top: 10%;
-	left: 0;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+
+.education__img_inform_btc {
+	background-image: url('../images/education/bitcoin.png');
+}
+
+.education__img_inform_mean {
+	background-image: url('../images/education/mean.png');
+}
+
+.education__img_inform_ape {
+	background-image: url('../images/education/ape.png');
+}
+
+.education__img_inform_game {
+	background-image: url('../images/education/game.png');
+}
+
+.education__img_inform_women {
+	background-image: url('../images/education/women.png');
+}
+
+.education__img_inform_woo {
+	background-image: url('../images/education/woo.png');
+}
+
+.education__img_inform_coti {
+	background-image: url('../images/education/coti.png');
+}
+
+.card__top {
+	margin-bottom: 15px;
 }
 
 .education__wrap {
-	max-width: 653px;
+	max-width: 295px;
 	width: 100%;
-	height: 260px;
+	height: 150px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	font-size: 18px;
-	text-align: left;
 }
 
-.education__wrap h2 {
-font-size: 30px;
+.education__title {
+	font-size: 20px;
+	line-height: 1;
+	font-family: 'NeueMachina';
+	margin-bottom: 15px;
 }
 
-.education__button-wrap a:not(:last-child) {
-	margin-right: 10px;
+.education__button-wrap {
+	position: absolute;
+	bottom: 27%;
+	left: 10%;
 }
 
+
+
+@media (min-width: 1220px) {
+	.education {
+		gap: 30px;
+	}
+
+	.education__card {
+		max-width: 1296px;
+		flex-direction: row;
+	}
+
+	.education__img {
+		max-width: 430px;
+		height: 259px;
+		position: static;
+	}
+
+	.education__button-wrap {
+		position: static;
+	}
+
+	.education__wrap {
+		max-width: 653px;
+		height: 260px;
+		font-size: 18px;
+	}
+
+	.education__wrap h2 {
+		font-size: 30px;
+	}
+
+	.education__button-wrap a:not(:last-child) {
+		margin-right: 10px;
+	}
+}
