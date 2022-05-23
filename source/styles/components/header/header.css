@@ -1,0 +1,99 @@
+.header {
+	min-height: 100vh;
+
+}
+
+
+.header__menu-top {
+	display: flex;
+	justify-content: space-between;
+	padding: 23px 16px;
+}
+
+.header__button-nav {
+	font-size: 16px;
+	position: relative;
+	padding-right: 15px;
+	font-family: 'NeueMachina';
+	font-weight: 400;
+}
+
+.header__button-nav::after {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 6px;
+	border-radius: 50%;
+	position: absolute;
+	width: 9px;
+	top: 40%;
+	right: 0;
+	transform: rotate(180deg);
+	background-image: url('../images/footer/arrow.svg');
+}
+
+.header__themes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	font-size: 16px;
+	padding-left: 16px;
+	margin-bottom: 30px;
+}
+
+.header__button-link {
+	padding: 6px 19px;
+}
+
+.header__button-link--big {
+	padding: 6px 33px;
+}
+
+.header__bottom {
+	text-align: left;
+	padding-left: 14px;
+	font-family: 'NeueMachina';
+}
+
+.header__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header__nav {
+	background-color: rgba(55, 61, 90, 1);
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	gap: 47px;
+	padding: 8px 23px;
+}
+
+.social__icon {
+	margin-bottom: 4px;
+}
+
+.header__button {
+	color: rgba(143, 147, 164, 1);
+	font-family: 'Inter';
+	font-size: 12px;
+}
