@@ -1,7 +1,9 @@
 .filter {
 	margin: 0 auto;
-	max-width: 350px;
+
 	margin-bottom: 50px;
+	text-align: left;
+	padding: 20px 10px;
 }
 
 .filter__top {
@@ -36,4 +38,13 @@ opacity: 1;
 	gap: 10px;
 	padding-top: 10px;
 	margin-bottom: 20px;
+}
+
+.filter__time {
+	margin-bottom: 20px;
+}
+
+.filter__bottom {
+	height: 65px;
+	background-color: rgba(49, 52, 76, 1);
 }
