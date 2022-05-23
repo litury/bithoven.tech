@@ -1,5 +1,39 @@
 .filter {
 	margin: 0 auto;
-	max-width: 330px;
+	max-width: 350px;
 	margin-bottom: 50px;
+}
+
+.filter__top {
+	padding: 20px 0;
+}
+
+.filter__button {
+	padding: 12px 22px;
+	margin-right: 5px;
+
+}
+
+.filter__all {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.filter__button-link {
+	padding: 6px 20px;
+	opacity: 0.6;
+}
+
+.filter__button-link_state_ok {
+opacity: 1;
+}
+
+.filter__level-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding-top: 10px;
+	margin-bottom: 20px;
 }

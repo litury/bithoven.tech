@@ -66,5 +66,20 @@
 	background-color: #602E3D;
 	opacity: 0.8;
 	border-radius: 50px;
+	position: relative;
+}
+
+.link_level_pro::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 5px;
+	position: absolute;
+	width: 5px;
+	top: 50%;
+	left: 15%;
+	transform: translateY(-50%);
+	background-color: #D92B4D;
+	border-radius: 50%;
 }
 
