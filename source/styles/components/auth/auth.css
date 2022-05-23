@@ -1,5 +1,5 @@
 .auth {
-	padding: 100px 0 50px 0;
+	padding: 50px 0 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -77,3 +77,32 @@
 	margin-bottom: 22px;
 }
 
+
+
+@media (max-width: 1200px) {
+
+	.auth {
+		gap: 15px;
+	}
+
+	.auth__auth-form {
+		background-color: transparent;
+	}
+
+	.auth__title {
+		font-size: 20px;
+		max-width: 325px;
+
+	}
+
+	.header__nav_display_non,
+	.header_display_non {
+		display: none;
+	}
+
+	.header__button-onof {
+		position: absolute;
+		top: 25px;
+		right: 5%;
+	}
+}
