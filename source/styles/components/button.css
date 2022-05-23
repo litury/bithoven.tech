@@ -29,3 +29,14 @@
 .button:hover {
 	cursor: pointer;
 }
+
+
+.button_color_yellow {
+	font-family: 'NeueMachina';
+	font-weight: 800;
+	font-size: 16px;
+	background: linear-gradient(89.7deg, #F9E312 1.47%, #FCFF62 99.74%);
+	border-radius: 5px;
+	padding: 13px 22px;
+	color: rgba(33, 41, 67, 1);
+}
