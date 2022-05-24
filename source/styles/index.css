@@ -19,7 +19,7 @@
 @import "components/quote.css";
 @import "components/text.css";
 @import "components/title.css";
-@import "components/filter.css";
+
 
 @import "components/header/header.css";
 @import "components/auth/auth.css";
@@ -29,3 +29,4 @@
 @import "components/education/education.css";
 @import "components/education-2/education-2.css";
 @import "components/footer/footer.css";
+@import "components/filter.css";

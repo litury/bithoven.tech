@@ -1,10 +1,5 @@
 .filter {
 	margin: 0 auto;
-
-
-
-
-	margin-bottom: 50px;
 	text-align: left;
 	padding: 20px 10px;
 }
@@ -32,7 +27,7 @@
 }
 
 .filter__button-link_state_ok {
-opacity: 1;
+	opacity: 1;
 }
 
 .filter__level-wrap {
@@ -45,10 +40,121 @@ opacity: 1;
 
 .filter__time {
 	margin-bottom: 20px;
+	position: relative;
+}
+
+.filter__time-scrol {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 100px;
+	position: relative;
+}
+
+.filter__time-scrol::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 3px;
+	position: absolute;
+	width: 330px;
+	top: 50%;
+	left: 2px;
+	background-color: #fff;
+}
+
+.span1::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 13px;
+	position: absolute;
+	width: 2px;
+	top: 46%;
+	left: 46px;
+	background-color: #fff;
+}
+
+.span2::before {
+	left: 22%;
+}
+
+.span3::before {
+	left: 39%;
+}
+
+.span4::before {
+	left: 59%;
+}
+
+.span5::before {
+	left: 80%;
+}
+
+
+.filter__time-scrol span:not(:last-child) {
+	margin-right: 10px;
+}
+
+.filter__circle-left {
+	position: absolute;
+	top: 47px;
+	left: 0;
+}
+
+.filter__circle-rights {
+	position: absolute;
+	top: 47px;
+	right: 0;
+}
+
+.filter__bottom-deck {
+	display: block;
 }
 
 .filter__bottom {
-	height: 65px;
+	padding: 20px 16px;
 	background-color: rgba(49, 52, 76, 1);
+	display: flex;
 
+	justify-content: space-around;
+	position: relative;
+}
+
+.filter__bottom::after {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 6px;
+	border-radius: 50%;
+	position: absolute;
+	width: 9px;
+	top: 46%;
+	right: 5%;
+	/* transform: rotate(180deg); */
+	background-image: url('../images/footer/arrow.svg');
+	opacity: 0.5;
+}
+
+.filter__button-wrap {
+	display: flex;
+	gap: 15px;
+}
+
+.filter__button-clear {
+	position: relative;
+	padding-left: 22px;
+	color: #A6A7B0;
+}
+
+.filter__button-clear::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 13px;
+	position: absolute;
+	width: 12px;
+	top: 24%;
+	left: 0;
+	background-image: url('../images/filter/trash.svg');
 }
