@@ -1,7 +1,15 @@
+.filter__all-desktop {
+	display: none;
+}
+
 .filter {
 	margin: 0 auto;
 	text-align: left;
 	padding: 20px 10px;
+}
+
+.filter__button-none {
+	display: none;
 }
 
 .filter__top {
@@ -57,7 +65,8 @@
 	background-repeat: no-repeat;
 	height: 3px;
 	position: absolute;
-	width: 330px;
+
+	width: 100%;
 	top: 50%;
 	left: 2px;
 	background-color: #fff;
@@ -105,7 +114,7 @@
 .filter__circle-rights {
 	position: absolute;
 	top: 47px;
-	right: 0;
+	right: -3px;
 }
 
 .filter__bottom-deck {
@@ -157,4 +166,59 @@
 	top: 24%;
 	left: 0;
 	background-image: url('../images/filter/trash.svg');
+}
+
+@media (min-width: 1200px) {
+
+	.filter__button-none {
+		display: inline-block;
+	}
+	.filter__bottom-inner {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.filter__all {
+		gap: 12px;
+	}
+
+	.filter__bottom::after {
+		right: 24%;
+	}
+
+	.filter__button-wrap {
+		gap: 23px;
+	}
+
+	.filter__menu-span {
+		margin-right: 25px;
+	height: 23px;
+	}
+
+	.filter__bottom-button {
+		font-size: 18px;
+		color: rgba(166, 167, 176, 1);
+	}
+
+	.filter__all-desktop {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+ .filter__inner {
+ 	display: flex;
+ 	justify-content: space-around;
+ }
+
+ .filter__top-inner {
+ 	max-width: 611px;
+ 	width: 100%;
+ }
+
+ .filter__level-inner {
+ 	max-width: 611px;
+ 	width: 100%;
+ }
 }
