@@ -51,7 +51,6 @@
 	width: 9px;
 	top: 40%;
 	right: 0;
-	transform: rotate(180deg);
 	background-image: url('../images/footer/arrow.svg');
 }
 
@@ -275,6 +274,10 @@
 
 	.header__button-deck {
 		display: inline-block;
+	}
+
+	.header__button-deck:hover {
+
 	}
 
 	.header__logo {

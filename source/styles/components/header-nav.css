@@ -1,0 +1,176 @@
+.header__user-wrap {
+	position: relative;
+}
+
+.header-nav__menu {
+	padding-top: 50px;
+	background-color: transparent;
+	display: none;
+	position: absolute;
+	min-width: 90px;
+	z-index: 1;
+}
+
+.header-nav {
+	display: none;
+	position: absolute;
+	text-align: left;
+	min-width: 368px;
+	padding: 20px;
+	z-index: 1;
+	background: #FFFFFF;
+	border-radius: 10px;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.header-nav__item {
+	position: relative;
+	padding: 10px 15px 10px 60px;
+}
+
+.header-nav__item::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 33px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #2C2F45;
+	width: 33px;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%)
+}
+
+.header-nav__item--bnb::before {
+	background-image: url('../images/header-nav/bnb.svg');
+}
+
+.header-nav__item--laba::before {
+	background-image: url('../images/header-nav/laba.svg');
+}
+
+.header-nav__item--study::before {
+	background-image: url('../images/header-nav/study.svg');
+}
+
+.header-nav__item--bcf::before {
+	background-image: url('../images/header-nav/bcf.svg');
+}
+
+.header-nav__item--rocket::before {
+	background-image: url('../images/header-nav/rocket.svg');
+}
+
+.header-nav__item--shield::before {
+	background-image: url('../images/header-nav/shield.svg');
+}
+
+.header-nav__item:hover {
+	background-color: rgba(230, 232, 242, 1);
+	border-radius: 5px;
+}
+
+.header-nav__link {
+	color: rgba(33, 41, 67, 1);
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'FuturaPT';
+	font-weight: 500;
+}
+
+.header-nav__text {
+	font-family: 'FuturaPT';
+	font-weight: 400;
+	color: rgba(33, 41, 67, 1);
+	display: block;
+}
+
+.header__button-deck:hover::after {
+	transform: rotate(180deg);
+	transition-duration: 0.5s;
+}
+
+
+.header__button-deck--hover:hover .header-nav__menu {
+	display: flex;
+
+}
+
+.header__button-deck--hover:hover .header-nav {
+	display: flex;
+}
+
+/* другая кнопка */
+.header__button-learn--hover:hover::after {
+	transform: rotate(180deg);
+	transition-duration: 0.5s;
+}
+
+.header__button-learn--hover:hover .header-nav__menu {
+	display: flex;
+
+}
+
+.header__button-learn--hover:hover .header-nav {
+	display: flex;
+}
+
+.header-nav__item--glossary::before {
+	background-image: url('../images/header-nav/glossary.svg');
+}
+
+.header-nav__item--game::before {
+	background-image: url('../images/header-nav/game.svg');
+}
+
+
+/* другая кнопка */
+
+.header__button-nav--hover:hover::after {
+	transform: rotate(180deg);
+	transition-duration: 0.5s;
+}
+
+.header__button-nav--hover:hover .header-nav__menu {
+	display: flex;
+
+}
+
+.header__button-nav--hover:hover .header-nav {
+display: grid;
+}
+
+.header-nav_size_smal {
+	padding: 25px 25px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 10px;
+	justify-items: center;
+	justify-content: center;
+	min-width: 329px;
+}
+
+.header-nav__item-button {
+	max-width: 132px;
+	width: 100%;
+}
+
+.header-nav__link-button:hover {
+	background-color: rgba(230, 232, 242, 1);
+	border-radius: 50px;
+}
+
+
+.header-nav__link-button {
+	border: 1px solid #182446;
+	border-radius: 50px;
+	padding: 6px 9px;
+	font-size: 18px;
+	max-width: 132px;
+	width: 100%;
+	text-align: center;
+	font-family: 'FuturaPT';
+	font-weight: 400;
+}

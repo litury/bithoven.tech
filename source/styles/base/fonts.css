@@ -10,7 +10,7 @@
 
 @font-face {
 	font-family: 'FuturaPT';
-	font-weight: 450;
+	font-weight: 400;
 	font-style: normal;
 	src:
 		url('../fonts/FuturaPT-Book.woff2') format('woff2'),
@@ -18,17 +18,17 @@
 	font-display: swap;
 }
 
-/* @font-face {
+@font-face {
 	font-family: 'FuturaPT';
-	font-weight: 300;
+	font-weight: 600;
 	font-style: normal;
 	src:
 		url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
 		url('../fonts/FuturaPT-Demi.woff') format('woff');
 	font-display: swap;
-} */
+}
 
-/* @font-face {
+@font-face {
 	font-family: 'FuturaPT';
 	font-weight: 100;
 	font-style: normal;
@@ -36,7 +36,7 @@
 		url('../fonts/FuturaPT-Light.woff2') format('woff2'),
 		url('../fonts/FuturaPT-Light.woff') format('woff');
 	font-display: swap;
-} */
+}
 
 @font-face {
 	font-family: 'FuturaPT';

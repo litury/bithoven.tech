@@ -9,6 +9,11 @@
 	outline: transparent;
 }
 
+.button_color_active {
+	color: #fff;
+	background-color: rgba(33, 35, 57, 1);
+}
+
 
 .button_form_clear {
 	border: 1px solid #FFFFFF;

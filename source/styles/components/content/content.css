@@ -146,10 +146,7 @@
 	gap: 9px;
 }
 
-.button_form_none span {
-	color: rgba(143, 147, 164, 1);
-	font-size: 18px;
-}
+
 
 @media (min-width: 1220px) {
 
