@@ -72,7 +72,7 @@
 	background-color: #fff;
 }
 
-.span1::before {
+.filter__clock--span1::before {
 	content: " ";
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -84,19 +84,19 @@
 	background-color: #fff;
 }
 
-.span2::before {
+.filter__clock--span2::before {
 	left: 22%;
 }
 
-.span3::before {
+.filter__clock--span3::before {
 	left: 39%;
 }
 
-.span4::before {
+.filter__clock--span4::before {
 	left: 59%;
 }
 
-.span5::before {
+.filter__clock--span5::before {
 	left: 80%;
 }
 
@@ -170,9 +170,14 @@
 
 @media (min-width: 1200px) {
 
+	.filter__time-scrol span:not(:last-child) {
+		margin-right: 41px;
+	}
+
 	.filter__button-none {
 		display: inline-block;
 	}
+
 	.filter__bottom-inner {
 		width: 100%;
 		display: flex;
@@ -184,7 +189,7 @@
 	}
 
 	.filter__bottom::after {
-		right: 24%;
+		right: 18%;
 	}
 
 	.filter__button-wrap {
@@ -193,7 +198,7 @@
 
 	.filter__menu-span {
 		margin-right: 25px;
-	height: 23px;
+		height: 23px;
 	}
 
 	.filter__bottom-button {
@@ -207,18 +212,18 @@
 		gap: 12px;
 	}
 
- .filter__inner {
- 	display: flex;
- 	justify-content: space-around;
- }
+	.filter__inner {
+		display: flex;
+		justify-content: space-around;
+	}
 
- .filter__top-inner {
- 	max-width: 611px;
- 	width: 100%;
- }
+	.filter__top-inner {
+		max-width: 611px;
+		width: 100%;
+	}
 
- .filter__level-inner {
- 	max-width: 611px;
- 	width: 100%;
- }
+	.filter__level-inner {
+		max-width: 611px;
+		width: 100%;
+	}
 }

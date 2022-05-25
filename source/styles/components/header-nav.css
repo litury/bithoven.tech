@@ -102,8 +102,8 @@
 	display: flex;
 }
 
-/* другая кнопка */
-.header__button-learn--hover:hover::after {
+/*  Кнопка Узнать */
+.header__button-leng--hover:hover::after {
 	transform: rotate(180deg);
 	transition-duration: 0.5s;
 }
@@ -126,7 +126,7 @@
 }
 
 
-/* другая кнопка */
+/* Кнопка Темы */
 
 .header__button-nav--hover:hover::after {
 	transform: rotate(180deg);
@@ -135,7 +135,6 @@
 
 .header__button-nav--hover:hover .header-nav__menu {
 	display: flex;
-
 }
 
 .header__button-nav--hover:hover .header-nav {
@@ -174,3 +173,47 @@ display: grid;
 	font-family: 'FuturaPT';
 	font-weight: 400;
 }
+
+/*  Кнопка выбора языка */
+.header__button-lang--hover:hover::after {
+	transform: rotate(180deg);
+	transition-duration: 0.5s;
+}
+
+.header__button-lang--hover:hover .header-nav__menu {
+	display: flex;
+
+}
+
+.header__button-lang--hover:hover .header-nav {
+	display: flex;
+
+}
+
+.header-nav_size--lang {
+	display: flex;
+	flex-direction: row;
+	z-index: 1;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 363px;
+}
+
+.header-lang__link-button {
+	border: none;
+	border-radius: 50px;
+	padding: 6px 9px;
+	font-size: 18px;
+	max-width: 132px;
+	width: 100%;
+	text-align: center;
+	font-family: 'FuturaPT';
+	font-weight: 400;
+}
+
+.header-lang__link-button:hover {
+	background-color: rgba(230, 232, 242, 1);
+	border-radius: 50px;
+}
+
+

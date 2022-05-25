@@ -7,6 +7,20 @@
 // });
 
 
+// Строка поиска
+const menuButton = document.querySelector('.btn');
+const inputDeckt = document.querySelector('.input');
+
+menuButton.addEventListener('click', () => {
+	inputDeckt.classList.toggle('inclicked');
+	menuButton.classList.toggle('close');
+});
+
+
+
+
+
+
 // const contentButton = document.querySelector('.content__nav-button');
 // const contentMenu = document.querySelector('.content__menu');
 
@@ -14,6 +28,13 @@
 // 	contentMenu.classList.toggle('content__menu--active');
 
 // });
+
+// $(".btn").on("click", function () {
+// 	$(".input").toggleClass("inclicked");
+// 	$(".btn").toggleClass("close");
+// });
+
+
 
 
 // const btnSearch = document.querySelector('.user-nav__search');
