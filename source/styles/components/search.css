@@ -4,6 +4,10 @@
 	top: -11px;
 }
 
+.middle__label {
+	display: none;
+}
+
 
 .search-box {
 	display: block;
@@ -34,7 +38,9 @@
 	border: 1px solid #FFFFFF;
 	border-radius: 5px;
 	padding: 10px 15px;
-
+position: relative;
+left: 120%;
+top: 0;
 }
 
 .btn {
@@ -84,6 +90,25 @@
 
 
 @media (max-width: 1200px) {
+
+
+	.close::before,
+	.close::after {
+		background: rgba(143, 147, 164, 1);
+	}
+
+	.btn::before {
+		background: rgba(143, 147, 164, 1);
+	}
+
+	.inclicked {
+		border: 1px solid rgba(143, 147, 164, 1);
+	}
+
+	.input {
+		border: 2px solid rgba(143, 147, 164, 1);
+	}
+
 	.middle {
 		display: none;
 	}
@@ -91,18 +116,44 @@
 	.input_media_mobile {
 		width: 18px;
 		height: 18px;
+		margin-bottom: 7px;
+		position: relative;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
 	}
 
 	.middle_media_mobile {
 		display: block;
-		top: -25px;
-		padding: 10px;
+		top: -22px;
+		padding: 0;
+
 	}
 
 	.btn_media_mobile {
-		right: 70%;
-		top: 20px;
+		right: 67%;
+		top: 6px;
 		width: 18px;
 		height: 18px;
 	}
+
+	.middle__label {
+		display: block;
+		font-size: 12px;
+		color: rgba(143, 147, 164, 1);
+		position: relative;
+		left: 30px;
+	}
+
+	.middle__label_media_mobilenone {
+		display: none;
+	}
+
+		.inclicked {
+			width: 300px;
+			
+		}
+
+
+
 }

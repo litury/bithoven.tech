@@ -11,12 +11,35 @@
 const menuButton = document.querySelector('.btn');
 const inputDeckt = document.querySelector('.input');
 
+
+
+
+
+
 menuButton.addEventListener('click', () => {
 	inputDeckt.classList.toggle('inclicked');
 	menuButton.classList.toggle('close');
+
 });
 
 
+const menuButtonMob = document.querySelector('.btn_media_mobile');
+const inputMobile = document.querySelector('.input_media_mobile');
+const labelMobile = document.querySelector('.middle__label_media_mobile');
+
+const homeMob = document.querySelector('.header__button_type_home');
+const profiMob = document.querySelector('.header__button_type_profile');
+const menuMob = document.querySelector('.header__button_type_menu');
+
+
+menuButtonMob.addEventListener('click', () => {
+	inputMobile.classList.toggle('inclicked');
+	menuButtonMob.classList.toggle('close');
+	labelMobile.classList.toggle('middle__label_media_mobilenone');
+	homeMob.classList.toggle('middle__label_media_mobilenone');
+	profiMob.classList.toggle('middle__label_media_mobilenone');
+	menuMob.classList.toggle('middle__label_media_mobilenone');
+});
 
 
 
