@@ -11,11 +11,6 @@
 const menuButton = document.querySelector('.btn');
 const inputDeckt = document.querySelector('.input');
 
-
-
-
-
-
 menuButton.addEventListener('click', () => {
 	inputDeckt.classList.toggle('inclicked');
 	menuButton.classList.toggle('close');
@@ -41,6 +36,18 @@ menuButtonMob.addEventListener('click', () => {
 	menuMob.classList.toggle('middle__label_media_mobilenone');
 });
 
+
+const headerAccountBtn = document.querySelector('.header__button-acc');
+const headerAccount = document.querySelector('.header__svg-login');
+const headerAccImgBtn = document.querySelector('.header__button-login');
+
+
+
+headerAccountBtn.addEventListener('click', () => {
+	headerAccount.classList.toggle('header__button--no');
+	headerAccImgBtn.classList.toggle('header__button--yes');
+
+});
 
 
 

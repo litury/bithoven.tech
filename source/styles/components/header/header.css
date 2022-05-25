@@ -182,16 +182,16 @@
 .header-mobile__leng {
 	display: block;
 	font-size: 16px;
-		font-family: 'NeueMachina';
-		font-weight: 300;
+	font-family: 'NeueMachina';
+	font-weight: 300;
 }
 
-	.header-mobile__content {
-		display: flex;
-		justify-content: space-between;
-		padding-top: 30px;
-		align-items: center;
-	}
+.header-mobile__content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	align-items: center;
+}
 
 @media (min-width: 1220px) {
 
@@ -350,8 +350,33 @@
 	}
 
 	.header__menu-wrap {
-
 		margin-bottom: 0;
 	}
+
+	.header__aut:hover {
+		color: #FFFFFF;
+		background: #454965;
+		border-radius: 5px;
+	}
+
+	.header__button-login {
+		display: none;
+		align-items: center;
+		gap: 7px;
+	}
+
+	.header__button-name {
+		font-size: 16px;
+		font-family: 'NeueMachina';
+		font-weight: 400;
+	}
+
+	.header__button--yes {
+		display: flex;
+	}
+
+		.header__button--no {
+			display: none;
+		}
 
 }

@@ -1,7 +1,15 @@
 .middle {
 	transform: translate(-50%, 50%);
 	position: relative;
-	top: -11px;
+	top: -15px;
+	min-width: 30px;
+	height: 30px;
+	left: 10px;
+}
+
+.middle:hover {
+	background-color: #454965;
+	border-radius: 5px;
 }
 
 .middle__label {
@@ -31,6 +39,9 @@
 	color: white;
 	font-size: 14px;
 	display: flex;
+	position: relative;
+	left: 8px;
+	top: 4px;
 }
 
 .inclicked {
@@ -38,17 +49,18 @@
 	border: 1px solid #FFFFFF;
 	border-radius: 5px;
 	padding: 10px 15px;
-position: relative;
-left: 120%;
-top: 0;
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 30px;
 }
 
 .btn {
 	position: absolute;
 	width: 13px;
 	height: 14px;
-	top: 2px;
-	right: 0;
+	top: 5px;
+	right: 6px;
 	box-sizing: border-box;
 	background: none;
 	border: none;
@@ -95,6 +107,8 @@ top: 0;
 	.close::before,
 	.close::after {
 		background: rgba(143, 147, 164, 1);
+		height: 17px;
+
 	}
 
 	.btn::before {
@@ -116,32 +130,38 @@ top: 0;
 	.input_media_mobile {
 		width: 18px;
 		height: 18px;
-		margin-bottom: 7px;
+		margin-bottom: 4px;
 		position: relative;
 		left: 50%;
 		top: 0;
 		transform: translateX(-50%);
+		background-color: rgba(143, 147, 164, 1);
+	}
+
+	.search-box_media_mobile {
+		position: relative;
+		left: 16px;
 	}
 
 	.middle_media_mobile {
 		display: block;
-		top: -22px;
+		top: -17px;
 		padding: 0;
 
 	}
 
 	.btn_media_mobile {
-		right: 67%;
-		top: 6px;
-		width: 18px;
-		height: 18px;
+		right: 62%;
+		top: 7px;
+		width: 20px;
+		height: 20px;
 	}
 
 	.middle__label {
 		display: block;
 		font-size: 12px;
 		color: rgba(143, 147, 164, 1);
-		position: relative;
+		position: static;
 		left: 30px;
 	}
 
@@ -149,10 +169,21 @@ top: 0;
 		display: none;
 	}
 
-		.inclicked {
-			width: 300px;
-			
-		}
+	.inclicked {
+		width: 300px;
+		background-color: transparent;
+		margin: 0;
+		top: 0;
+		border: 2px solid #8F93A4;
+		border-radius: 50px;
+		transform: translateX(0);
+		height: 40px;
+	}
+
+	.close {
+		right: 23%;
+		top: 17px;
+	}
 
 
 
