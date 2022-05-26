@@ -30,12 +30,13 @@
 
 
 
-@import "components/header/header.css";
+
 @import "components/auth/auth.css";
 @import "components/content/content.css";
 @import "components/discus/discus.css";
 @import "components/interesting/interesting.css";
 @import "components/education/education.css";
 @import "components/education-2/education-2.css";
+@import "components/header/header.css";
 
 

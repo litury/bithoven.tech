@@ -75,7 +75,7 @@
 	background: #FFFFFF;
 	position: absolute;
 	transform: rotate(-45deg);
-	bottom: -5px;
+	bottom: -9px;
 	right: 0px;
 	transition: 0.3s;
 }
@@ -130,7 +130,7 @@
 	.input_media_mobile {
 		width: 18px;
 		height: 18px;
-		margin-bottom: 4px;
+		margin-bottom: 1px;
 		position: relative;
 		left: 50%;
 		top: 0;
@@ -145,7 +145,7 @@
 
 	.middle_media_mobile {
 		display: block;
-		top: -17px;
+		top: -13px;
 		padding: 0;
 
 	}

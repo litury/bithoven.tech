@@ -21,6 +21,25 @@ const formNav = document.querySelector('.form')
 
 const formBtn = document.querySelector('.form__button')
 
+const authmBtn = document.querySelector('.header__button_type_profile')
+const authmBlock = document.querySelector('.header__aut-none')
+const authBtnOf = document.querySelector('.auth_button-onof');
+
+
+//показать авторизацию
+authmBtn.addEventListener('click', () => {
+	authmBlock.classList.add('header__aut-yes');
+	headerBlur.classList.add('header__button--no');
+});
+
+//скрыть авторизацию
+authBtnOf.addEventListener('click', () => {
+	authmBlock.classList.remove('header__aut-yes');
+	headerBlur.classList.remove('header__button--no');
+});
+
+
+
 
 //показать нижний поиск
 searchMobBtn.addEventListener('click', () => {
@@ -32,10 +51,6 @@ searchMobBtn.addEventListener('click', () => {
 formBtn.addEventListener('click', () => {
 	formNav.classList.remove('header__button--yes');
 });
-
-
-
-
 
 
 //показать нижнее меню
@@ -76,6 +91,7 @@ logoBtnMobMenu.addEventListener('click', () => {
 //header mobile
 const headBtnMobMenu = document.querySelector('.header__button_type_menu');
 const headBtnMobOF = document.querySelector('.header__button-onof');
+
 
 const headMobMenu = document.querySelector('.header-mobile');
 const headMobMenuBlock = document.querySelector('.header__menu-wrap');
@@ -144,14 +160,14 @@ menuBtnMob.addEventListener('click', () => {
 // });
 
 
-// const headerAccountBtn = document.querySelector('.header__button-acc');
-// const headerAccount = document.querySelector('.header__svg-login');
-// const headerAccImgBtn = document.querySelector('.header__button-login');
+const headerAccountBtn = document.querySelector('.header__button-acc');
+const headerAccount = document.querySelector('.header__svg-login');
+const headerAccImgBtn = document.querySelector('.header__button-login');
 
-// headerAccountBtn.addEventListener('click', () => {
-// 	headerAccount.classList.toggle('header__button--no');
-// 	headerAccImgBtn.classList.toggle('header__button--yes');
-// });
+headerAccountBtn.addEventListener('click', () => {
+	headerAccount.classList.toggle('header__button--no');
+	headerAccImgBtn.classList.toggle('header__button--yes');
+});
 
 
 

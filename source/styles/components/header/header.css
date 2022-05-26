@@ -169,7 +169,7 @@
 }
 
 .header-mobile {
-z-index: 1;
+	z-index: 1;
 }
 
 .header-mobile__logo {
@@ -210,31 +210,40 @@ z-index: 1;
 	font-family: 'NeueMachina';
 }
 
-	.header-mobile__search,
-	.header-mobile__auth {
-		display: none;
-	}
+.header-mobile__search,
+.header-mobile__auth {
+	display: none;
+}
 
-	.header__button--yes {
-		display: block;
-	}
+.header__button--yes {
+	display: block;
+}
 
-	.header__button--no {
-		display: none;
-	}
+.header__button--no {
+	display: none;
+}
 
 .header-mobile__input {
 	border: 2px solid #FFFFFF;
 }
 
 .header-mobile__btn::before {
-	background: #FFFFFF; }
+	background: #FFFFFF;
+}
 
-	.header-nav__menu_yes {
-		position: absolute;
-		display: block;
-	}
+.header-nav__menu_yes {
+	position: absolute;
+	display: block;
+}
 
+.header__aut-none {
+	display: none;
+}
+
+.header__aut-yes {
+	display: flex;
+	max-width: 370px;
+}
 
 @media (min-width: 1220px) {
 
@@ -415,10 +424,8 @@ z-index: 1;
 		display: flex;
 	}
 
-	header_display_non
-
-		.header__button--no {
-			display: none;
-		}
+	header_display_non .header__button--no {
+		display: none;
+	}
 
 }
