@@ -3,10 +3,42 @@
 const logoBtnMobMenu = document.querySelector('.header-mobile__logotype');
 const menuBtnMob = document.querySelector('.header__button-deck');
 const langBtnMob = document.querySelector('.header-mobile__lang');
+
 const searchBtnMob = document.querySelector('.header-mobile__search');
 const authhBtnMob = document.querySelector('.header-mobile__auth');
+const menuMob = document.querySelector('.mobile-menu');
+const headerBlur = document.querySelector('.header-mobile')
+const ofMobmenu = document.querySelector('.mobile-menu__button')
+
+const langMobmenu = document.querySelector('.mobile-menu_lang')
 
 
+//показать нижнее меню
+menuBtnMob.addEventListener('click', () => {
+	menuMob.classList.add('header__button--yes');
+	headerBlur.classList.add('blur');
+});
+
+//скрыть нижнее меню
+ofMobmenu.addEventListener('click', () => {
+	menuMob.classList.remove('header__button--yes');
+	headerBlur.classList.remove('blur');
+});
+
+
+//показать выборя языка
+langBtnMob.addEventListener('click', () => {
+	langMobmenu.classList.add('header__button--yes');
+	headerBlur.classList.add('blur');
+});
+
+//скрыть выбор языка
+ofMobmenu.addEventListener('click', () => {
+	langMobmenu.classList.remove('header__button--yes');
+	headerBlur.classList.remove('blur');
+});
+
+//шапка поиска
 logoBtnMobMenu.addEventListener('click', () => {
 	menuBtnMob.classList.toggle('header__button--no');
 	langBtnMob.classList.toggle('header__button--no');
@@ -15,18 +47,6 @@ logoBtnMobMenu.addEventListener('click', () => {
 	authhBtnMob.classList.toggle('header__button--yes');
 
 });
-
-// menuBtnMob.addEventListener('click', () => {
-// 	menuBtnMob.classList.toggle('header__button--no');
-// 	langBtnMob.classList.toggle('header__button--no');
-
-// 	searchBtnMob.classList.toggle('header__button--yes');
-// 	authhBtnMob.classList.toggle('header__button--yes');
-
-// });
-
-
-
 
 //header mobile
 const headBtnMobMenu = document.querySelector('.header__button_type_menu');
@@ -54,6 +74,17 @@ menuButton.addEventListener('click', () => {
 	menu.classList.toggle('header__themes');
 	menuButton.classList.toggle('rotate');
 });
+
+// menuBtnMob.addEventListener('click', () => {
+// 	menuBtnMob.classList.toggle('header__button--no');
+// 	langBtnMob.classList.toggle('header__button--no');
+
+// 	searchBtnMob.classList.toggle('header__button--yes');
+// 	authhBtnMob.classList.toggle('header__button--yes');
+
+// });
+
+
 
 
 
