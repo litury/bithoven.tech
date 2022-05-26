@@ -10,17 +10,10 @@ const headerBlur = document.querySelector('.header-mobile')
 const ofMobmenu = document.querySelector('.mobile-menu__button')
 const langMobmenu = document.querySelector('.mobile-menu_lang')
 const langMobBtn = document.querySelector('.mobile-menu__button-ofLang')
-
-
-
 const searchMobBtn = document.querySelector('.middle_media_mobile')
-
 const headerNav = document.querySelector('.header__nav')
-
 const formNav = document.querySelector('.form')
-
 const formBtn = document.querySelector('.form__button')
-
 const authmBtn = document.querySelector('.header__button_type_profile')
 const authmBlock = document.querySelector('.header__aut-none')
 const authBtnOf = document.querySelector('.auth_button-onof');
@@ -37,8 +30,6 @@ authBtnOf.addEventListener('click', () => {
 	authmBlock.classList.remove('header__aut-yes');
 	headerBlur.classList.remove('header__button--no');
 });
-
-
 
 
 //показать нижний поиск
@@ -126,40 +117,7 @@ menuBtnMob.addEventListener('click', () => {
 });
 
 
-
-
-
-
-// // Строка поиска
-// const menuButton = document.querySelector('.btn');
-// const inputDeckt = document.querySelector('.input');
-
-// menuButton.addEventListener('click', () => {
-// 	inputDeckt.classList.toggle('inclicked');
-// 	menuButton.classList.toggle('close');
-
-// });
-
-
-// const menuButtonMob = document.querySelector('.btn_media_mobile');
-// const inputMobile = document.querySelector('.input_media_mobile');
-// const labelMobile = document.querySelector('.middle__label_media_mobile');
-
-// const homeMob = document.querySelector('.header__button_type_home');
-// const profiMob = document.querySelector('.header__button_type_profile');
-// const menuMob = document.querySelector('.header__button_type_menu');
-
-
-// menuButtonMob.addEventListener('click', () => {
-// 	inputMobile.classList.toggle('inclicked');
-// 	menuButtonMob.classList.toggle('close');
-// 	labelMobile.classList.toggle('middle__label_media_mobilenone');
-// 	homeMob.classList.toggle('middle__label_media_mobilenone');
-// 	profiMob.classList.toggle('middle__label_media_mobilenone');
-// 	menuMob.classList.toggle('middle__label_media_mobilenone');
-// });
-
-
+//авторизация
 const headerAccountBtn = document.querySelector('.header__button-acc');
 const headerAccount = document.querySelector('.header__svg-login');
 const headerAccImgBtn = document.querySelector('.header__button-login');
@@ -169,32 +127,3 @@ headerAccountBtn.addEventListener('click', () => {
 	headerAccImgBtn.classList.toggle('header__button--yes');
 });
 
-
-
-
-
-// const contentButton = document.querySelector('.content__nav-button');
-// const contentMenu = document.querySelector('.content__menu');
-
-// contentButton.addEventListener('click', () => {
-// 	contentMenu.classList.toggle('content__menu--active');
-
-// });
-
-// $(".btn").on("click", function () {
-// 	$(".input").toggleClass("inclicked");
-// 	$(".btn").toggleClass("close");
-// });
-
-
-
-
-// const btnSearch = document.querySelector('.user-nav__search');
-// const searchForm = document.querySelector('.user-nav__noactive');
-// const searchInput = document.querySelector('.user-nav__input');
-
-// btnSearch.addEventListener('click', () => {
-// 	searchForm.classList.toggle('user-nav--active');
-// 	searchInput.classList.toggle('user-nav--active');
-// 	searchInput.focus();
-// });
