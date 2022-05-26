@@ -10,7 +10,9 @@
  * components
  */
 
-@import "components/button.css";
+@import "components/filter.css";
+@import "components/footer/footer.css";
+ @import "components/button.css";
 @import "components/card.css";
 @import "components/input.css";
 @import "components/link.css";
@@ -20,8 +22,9 @@
 @import "components/text.css";
 @import "components/title.css";
 @import "components/header-nav.css";
-
+@import "components/visually-hidden.css";
 @import "components/search.css";
+@import "components/header-mobile.css";
 
 
 
@@ -32,5 +35,5 @@
 @import "components/interesting/interesting.css";
 @import "components/education/education.css";
 @import "components/education-2/education-2.css";
-@import "components/footer/footer.css";
-@import "components/filter.css";
+
+
