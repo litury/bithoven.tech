@@ -105,6 +105,10 @@
 	color: #8F93A4;
 }
 
+.mobile-menu__link_active {
+	color: #212943;
+}
+
 .form {
 	position: absolute;
 	background-color: #373d5a;
