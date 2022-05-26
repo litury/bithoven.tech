@@ -3,14 +3,39 @@
 const logoBtnMobMenu = document.querySelector('.header-mobile__logotype');
 const menuBtnMob = document.querySelector('.header__button-deck');
 const langBtnMob = document.querySelector('.header-mobile__lang');
-
 const searchBtnMob = document.querySelector('.header-mobile__search');
 const authhBtnMob = document.querySelector('.header-mobile__auth');
 const menuMob = document.querySelector('.mobile-menu');
 const headerBlur = document.querySelector('.header-mobile')
 const ofMobmenu = document.querySelector('.mobile-menu__button')
-
 const langMobmenu = document.querySelector('.mobile-menu_lang')
+const langMobBtn = document.querySelector('.mobile-menu__button-ofLang')
+
+
+
+const searchMobBtn = document.querySelector('.middle_media_mobile')
+
+const headerNav = document.querySelector('.header__nav')
+
+const formNav = document.querySelector('.form')
+
+const formBtn = document.querySelector('.form__button')
+
+
+//показать нижний поиск
+searchMobBtn.addEventListener('click', () => {
+	formNav.classList.add('header__button--yes');
+
+});
+
+//скрыть нижний поиск
+formBtn.addEventListener('click', () => {
+	formNav.classList.remove('header__button--yes');
+});
+
+
+
+
 
 
 //показать нижнее меню
@@ -33,7 +58,7 @@ langBtnMob.addEventListener('click', () => {
 });
 
 //скрыть выбор языка
-ofMobmenu.addEventListener('click', () => {
+langMobBtn.addEventListener('click', () => {
 	langMobmenu.classList.remove('header__button--yes');
 	headerBlur.classList.remove('blur');
 });
@@ -75,14 +100,14 @@ menuButton.addEventListener('click', () => {
 	menuButton.classList.toggle('rotate');
 });
 
-// menuBtnMob.addEventListener('click', () => {
-// 	menuBtnMob.classList.toggle('header__button--no');
-// 	langBtnMob.classList.toggle('header__button--no');
+menuBtnMob.addEventListener('click', () => {
+	menuBtnMob.classList.toggle('header__button--no');
+	langBtnMob.classList.toggle('header__button--no');
 
-// 	searchBtnMob.classList.toggle('header__button--yes');
-// 	authhBtnMob.classList.toggle('header__button--yes');
+	searchBtnMob.classList.toggle('header__button--yes');
+	authhBtnMob.classList.toggle('header__button--yes');
 
-// });
+});
 
 
 
