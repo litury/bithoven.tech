@@ -108,6 +108,10 @@
 	color: rgba(143, 147, 164, 1);
 	font-family: 'Inter';
 	font-size: 12px;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
 }
 
 .user-nav__wrap {
