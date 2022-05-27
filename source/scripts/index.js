@@ -1,5 +1,54 @@
-//шапка поиска
+//glossary строка поиска с алфавитом
+const navBtn = document.querySelector('.glossary__nav-button')
+const alphabet = document.querySelector('.glossary__alphabet')
+const arrow = document.querySelector('.glossary__nav-button')
 
+
+
+
+navBtn.addEventListener('click', () => {
+	alphabet.classList.toggle('glossary__alphabet--yes');
+	arrow.classList.toggle('glossary__nav-button--rot');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//шапка поиска
 const logoBtnMobMenu = document.querySelector('.header-mobile__logotype');
 const menuBtnMob = document.querySelector('.header__button-deck');
 const langBtnMob = document.querySelector('.header-mobile__lang');
@@ -27,6 +76,8 @@ const headerAccount = document.querySelector('.header__svg-login');
 const headerAccImgBtn = document.querySelector('.header__button-login');
 const menuButton = document.querySelector('.header__button-nav');
 const menu = document.querySelector('.header__themes--noactive');
+
+
 
 //показать авторизацию
 authmBtn.addEventListener('click', () => {
