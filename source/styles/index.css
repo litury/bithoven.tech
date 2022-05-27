@@ -12,7 +12,7 @@
 
 @import "components/filter.css";
 @import "components/footer/footer.css";
- @import "components/button.css";
+@import "components/button.css";
 @import "components/card.css";
 @import "components/input.css";
 @import "components/link.css";
@@ -26,7 +26,7 @@
 @import "components/search.css";
 @import "components/header-mobile.css";
 @import "components/mobile-menu.css";
-
+@import "components/glossary/glossary.css";
 
 
 
@@ -38,5 +38,3 @@
 @import "components/education/education.css";
 @import "components/education-2/education-2.css";
 @import "components/header/header.css";
-
-
