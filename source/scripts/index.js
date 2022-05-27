@@ -1,7 +1,5 @@
 //шапка поиска
 
-const { GulpUglifyError } = require("gulp-uglify");
-
 const logoBtnMobMenu = document.querySelector('.header-mobile__logotype');
 const menuBtnMob = document.querySelector('.header__button-deck');
 const langBtnMob = document.querySelector('.header-mobile__lang');
@@ -116,5 +114,3 @@ headerAccountBtn.addEventListener('click', () => {
 	headerAccImgBtn.classList.toggle('header__button--yes');
 });
 
-
-GulpUglifyError
