@@ -304,6 +304,14 @@
 		background-image: url('../images/footer/arrow.svg');
 	}
 
+	.header__button-learn:hover::after {
+		transform: rotate(180deg);
+		transition-duration: .5s;
+	}
+
+
+
+
 	.header__button-deck {
 		position: relative;
 		padding-right: 15px;

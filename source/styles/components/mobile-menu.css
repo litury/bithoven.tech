@@ -110,7 +110,7 @@
 }
 
 .form {
-	position: absolute;
+	position: fixed;
 	background-color: #373d5a;
 	bottom: 0;
 	left: 0;
