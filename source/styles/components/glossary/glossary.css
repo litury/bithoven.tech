@@ -1,6 +1,9 @@
 .glossary {
 	text-align: left;
 	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .glossary__top {
@@ -10,6 +13,7 @@
 	position: relative;
 	margin-bottom: 30px;
 	opacity: 0.8;
+	margin-right: auto;
 }
 
 .glossary__top::before {
@@ -31,6 +35,8 @@
 	margin-bottom: 18px;
 }
 
+
+
 .glossary__nav {
 	background-color: #31344C;
 	width: 100vw;
@@ -43,6 +49,8 @@
 	gap: 15px;
 	align-items: center;
 }
+
+
 
 .glossary__search {
 	display: inline-flex;
@@ -64,7 +72,9 @@
 	color: rgba(143, 147, 164, 1);
 }
 
-
+.glossary__text {
+	font-size: 18px;
+}
 
 .glossary__form-button {
 	position: absolute;
@@ -101,17 +111,89 @@
 	transform: rotate(180deg);
 }
 
-.glossary__content-wrap {
-	padding: 61px 0 30px 0;
-	border-bottom: 1px solid rgba(143, 147, 164, 1);
+.glossary__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.glossary__content-wrap {
+	padding: 91px 0 30px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	position: relative;
+	max-width: 327px;
+}
+
+
+
+.glossary__content-wrap::before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(143, 147, 164, 1);
+	opacity: 0.8;
 }
 
 .glossary__pretitle-wrap {
 	display: inline-flex;
 	justify-content: space-between;
+
 }
+
 
 .glossary__pretitle {
 	font-size: 22px;
+}
+
+@media (min-width: 1200px) {
+	.glossary {
+		align-items: flex-start;
+		gap: 100px;
+	}
+
+	.glossary_title {
+		font-size: 60px;
+		max-width: 583px;
+	}
+
+	.glossary__nav {
+
+	}
+
+	.glossary__nav-wrap {
+		display: flex;
+		gap: 40px;
+		width: 100%;
+		padding: 0;
+		justify-content: space-between;
+	}
+
+	.glossary__alphabet {
+		flex-direction: row;
+		align-items: center;
+		max-width: 881px;
+		display: flex;
+			margin: 0;
+			padding-left: 0;
+	}
+
+	.glossary__nav-button {
+		display: none;
+	}
+
+	.glossary__input {
+		padding-right: 177px;
+	}
+
+	.glossary__form-button {
+		top: 16px;
+		right: 75%;
+	}
 }
