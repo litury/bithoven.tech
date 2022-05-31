@@ -12,7 +12,7 @@
 
 
  @import "components/title.css";
-@import "components/filter.css";
+
 @import "components/footer/footer.css";
 @import "components/button.css";
 @import "components/card.css";
@@ -22,6 +22,7 @@
 @import "components/paragraph.css";
 @import "components/quote.css";
 @import "components/text.css";
+@import "components/filter.css";
 
 @import "components/header-nav.css";
 @import "components/visually-hidden.css";

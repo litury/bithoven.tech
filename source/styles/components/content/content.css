@@ -66,6 +66,7 @@
 	opacity: 0.5;
 	position: relative;
 	padding-right: 15px;
+	font-size: 18px;
 }
 
 .content__nav-button::after {
@@ -79,6 +80,10 @@
 	top: 30%;
 	right: 0;
 	background-image: url('../images/footer/arrow.svg');
+}
+
+.content__nav-button:hover {
+	opacity: 1;
 }
 
 .content__menu {
@@ -96,6 +101,10 @@
 .content__link {
 	color: rgba(143, 147, 164, 1);
 	font-size: 18px;
+}
+
+.content__link:hover {
+	color: #fff;
 }
 
 .content__line {
@@ -132,12 +141,21 @@
 	gap: 9px;
 }
 
+.content__button-svg svg:hover {
+	stroke: #fff;
+	fill: #fff;
+}
+
 
 
 @media (min-width: 1220px) {
 
 	.content__menu {
 		display: none;
+	}
+
+	.content__menu--yes {
+		display: block;
 	}
 
 	.container {
@@ -182,16 +200,22 @@
 
 	.content__nav {
 		position: absolute;
-		right: 10%;
+		right: 0;
 		top: 0;
+		max-width: 174px;
+		width: 100%;
 	}
 
 	.content__social {
 		flex-direction: column;
 		position: absolute;
-		right: 13%;
+		right: 9%;
 		top: 70px;
 		gap: 31px;
+	}
+
+	.content__social--active {
+		top: 9%;
 	}
 
 	.content__social-wrap {

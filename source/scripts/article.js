@@ -23,10 +23,10 @@ disBtnTop.addEventListener('click', () => {
 
 const disBtnNav = document.querySelector('.content__nav-button')
 const disMenuCont = document.querySelector('.content__menu')
+const disMenuSoc = document.querySelector('.content__social')
 
 
 disBtnNav.addEventListener('click', () => {
 	disMenuCont.classList.toggle('content__menu--yes');
+	disMenuSoc.classList.toggle('content__social--active');
 });
-
-

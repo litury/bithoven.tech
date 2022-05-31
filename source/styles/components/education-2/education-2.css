@@ -3,6 +3,10 @@
 	min-height: 167px;
 }
 
+.filter__button {
+	padding: 12px 22px;
+}
+
 .education-2__img,
 .education-2__text {
 	display: none;
