@@ -90,12 +90,16 @@
 }
 
 .footer__menu {
+	padding-top: 20px;
 	display: none;
+	flex-direction: column;
+	gap: 10px;
 }
 
-.footer__menu_state_active {
-	display: none;
+.footer__menu--yes {
+	display: flex;
 }
+
 
 .footer__load {
 	display: flex;

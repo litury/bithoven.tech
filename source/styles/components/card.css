@@ -144,11 +144,11 @@
 	height: 219px;
 }
 
-@media (max-width: 1200px) {
-	.card__img_media_decktop {
-		display: none;
-	}
+
+.card__img_media_decktop {
+	display: none;
 }
+
 
 
 @media (min-width: 1220px) {
@@ -162,6 +162,19 @@
 		border-radius: 20px;
 	}
 
+	.card__img_media_decktop {
+		display: block;
+	}
+
+	.card__link_size_small {
+		font-size: 14px;
+		padding: 5px 13px 5px 24px;
+	}
+
+	.card_level {
+		font-size: 14px;
+	}
+
 	.card__top {
 		display: flex;
 		gap: 20px;
@@ -170,6 +183,7 @@
 	.card__text {
 		padding-left: 28px;
 		position: relative;
+		font-size: 18px;
 	}
 
 	.card__text::before {
@@ -179,7 +193,8 @@
 		height: 16px;
 		position: absolute;
 		width: 16px;
-		top: 0;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 0;
 		background-image: url('../images/interesting/clock.svg');
 	}
@@ -194,17 +209,17 @@
 		height: 290px;
 	}
 
-.card__content--eth {
-	background-image: url('../images/interesting/eth.png');
-}
+	.card__content--eth {
+		background-image: url('../images/interesting/eth.png');
+	}
 
-.card__content--one {
-	background-image: url('../images/interesting/one.png');
-}
+	.card__content--one {
+		background-image: url('../images/interesting/one.png');
+	}
 
-.card__content--matic {
-	background-image: url('../images/interesting/matic.png');
-}
+	.card__content--matic {
+		background-image: url('../images/interesting/matic.png');
+	}
 
 	.card__img_name_portu {
 		max-width: 630px;
