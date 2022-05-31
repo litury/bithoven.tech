@@ -13,7 +13,7 @@
 
  @import "components/title.css";
 
-@import "components/footer/footer.css";
+
 @import "components/button.css";
 @import "components/card.css";
 @import "components/input.css";
@@ -31,7 +31,7 @@
 @import "components/mobile-menu.css";
 @import "components/glossary/glossary.css";
 @import "components/breadcrumb.css";
-
+@import "components/footer/footer.css";
 
 
 

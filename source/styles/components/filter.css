@@ -146,7 +146,7 @@
 }
 
 .filter__button-wrap {
-	display: flex;
+	display: inline-flex;
 	gap: 15px;
 }
 
@@ -168,6 +168,12 @@
 	background-image: url('../images/filter/trash.svg');
 }
 
+	.filter__bottom-inner {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
 @media (min-width: 1200px) {
 
 	.filter__time-scrol span:not(:last-child) {
@@ -176,20 +182,42 @@
 
 	.filter__button-none {
 		display: inline-block;
+		padding-left: 20px;
 	}
 
-	.filter__bottom-inner {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
+	.filter__button-sort {
+		display: inline-flex;
 	}
+
+.filter__button-hide {
+	position: relative;
+}
+
+	.filter__button-hide:after {
+    content: " ";
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    width: 9px;
+    top: 50%;
+    left: 0;
+    background-image: url(../images/footer/arrow.svg);
+    opacity: .5;
+	}
+
+
+
+
+
 
 	.filter__all {
 		gap: 12px;
 	}
 
 	.filter__bottom::after {
-		right: 18%;
+		display: none;
 	}
 
 	.filter__button-wrap {

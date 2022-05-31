@@ -79,7 +79,7 @@
 	font-size: 20px;
 	line-height: 1;
 	font-family: 'NeueMachina';
-	
+
 	max-width: 325px;
 
 	font-size: 20px;
@@ -146,6 +146,14 @@
 		gap: 30px;
 	}
 
+	.link_level_advanced {
+		font-size: 14px;
+	}
+
+	.education__button-wrap {
+		font-size: 14px;
+	}
+
 	.education__inners {
 		gap: 30px;
 	}
@@ -177,12 +185,15 @@
 	.education__wrap {
 		max-width: 653px;
 		height: 260px;
-		font-size: 18px;
 	}
 
 	.education__wrap h2 {
 		font-size: 30px;
 	}
+
+		.education__wrap p {
+			font-size: 18px;
+		}
 
 	.education__button-wrap a:not(:last-child) {
 		margin-right: 10px;
