@@ -3,7 +3,7 @@
 	text-align: left;
 }
 
-.education__inner {
+.education__inners {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
@@ -63,9 +63,7 @@
 	background-image: url('../images/education/coti.png');
 }
 
-.card__top {
-	margin-bottom: 15px;
-}
+
 
 .education__wrap {
 	max-width: 295px;
@@ -74,22 +72,23 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	gap: 15px;
 }
 
 .education__title {
 	font-size: 20px;
 	line-height: 1;
 	font-family: 'NeueMachina';
-	margin-bottom: 15px;
+	
 	max-width: 325px;
-	margin: 0 auto;
+
 	font-size: 20px;
 }
 
 .education__button-wrap {
 	position: absolute;
-	bottom: 41%;
-	left: 4%;
+	bottom: 36%;
+	left: 8%;
 	font-size: 10px;
 }
 
@@ -99,6 +98,7 @@
 	padding: 9px 42px 6px 25px;
 	position: relative;
 	margin: 50px 0;
+
 }
 
 .education__link::before {
@@ -143,6 +143,10 @@
 
 @media (min-width: 1220px) {
 	.education {
+		gap: 30px;
+	}
+
+	.education__inners {
 		gap: 30px;
 	}
 

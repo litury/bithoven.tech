@@ -1,5 +1,5 @@
 .header__button-deck,
-.header__logo,
+.header__logotype,
 .header__button-learn,
 .header__aut,
 .header__button-leng,
@@ -8,9 +8,6 @@
 .header__menu-wrap {
 	display: none;
 }
-
-
-
 
 .header__themes--noactive {
 	display: none;

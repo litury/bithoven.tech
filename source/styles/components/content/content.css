@@ -19,38 +19,20 @@
 }
 
 .content {
-	padding: 50px 15px;
-
-}
-
-@media (max-width: 1220px) {
-	.content__wrap {
-		max-width: 325px;
-		margin: 0 auto;
-	}
-}
-
-.content__top {
-	max-width: 328px;
-	text-align: left;
-	padding-left: 52px;
 	position: relative;
-	margin-bottom: 30px;
-	opacity: 0.8;
+	padding: 50px 0;
 }
 
-.content__top::before {
-	content: " ";
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 30px;
-	position: absolute;
-	width: 30px;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-	background-image: url('../images/content/arov-mob.png');
-	border-radius: 50%;
+
+.content__wrap {
+	margin: 0 auto;
+}
+
+
+.content__discus {
+	position: fixed;
+	bottom: 0;
+	right: 10%;
 }
 
 .content__card {
@@ -101,6 +83,10 @@
 
 .content__menu {
 	display: none;
+}
+
+.content__menu--yes {
+	display: block;
 }
 
 .content__menu--active {
@@ -166,10 +152,13 @@
 	.content h2 {
 		font-size: 42px;
 		max-width: 597px;
+		text-align: left;
 	}
 
 	.content__wrap {
-		max-width: 635px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		margin: 0 auto;
 	}
 
@@ -194,14 +183,14 @@
 	.content__nav {
 		position: absolute;
 		right: 10%;
-		top: 45px;
+		top: 0;
 	}
 
 	.content__social {
 		flex-direction: column;
 		position: absolute;
 		right: 13%;
-		top: 119px;
+		top: 70px;
 		gap: 31px;
 	}
 

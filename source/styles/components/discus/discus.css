@@ -1,30 +1,34 @@
-@media (max-width: 1220px) {
-	.discus {
-		display: none;
-	}
+.discus {
+	display: none;
 }
 
-
-
 @media (min-width: 1220px) {
+
+
 	.discus {
 		max-width: 462px;
 		width: 100%;
 		text-align: left;
 		background-color: rgba(53, 55, 80, 1);
-		position: absolute;
-		bottom: 0;
-		right: -20%;
-		height: 1061px;
+		padding-bottom: 50px;
+		z-index: 10;
+		display: block;
 	}
 
+		.discus-display--yes {
+			display: block;
+		}
+
+
+	.discus-display--non {
+		display: none;
+	}
 
 	.discus__wrap {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 20px;
 		padding: 70px 40px 23px;
-
 	}
 
 	.discus_title {
@@ -50,13 +54,43 @@
 	.discus__nav-button {
 		font-size: 20px;
 		padding-left: 40px;
+		position: relative;
+		padding-right: 20px;
+		margin-bottom: 22px;
 	}
 
-	.discus__line {
-		background-color: #fff;
+	.discus__nav-button::after {
+		content: " ";
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 9px;
+		position: absolute;
+		width: 9px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		background-image: url('../images/footer/arrow.svg');
+	}
+
+	.discus__menu {
+		padding-top: 30px;
+		display: none;
+		position: relative;
+	}
+
+		.discus__menu--yes {
+			display: block;
+		}
+
+	.discus__menu::before {
+		content: " ";
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 2px;
+		position: absolute;
 		width: 100%;
-		height: 1px;
-		margin: 23px 0 39px;
+		top: 0;
+		background-color: white;
 	}
 
 	.discus__cite {

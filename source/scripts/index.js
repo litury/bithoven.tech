@@ -1,15 +1,3 @@
-// //glossary строка поиска с алфавитом
-// const navBtn = document.querySelector('.glossary__nav-button')
-// const alphabet = document.querySelector('.glossary__alphabet')
-// const arrow = document.querySelector('.glossary__nav-button')
-
-
-
-
-// navBtn.addEventListener('click', () => {
-// 	alphabet.classList.toggle('glossary__alphabet--yes');
-// 	arrow.classList.toggle('glossary__nav-button--rot');
-// });
 
 
 //шапка поиска
@@ -40,7 +28,6 @@ const headerAccount = document.querySelector('.header__svg-login');
 const headerAccImgBtn = document.querySelector('.header__button-login');
 const menuButton = document.querySelector('.header__button-nav');
 const menu = document.querySelector('.header__themes--noactive');
-
 
 
 //показать авторизацию
@@ -128,4 +115,11 @@ headerAccountBtn.addEventListener('click', () => {
 	headerAccount.classList.toggle('header__button--no');
 	headerAccImgBtn.classList.toggle('header__button--yes');
 });
+
+
+
+
+
+
+
 

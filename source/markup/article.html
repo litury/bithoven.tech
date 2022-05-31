@@ -12,147 +12,221 @@
 
 <body class="page__body">
 
-	<header class="header-mobile container">
-		<div class="content__wrap header-mobile__content">
+	<header class="header">
+		<header class="header-mobile container ">
+			<div class="content__wrap header-mobile__content">
 
-			<a class="link logotype" width="126" height="53" href="#главная">
-				<img class="logotype__image" src="assets/images/logo.svg" alt="Логотип криптоплатформы Bithoven">
-			</a>
+				<a class="link logotype header-mobile__logotype" width="126" height="53" href="#главная">
+					<img class="logotype__image" src="assets/images/logo.svg" alt="Логотип криптоплатформы Bithoven">
+				</a>
 
-			<nav class="header-mobile__nav">
-				<button class="button_form_none header-mobile__deck  header__button-deck" type="button">
-					<svg class="header__svg" width="22" height="22" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#deck"></use>
-					</svg>
-				</button>
-
-				<button class="button_form_none header-mobile__lang" type="button">
-					RU
-
-					<nav class="header-nav__menu">
-						<ul class="menu header-nav header-nav_size_smal header-nav_size--lang">
-							<li class="header-nav__item-button">
-								<a class="button header-lang__link-button" href="">
-									English
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button header-lang__link-button" href="">
-									Polski
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button  header-lang__link-button" href="">
-									繁體中文
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button  header-lang__link-button" href="">
-									العربية
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button  header-lang__link-button" href="">
-									Русский
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button  header-lang__link-button" href="">
-									Türkçe
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button  header-lang__link-button" href="">
-									Português
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button header-lang__link-button" href="">
-									Svenska
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button header-lang__link-button" href="">
-									Bahasa Indonesia
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button header-lang__link-button" href="">
-									日本語
-								</a>
-							</li>
-
-							<li class="header-nav__item-button">
-								<a class="button header-lang__link-button" href="">
-									Filipino
-								</a>
-							</li>
-
-							<li class="header-nav__item-button ">
-								<a class="button header-lang__link-button" href="">
-									Українська мова
-								</a>
-							</li>
-
-							<li class="header-nav__item-button ">
-								<a class="button header-lang__link-button" href="">
-									Čeština
-								</a>
-							</li>
-							<li class="header-nav__item-button ">
-								<a class="button header-lang__link-button" href="">
-									Български
-								</a>
-							</li>
-							<li class="header-nav__item-button ">
-								<a class="button header-lang__link-button" href="">
-									اردو
-								</a>
-							</li>
-							<li class="header-nav__item-button ">
-								<a class="button header-lang__link-button" href="">
-									latviešu valoda
-								</a>
-							</li>
-
-						</ul>
-					</nav>
-				</button>
-			</nav>
-		</div>
-	</header>
-
-	<header class="header header_display_non">
-		<div class="header__menu-wrap">
-			<div class="header__menu-top">
-				<div class="header__user-wrap">
-					<button class="button_form_none  header__button-deck " type="button">
+				<nav class="header-mobile__nav">
+					<button class="button_form_none header-mobile__deck  header__button-deck" type="button">
 						<svg class="header__svg" width="22" height="22" aria-hidden="true" focusable="false">
 							<use href="assets/images/svg/sprite.svg#deck"></use>
 						</svg>
 					</button>
 
-					<button class="button_form_none header__button-learn" type="button">
-						Узнать
+					<button class="button_form_none header-mobile__lang" type="button">
+						RU
 					</button>
 
-					<button class="button_form_none header__button-nav " type="button">
+					<div class="middle header-mobile__search">
+						<form class="search-box" action="" method="post">
+							<input class="input header-mobile__input" type="text" name="" value="">
+							<button class="btn header-mobile__btn" type="button" name="button"></button>
+						</form>
+					</div>
+
+					<button class="button_form_none header-mobile__auth" type="button">
+						<svg class="header__svg" width="26" height="15" aria-hidden="true" focusable="false">
+							<use href="assets/images/svg/sprite.svg#noauth"></use>
+						</svg>
+					</button>
+				</nav>
+			</div>
+		</header>
+
+
+		<div class="header__menu-wrap">
+			<div class="header__menu-top">
+				<div class="header__user-wrap">
+					<button class="button button_form_none  header__button-deck header__button-deck--hover" type="button">
+						<svg class="header__svg" width="22" height="22" aria-hidden="true" focusable="false">
+							<use href="assets/images/svg/sprite.svg#deck"></use>
+						</svg>
+
+						<nav class="header-nav__menu header-nav__menu_yes">
+							<ul class="menu header-nav">
+								<li class="header-nav__item header-nav__item--bnb">
+									<a class="header-nav__link" href="">
+										Обмен
+										<span class="header-nav__text">
+											Блокчейн и обмен криптоактивами
+										</span>
+									</a>
+								</li>
+
+								<li class="header-nav__item header-nav__item--laba">
+									<a class="header-nav__link" href="">
+										Лаборатория
+										<span class="header-nav__text">
+											Инкубатор для топовых блокчейн-проектов
+										</span>
+									</a>
+								</li>
+
+								<li class="header-nav__item header-nav__item--study">
+									<a class="header-nav__link" href="">
+										Исследование
+										<span class="header-nav__text">
+											Анализ и отчеты на институциональном уровне
+										</span>
+									</a>
+								</li>
+
+								<li class="header-nav__item header-nav__item--bcf">
+									<a class="header-nav__link" href="">
+										BCF
+										<span class="header-nav__text">
+											Благотворительный фонд Blockchain
+										</span>
+									</a>
+								</li>
+
+								<li class="header-nav__item header-nav__item--rocket">
+									<a class="header-nav__link" href="">
+										Панель запуска
+										<span class="header-nav__text">
+											Платформа для запуска токенов
+										</span>
+									</a>
+								</li>
+
+								<li class="header-nav__item header-nav__item--shield">
+									<a class="header-nav__link" href="">
+										Доверительный кошелек
+										<span class="header-nav__text">
+											Официальный криптокошелек Binances
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</button>
+
+					<button class="button_form_none header__button-learn header__button-learn--hover" type="button">
+						Узнать
+
+						<nav class="header-nav__menu">
+							<ul class="menu header-nav header-nav_size_smal">
+								<li class="header-nav__item header-nav__item--glossary">
+									<a class="header-nav__link" href="">
+										Глоссарий
+										<span class="header-nav__text">
+											Глоссарий криптотерминов
+										</span>
+									</a>
+								</li>
+
+								<li class="header-nav__item header-nav__item--game">
+									<a class="header-nav__link" href="">
+										Викторина
+										<span class="header-nav__text">
+											Проходите игровые тесты
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</button>
+
+					<button class="button_form_none header__button-nav header__button-nav--hover" type="button">
 						Темы
+
+						<nav class="header-nav__menu">
+							<ul class="menu header-nav header-nav_size_smal">
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Altcoin
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Binance
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Основы
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Глоссарий
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Майнинг
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Блокчейн
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Экономика
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										DeFi
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										История
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Руководство
+									</a>
+								</li>
+
+								<li class="header-nav__item-button">
+									<a class="button header-nav__link-button" href="">
+										Биткоин
+									</a>
+								</li>
+
+								<li class="header-nav__item-button ">
+									<a class="button header-nav__link-button button_color_active" href="">
+										Еще
+									</a>
+								</li>
+
+							</ul>
+						</nav>
 					</button>
 				</div>
 
 				<a class="link logotype header__logotype" width="126" height="53" href="#главная">
 					<img class="logotype__image" src="assets/images/logo.svg" alt="Логотип криптоплатформы Bithoven">
 				</a>
+
 
 				<div class="header__user-nav header__user-nav_media_deck ">
 
@@ -164,15 +238,19 @@
 
 
 					<button class="button_form_none header__button-acc" type="button">
-						<svg class="header__svg" width="25" height="25" aria-hidden="true" focusable="false">
+						<svg class="header__svg header__svg-login" width="25" height="25" aria-hidden="true" focusable="false">
 							<use href="assets/images/svg/sprite.svg#acc"></use>
 						</svg>
+
+						<div class="header__button-login">
+							<img class="header__button-img" src="assets/images/header/account.png" alt="автврка пользователя">
+							<span class="header__button-name">[Vip]</span>
+						</div>
 					</button>
 
 
 					<button class="button_form_none header__button-leng header__button-lang--hover" type="button">
 						RU
-
 						<nav class="header-nav__menu">
 							<ul class="menu header-nav header-nav_size_smal header-nav_size--lang">
 								<li class="header-nav__item-button">
@@ -267,20 +345,19 @@
 										latviešu valoda
 									</a>
 								</li>
-
 							</ul>
 						</nav>
 					</button>
 
-
-					<button class="button_form_none header__button-sedes" type="button">
-						<svg class="header__svg" width="13" height="14" aria-hidden="true" focusable="false">
-							<use href="assets/images/svg/sprite.svg#sedes"></use>
-						</svg>
-					</button>
+					<div class="middle">
+						<form action="" class="search-box" method="post">
+							<input type="text" class="input" name="" value="">
+							<button type="button" class="btn" name="button"></button>
+						</form>
+					</div>
 				</div>
 
-				<button class="button button_color_yellow header__aut">
+				<button class="button button_color_yellow header__aut" type="button">
 					Авторизация
 				</button>
 
@@ -359,68 +436,78 @@
 			</ul>
 		</div>
 
-		<nav class="header__nav header__nav_display_non">
-			<button class="button_form_none header__button-bottom header__button_type_home" type="button">
+		<div class="form">
+			<form action="" class="form__form" method="post">
+				<input class="form__input" type="text" name="text" value="" id="search">
+
+				<button type="button" class="button_form_none form__button" name="button">
+					<svg class="form__svg" width="13" height="13" aria-hidden="true" focusable="false">
+						<use href="assets/images/svg/sprite.svg#formof"></use>
+					</svg>
+				</button>
+			</form>
+		</div>
+
+		<!-- <nav class="header__nav">
+			<button class="header__button-bottom header__button_type_home" type="button">
 				<svg class="header__svg" width="16" height="17" aria-hidden="true" focusable="false">
 					<use href="assets/images/svg/sprite.svg#home"></use>
 				</svg>
 				Главная
 			</button>
 
-			<button class="button_form_none header__button-bottom header__button_type_search" type="button">
-				<svg class="header__svg" width="18" height="18" aria-hidden="true" focusable="false">
-					<use href="assets/images/svg/sprite.svg#search"></use>
+			<button class="middle_media_mobile header__button-bottom" type="button"> -->
+				<!-- <form action="" class="search-box search-box_media_mobile" method="post">
+					<input type="text" class="input input_media_mobile" name="text" value="" id="search">
+					<label class="middle__label middle__label_media_mobile" for="search">Поиск</label>
+					<button type="button" class="btn btn_media_mobile" name="button"></button>
+				</form> -->
+				<!-- <svg class="header__svg" width="18" height="18" aria-hidden="true" focusable="false">
+					<use href="assets/images/svg/sprite.svg#searchBac"></use>
 				</svg>
 				Поиск
 			</button>
 
-			<button class="button_form_none header__button-bottom header__button_type_profile" type="button">
+
+
+			<button class="header__button-bottom header__button_type_profile" type="button">
 				<svg class="header__svg" width="19" height="18" aria-hidden="true" focusable="false">
 					<use href="assets/images/svg/sprite.svg#profile"></use>
 				</svg>
 				Профиль
 			</button>
 
-			<button class="button_form_none header__button-bottom header__button_type_menu" type="button">
+			<button class="header__button-bottom header__button_type_menu" type="button">
 				<svg class="header__svg" width="22" height="18" aria-hidden="true" focusable="false">
 					<use href="assets/images/svg/sprite.svg#menu"></use>
 				</svg>
 				Меню
 			</button>
-		</nav>
+		</nav> -->
+
 	</header>
 
-	<section class="content container">
-		<div class="content__wrap">
+	<section class="content">
+		<div class="content__wrap container">
 
-			<div class="content__top">
-
-				<nav aria-label="Breadcrumb" class="breadcrumb">
-					<ul class="menu">
-						<li>
-							<a href="">Главная</a>
-						</li>
-						<li>
-							<a href="">Статьи</a>
-						</li>
-						<li>
-							<a href="">Sub-Category</a>
-						</li>
-						<li>
-							<span aria-current="page">Product</span>
-						</li>
-					</ul>
-				</nav>
-				<a class="link content_link" href="#">
-					Главная
+			<nav aria-label="Breadcrumb" class="content__top breadcrumb">
+				<ol class="menu breadcrumb__menu">
+					<li class="breadcrumb__item">
+						<a class="link content_link" href="#"> Главная </a>
+					</li>
+					<li class="breadcrumb__item">
+						<a class="link content_link" href="#"> Статьи </a>
+					</li class="breadcrumb__item">
+					<li class="breadcrumb__item">
+						<span aria-current="page">Что такое фан-токен ФК «Порту» (PORTO)?</span>
+					</li>
+				</ol>
+				<a class="breadcrumb__back" href="#">
+					<svg class="breadcrumb__svg" width="7" height="10" aria-hidden="true" focusable="false">
+						<use href="assets/images/svg/sprite.svg#armob"></use>
+					</svg>
 				</a>
-				<a class="link content_link" href="#">
-					Статьи
-				</a>
-				<a class="link content_link" href="#">
-					Что такое фан-токен ФК «Порту» (PORTO)?
-				</a>
-			</div>
+			</nav>
 
 			<h1 class="title">
 				Что такое фантокен ФК «Порту» (PORTO)?
@@ -449,9 +536,10 @@
 			</div>
 
 			<nav class="content__nav">
-				<button class="button_form_none  content__nav-button">
+				<button class="button_form_none  content__nav-button" type="button">
 					Содержание
 				</button>
+
 				<ul class="menu content__menu">
 					<li class="content__item">
 						<a class="link content__link" href="#">
@@ -487,6 +575,8 @@
 						</a>
 					</li>
 				</ul>
+
+
 			</nav>
 
 			<div class="content__text content__text_size_big">
@@ -676,85 +766,75 @@
 
 			<div class="content__social">
 				<div class="content__social-wrap">
-					<button class="button_form_none content__button-svg">
-						<svg class="content__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M14.6 8L21 8C21.5304 8 22.0391 8.21071 22.4142 8.58579C22.7893 8.96086 23 9.46957 23 10L23 12.104C23.0003 12.3654 22.9493 12.6242 22.85 12.866L19.754 20.38C19.6787 20.5632 19.5507 20.72 19.3862 20.8304C19.2217 20.9408 19.0281 20.9998 18.83 21L2 21C1.73478 21 1.48043 20.8946 1.29289 20.7071C1.10535 20.5196 0.999998 20.2652 0.999998 20L0.999999 10C0.999999 9.73478 1.10536 9.48043 1.29289 9.29289C1.48043 9.10536 1.73478 9 2 9L5.482 9C5.6421 9.00004 5.79986 8.96164 5.94203 8.88803C6.0842 8.81442 6.20662 8.70776 6.299 8.577L11.752 0.850999C11.8209 0.753312 11.9226 0.68356 12.0385 0.654389C12.1545 0.625218 12.277 0.638562 12.384 0.691999L14.198 1.6C14.7085 1.85516 15.1163 2.27731 15.3537 2.79632C15.5911 3.31532 15.6438 3.89992 15.503 4.453L14.6 8ZM7 10.588L7 19L18.16 19L21 12.104L21 10L14.6 10C14.2954 9.99996 13.9948 9.93034 13.7212 9.79646C13.4476 9.66258 13.2082 9.46797 13.0213 9.22749C12.8343 8.987 12.7048 8.70699 12.6425 8.40882C12.5803 8.11065 12.5869 7.8022 12.662 7.507L13.565 3.959C13.5933 3.84833 13.5828 3.73131 13.5353 3.62743C13.4878 3.52354 13.4062 3.43905 13.304 3.388L12.643 3.058L7.933 9.73C7.683 10.084 7.363 10.374 7 10.588ZM5 11L3 11L3 19L5 19L5 11Z"
-								fill="#8F93A4" />
+
+					<button class="button_form_none content__button-svg" type="button">
+						<span class="visually-hidden">оценить</span>
+						<svg class="content__svg-laik" width="24" height="24" aria-hidden="true" focusable="false">
+							<use href="assets/images/svg/sprite.svg#laik"></use>
 						</svg>
 						<span>
 							10
 						</span>
 					</button>
 
-					<button class="button_form_none content__button-svg">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M14.6 16L21 16C21.5304 16 22.0391 15.7893 22.4142 15.4142C22.7893 15.0391 23 14.5304 23 14L23 11.896C23.0003 11.6346 22.9493 11.3758 22.85 11.134L19.754 3.62C19.6787 3.43675 19.5507 3.27999 19.3862 3.16961C19.2217 3.05923 19.0281 3.0002 18.83 3L2 3C1.73478 3 1.48043 3.10535 1.29289 3.29289C1.10535 3.48043 0.999998 3.73478 0.999998 4L0.999997 14C0.999997 14.2652 1.10535 14.5196 1.29289 14.7071C1.48043 14.8946 1.73478 15 2 15L5.482 15C5.64209 15 5.79986 15.0384 5.94203 15.112C6.0842 15.1856 6.20662 15.2922 6.299 15.423L11.752 23.149C11.8209 23.2467 11.9226 23.3164 12.0385 23.3456C12.1545 23.3748 12.277 23.3614 12.384 23.308L14.198 22.4C14.7085 22.1448 15.1163 21.7227 15.3537 21.2037C15.5911 20.6847 15.6438 20.1001 15.503 19.547L14.6 16ZM7 13.412L7 5L18.16 5L21 11.896L21 14L14.6 14C14.2954 14 13.9948 14.0697 13.7212 14.2035C13.4476 14.3374 13.2082 14.532 13.0213 14.7725C12.8343 15.013 12.7048 15.293 12.6425 15.5912C12.5802 15.8893 12.5869 16.1978 12.662 16.493L13.565 20.041C13.5933 20.1517 13.5828 20.2687 13.5353 20.3726C13.4878 20.4765 13.4062 20.561 13.304 20.612L12.643 20.942L7.933 14.27C7.683 13.916 7.363 13.626 7 13.412ZM5 13L3 13L3 5L5 5L5 13Z"
-								fill="#8F93A4" />
+					<button class="button_form_none content__button-svg" type="button">
+						<span class="visually-hidden">дизлайк</span>
+						<svg class="content__svg-diz" width="24" height="24" aria-hidden="true" focusable="false">
+							<use href="assets/images/svg/sprite.svg#diz"></use>
 						</svg>
 						<span>
 							5
 						</span>
 					</button>
 
-					<button class="button_form_none content__button-svg">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-								fill="#8F93A4" />
+					<button class="button_form_none content__button-svg content__button-svg--dis" type="button">
+						<span class="visually-hidden">обсудить</span>
+						<svg class="content__svg-dis" width="24" height="24" aria-hidden="true" focusable="false">
+							<use href="assets/images/svg/sprite.svg#dis"></use>
 						</svg>
 						<span>
-							0
+							1
 						</span>
 					</button>
 				</div>
-				<button class="button_form_none content__button-svg">
-					<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M10 11.5H8C6.3596 11.4994 4.75023 11.9471 3.34588 12.7949C1.94152 13.6427 0.795601 14.8582 0.0320014 16.31C0.010538 16.0405 -0.000137283 15.7703 1.33261e-06 15.5C1.33261e-06 9.977 4.477 5.5 10 5.5V0L20.5 8.5L10 17V11.5ZM8 9.5H12V12.808L17.321 8.5L12 4.192V7.5H10C8.85025 7.49871 7.71379 7.74582 6.66839 8.22442C5.62299 8.70302 4.69332 9.40182 3.943 10.273C5.23432 9.76122 6.61096 9.49892 8 9.5Z"
-							fill="#8F93A4" />
-					</svg>
 
+				<button class="button_form_none content__button-svg" type="button">
+					<span class="visually-hidden">вернутся</span>
+					<svg class="content__svg-return" width="21" height="17" aria-hidden="true" focusable="false">
+						<use href="assets/images/svg/sprite.svg#return"></use>
+					</svg>
 				</button>
 			</div>
 		</div>
 
-		<section class="discus">
+		<section class="discus content__discus">
 			<div class="discus__wrap">
 				<h3 class="title discus_title">
 					Обсуждение
 				</h3>
 
-
-				<button class="button_form_none " type="button">
-					<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M8.5 6.61141L15.1114 0L17 1.88859L10.3886 8.5L17 15.1114L15.1114 17L8.5 10.3886L1.88859 17L0 15.1114L6.61141 8.5L0 1.88859L1.88859 0L8.5 6.61141Z"
-							fill="white" />
+				<button class="button_form_none discus__button-off" type="button" type="button">
+					<span class="visually-hidden">закрыть</span>
+					<svg class="discus__ofdis" width="17" height="17" aria-hidden="true" focusable="false">
+						<use href="assets/images/svg/sprite.svg#ofdis"></use>
 					</svg>
 				</button>
 			</div>
 
 			<div class="discus__input">
-				<label class="discus__label" for="name"></label>
 				<input class="input discus__inform" name="text" type="text" placeholder="Что ты думаешь?" id="name" required>
 			</div>
 
-
-			<button class="button_form_none  discus__nav-button">
+			<button class="button_form_none discus__nav-button" type="button">
 				Актуальные
 			</button>
-			<div class="line discus__line">
-			</div>
+
+			<!-- <div class="line discus__line">
+			</div> -->
 
 			<ul class="menu discus__menu">
 				<li class="discus__item">
-
 					<blockquote class="quote discus__quote">
-
-
 						<cite class="cite discus__cite">
 							<img class="discus__img" src="assets/images/discus/foto.png" alt="фотография пользователя">
 							<span>MQ Wireless</span>
@@ -766,15 +846,12 @@
 							🔥. Разве предсказание не
 							считается азартной игрой? Почему правила разрешают это в США, Великобритании и Австралии.
 						</span>
-
-
 					</blockquote>
-					<button class="button_form_none content__button-svg discus__button-svg">
-						<svg class="content__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M14.6 8L21 8C21.5304 8 22.0391 8.21071 22.4142 8.58579C22.7893 8.96086 23 9.46957 23 10L23 12.104C23.0003 12.3654 22.9493 12.6242 22.85 12.866L19.754 20.38C19.6787 20.5632 19.5507 20.72 19.3862 20.8304C19.2217 20.9408 19.0281 20.9998 18.83 21L2 21C1.73478 21 1.48043 20.8946 1.29289 20.7071C1.10535 20.5196 0.999998 20.2652 0.999998 20L0.999999 10C0.999999 9.73478 1.10536 9.48043 1.29289 9.29289C1.48043 9.10536 1.73478 9 2 9L5.482 9C5.6421 9.00004 5.79986 8.96164 5.94203 8.88803C6.0842 8.81442 6.20662 8.70776 6.299 8.577L11.752 0.850999C11.8209 0.753312 11.9226 0.68356 12.0385 0.654389C12.1545 0.625218 12.277 0.638562 12.384 0.691999L14.198 1.6C14.7085 1.85516 15.1163 2.27731 15.3537 2.79632C15.5911 3.31532 15.6438 3.89992 15.503 4.453L14.6 8ZM7 10.588L7 19L18.16 19L21 12.104L21 10L14.6 10C14.2954 9.99996 13.9948 9.93034 13.7212 9.79646C13.4476 9.66258 13.2082 9.46797 13.0213 9.22749C12.8343 8.987 12.7048 8.70699 12.6425 8.40882C12.5803 8.11065 12.5869 7.8022 12.662 7.507L13.565 3.959C13.5933 3.84833 13.5828 3.73131 13.5353 3.62743C13.4878 3.52354 13.4062 3.43905 13.304 3.388L12.643 3.058L7.933 9.73C7.683 10.084 7.363 10.374 7 10.588ZM5 11L3 11L3 19L5 19L5 11Z"
-								fill="#8F93A4" />
+
+					<button class="button_form_none content__button-svg discus__button-svg"" type=" button">
+						<span class="visually-hidden">оценить</span>
+						<svg class="content__svg-laik" width="24" height="24" aria-hidden="true" focusable="false">
+							<use href="assets/images/svg/sprite.svg#laik"></use>
 						</svg>
 						<span>
 							10
@@ -784,7 +861,6 @@
 			</ul>
 		</section>
 	</section>
-
 
 
 	<section class="interesting container">
@@ -813,13 +889,14 @@
 				</div>
 
 				<h2 class="title card__title">
-					Что такое BETH и как он работает?
+					<a class="link" href="">
+						Что такое BETH и как он работает?
+					</a>
 				</h2>
 
-				<div class="card__content">
-					<img class="card__img card__img_media_decktop" src="assets/images/interesting/eth.png" alt="">
-					<img class="card__img card__img_media_mobail" src="assets/images/interesting/eth-mob.png" alt="">
-				</div>
+				<a class="card__content card__content--eth">
+
+				</a>
 			</div>
 
 			<div class="card">
@@ -834,13 +911,14 @@
 				</div>
 
 				<h2 class="title card__title">
-					Что такое Harmony (ONE)?
+					<a class="link" href="">
+						Что такое Harmony (ONE)?
+					</a>
 				</h2>
 
-				<div class="card__content">
-					<img class="card__img card__img_media_decktop" src="assets/images/interesting/one.png" alt="">
-					<img class="card__img card__img_media_mobail" src="assets/images/interesting/one-mob.png" alt="">
-				</div>
+				<a class="card__content card__content--one">
+
+				</a>
 			</div>
 
 			<div class="card">
@@ -855,13 +933,14 @@
 				</div>
 
 				<h2 class="title card__title">
-					Что такое Polygon (MATIC)?
+					<a class="link " href="">
+						Что такое Polygon (MATIC)?
+					</a>
 				</h2>
 
-				<div class="card__content">
-					<img class="card__img card__img_media_decktop" src="assets/images/interesting/matic.png" alt="">
-					<img class="card__img card__img_media_mobail" src="assets/images/interesting/matic-mob.png" alt="">
-				</div>
+				<a class="card__content card__content--matic">
+
+				</a>
 			</div>
 		</div>
 
@@ -991,6 +1070,7 @@
 						<svg class="social__icon" width="39" height="39" aria-hidden="true" focusable="false">
 							<use href="assets/images/svg/sprite.svg#telegramm"></use>
 						</svg>
+
 						<span class="acces">telegramm</span>
 					</a>
 				</li>
@@ -1000,6 +1080,7 @@
 						<svg class="social__icon" width="39" height="39" aria-hidden="true" focusable="false">
 							<use href="assets/images/svg/sprite.svg#youtube"></use>
 						</svg>
+
 						<span class="acces">youtube</span>
 					</a>
 				</li>
@@ -1038,9 +1119,10 @@
 					<img class="footer__img" src="assets/images/footer/google.svg" alt="загрузка в googleplay">
 				</a>
 			</div>
+
 		</div>
 		<div class="footer__list">
-			<button class="button button_form_none footer__button">Discover</button>
+			<button class="button button_form_none footer__button" type="button">Discover</button>
 			<ul class="menu footer__menu footer__menu_state_active">
 				<li class="footer__item">
 					<a class="link footer__link" href="#">
@@ -1069,7 +1151,7 @@
 		</div>
 
 		<div class="footer__list">
-			<button class="button button_form_none footer__button">Продукт</button>
+			<button class="button button_form_none footer__button" type="button">Продукт</button>
 			<ul class="menu footer__menu">
 				<li class="footer__item">
 					<a class="link link footer__link" href="#">
@@ -1110,7 +1192,7 @@
 		</div>
 
 		<div class="footer__list">
-			<button class="button button_form_none footer__button">Компания</button>
+			<button class="button button_form_none footer__button" type="button">Компания</button>
 			<ul class="menu footer__menu">
 				<li class="footer__item">
 					<a class="link footer__link" href="#">
@@ -1150,10 +1232,21 @@
 			</ul>
 		</div>
 
-		<div class="footer__load">
-			<img class="footer__img" src="assets/images/footer/appstore.png" alt="appstore">
-			<img class="footer__img" src="assets/images/footer/googleplay.png" alt="googleplay">
-		</div>
+			<div class="footer__load">
+				<a class="link footer__img-link" href="#">
+					<span class="visually-hidden">appstore</span>
+					<svg class="social__icon-play" width="113" height="30" aria-hidden="true" focusable="false">
+						<use href="assets/images/svg/sprite.svg#apple"></use>
+					</svg>
+				</a>
+
+				<a class="link footer__img-link" href="#">
+					<span class="visually-hidden">googleplay</span>
+					<svg class="social__icon-play" width="119" height="30" aria-hidden="true" focusable="false">
+						<use href="assets/images/svg/sprite.svg#google"></use>
+					</svg>
+				</a>
+			</div>
 
 		<ul class="menu footer__social">
 			<li class="footer__icon footer__icon_net_telegramm">
@@ -1207,8 +1300,10 @@
 			All rights reserved.
 		</p>
 		</а>
-		<script src="assets/scripts/index.js"></script>
-		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	</footer>
+	<script src="assets/scripts/article.js"></script>
+	<script src="assets/scripts/index.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>
