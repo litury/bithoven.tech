@@ -15,7 +15,6 @@
 	position: relative;
 	margin-bottom: 30px;
 	opacity: 0.8;
-	margin-right: auto;
 }
 
 .glossary__top::before {
@@ -34,6 +33,7 @@
 
 .glossary_title {
 	font-size: 30px;
+	margin-right: 0;
 }
 
 .glossary__nav {
@@ -77,6 +77,10 @@
 	font-weight: 300;
 }
 
+.glossary__text p:not(:last-child) {
+	margin-bottom: 30px;
+}
+
 .glossary__form-button {
 	position: absolute;
 	top: 30px;
@@ -104,6 +108,15 @@
 
 }
 
+.glossary__category {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
 .glossary__nav-button {
 	transition-duration: 0.5s;
 }
@@ -119,13 +132,15 @@
 }
 
 .glossary__content-wrap {
-padding-top: 71px;
 	display: flex;
 	flex-direction: column;
 	gap: 18px;
 	position: relative;
 	max-width: 327px;
+}
 
+.glossary__content-wrap--first {
+	padding-top: 71px;
 }
 
 .glossary__line {
@@ -137,14 +152,22 @@ padding-top: 71px;
 }
 
 .glossary__pretitle-wrap {
-	display: inline-flex;
+	display: flex;
 	justify-content: space-between;
-
+	flex-direction: column;
+	gap: 18px;
 }
 
 
 .glossary__pretitle {
 	font-size: 22px;
+	position: relative;
+}
+
+.glossary__pretitle-button {
+	position: absolute;
+	right: 5%;
+	transition-duration: .5s;
 }
 
 .glossary__content-wrap--nomobile {
@@ -152,17 +175,63 @@ padding-top: 71px;
 }
 
 
-	.alpha__text {
-		font-size: 45px;
-		color: #606378;
-		position: absolute;
-		left: 15px;
-		top: 0;
-	}
+.alpha__text {
+	font-size: 45px;
+	color: #606378;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+
+.glossary__text--non {
+	display: none;
+}
+
+.glossary__text--yes {
+	display: block;
+}
+
+.glossary__vector--rotate {
+	transform: rotate(180deg);
+	transition-duration: 0.5s;
+}
+
+
+
 
 @media (min-width: 1200px) {
 
+	.glossary__category {
+		display: flex;
+		flex-direction: column;
+		gap: 70px;
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+		padding-bottom: 100px;
+	}
 
+	.glossary__text--non {
+		padding: 0 190px 0 36px;
+		border-radius: 20px;
+	}
+
+
+	.glossary__pretitle-wrap {
+		gap: 30px;
+		padding: 31px 36px;
+		border-radius: 20px;
+		box-sizing: inherit;
+	}
+
+	.glossary__pretitle-wrap:hover {
+		background-color: rgba(49, 52, 76, 1);
+		cursor: pointer;
+	}
+
+
+	.glossary__top-wrap {
+		width: 100%;
+	}
 
 	.glossary__content-wrap--nomobile {
 		display: flex;
@@ -176,7 +245,6 @@ padding-top: 71px;
 	.glossary_title {
 		font-size: 60px;
 		max-width: 583px;
-		display: block;
 	}
 
 
@@ -186,6 +254,8 @@ padding-top: 71px;
 		width: 100%;
 		padding: 0;
 		justify-content: space-between;
+		flex-direction: row;
+		padding: 20px 0;
 	}
 
 	.glossary__alphabet {
@@ -207,7 +277,7 @@ padding-top: 71px;
 	}
 
 	.glossary__form-button {
-		top: 16px;
+		top: 33px;
 		right: 75%;
 	}
 
@@ -246,7 +316,9 @@ padding-top: 71px;
 		margin: 100px 0;
 	}
 
+
 	.glossary__pretitle-button {
-		display: none;
+		right: 20%;
+		top: 50px;
 	}
 }

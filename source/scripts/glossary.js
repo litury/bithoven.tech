@@ -6,3 +6,25 @@ navBtn.addEventListener('click', () => {
 	alphabet.classList.toggle('glossary__alphabet--yes');
 	arrow.classList.toggle('glossary__nav-button--rot');
 });
+
+
+
+
+
+
+
+
+const headers = document.querySelectorAll(".glossary__pretitle-wrap");
+const headers2 = document.querySelectorAll(".glossary__vector");
+
+
+
+
+headers.forEach(function (item) {
+	item.addEventListener("click", headerClick);
+});
+
+function headerClick() {
+	this.nextElementSibling.classList.toggle("glossary__text--yes");
+	this.previousElementSibling.classList.toggle("glossary__vector--rotate");
+}
