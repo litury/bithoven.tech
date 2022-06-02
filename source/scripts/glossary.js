@@ -15,10 +15,6 @@ navBtn.addEventListener('click', () => {
 
 
 const headers = document.querySelectorAll(".glossary__pretitle-wrap");
-const headers2 = document.querySelectorAll(".glossary__vector");
-
-
-
 
 headers.forEach(function (item) {
 	item.addEventListener("click", headerClick);

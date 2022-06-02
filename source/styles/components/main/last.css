@@ -1,0 +1,33 @@
+
+.last {
+	margin-bottom: 30px;
+}
+.last__top {
+	margin-bottom: 15px;
+}
+
+.last__title {
+	font-size: 22px;
+	line-height: 105.5%;
+	text-align: left;
+}
+
+.last__link {
+	display: none;
+}
+
+.last__content-top {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.last__img--balanse {
+	min-height: 135px;
+	background-image: url('../images/main/last/balanse.png');
+}
+
+.last__img--porto {
+	min-height: 135px;
+	background-image: url('../images/main/last/porto.png');
+}

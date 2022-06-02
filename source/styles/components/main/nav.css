@@ -1,0 +1,32 @@
+.nav {
+	text-align: left;
+	margin-bottom: 30px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #fff;
+}
+
+.nav__title {
+	font-size: 22px;
+	line-height: 105.5%;
+	margin-bottom: 18px;
+}
+
+.nav__topic {
+	margin-bottom: 20px
+}
+
+.nav__topic-title {
+	font-size: 18px;
+	line-height: 99.2%;
+	margin-bottom: 12px;
+}
+
+.nav__topic-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.nav__button-link {
+	padding: 6px 20px;
+}

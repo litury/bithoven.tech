@@ -12,8 +12,6 @@
 
 
  @import "components/title.css";
-
-
 @import "components/button.css";
 @import "components/card.css";
 @import "components/input.css";
@@ -40,3 +38,17 @@
 @import "components/education/education.css";
 @import "components/education-2/education-2.css";
 @import "components/header/header.css";
+
+@import "components/main/main.css";
+@import "components/main/main-card.css";
+@import "components/main/hero.css";
+@import "components/main/slider.css";
+@import "components/main/last.css";
+@import "components/main/event.css";
+@import "components/main/nav.css";
+@import "components/main/popular.css";
+@import "components/main/manual.css";
+@import "components/main/study.css";
+@import "components/main/subs.css";
+
+

@@ -1,0 +1,43 @@
+.popular {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.popular__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+
+.popular__title {
+	font-size: 18px;
+	line-height: 99.2%;
+	max-width: 149px;
+}
+
+.popular__top-link {
+	padding: 11px 19px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+}
+
+.popular__content {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.popular__img--binance {
+	min-height: 135px;
+	background-image: url('../images/main/popular/binance.png');
+}
+
+.popular__img--mean {
+	min-height: 135px;
+	background-image: url('../images/main/popular/mean.png');
+}
+
+.popular__img--btc {
+	min-height: 135px;
+	background-image: url('../images/main/popular/btc.png');
+}

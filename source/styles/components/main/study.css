@@ -1,0 +1,38 @@
+.study {
+	margin-bottom: 30px;
+}
+
+.study__title {
+	font-size: 22px;
+	line-height: 105.5%;
+	margin-bottom: 18px;
+}
+
+.study__content {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.study-main-card__title {
+	font-size: 20px;
+	line-height: 105.5%;
+	max-width: 227px;
+}
+
+.study__form {
+	margin-bottom: 23px;
+}
+
+.study__form-button {
+	top: 65px;
+}
+
+.study__text {
+	max-width: 270px;
+}
+
+.main-card__link-btn--active {
+	color: rgba(20, 34, 67, 1);
+	background-color: #fff;
+}

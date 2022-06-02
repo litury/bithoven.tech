@@ -1,0 +1,123 @@
+.subs__title--desktop,
+.subs__form-button,
+.subs__form-button--desktop {
+	display: none;
+}
+
+.subs__main-card {
+	padding: 115px 25px 25px 25px;
+	background: linear-gradient(142.63deg, #4D506C -0.01%, #212339 104.7%), rgba(98, 100, 123, 0.2);
+	backdrop-filter: blur(33px);
+	border-radius: 20px;
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-image: url('../images/main/subs/mail.png');
+}
+
+
+.subs__title {
+	font-size: 22px;
+	line-height: 105.5%;
+	max-width: 198px;
+	margin-bottom: 16px;
+}
+
+.subs__text {
+	max-width: 209px;
+	margin-bottom: 16px;
+}
+
+.subs__form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.subs__form-button--mobile {
+	max-width: 146px;
+}
+
+
+
+
+
+
+.subs__checkbox {
+	display: inline-flex;
+	gap: 23px;
+	height: 28px;
+	position: relative;
+	vertical-align: middle;
+	font-size: 12px;
+	user-select: none;
+}
+
+.subs__checkbox .subs__checkbox-span {
+	position: relative;
+	display: inline-flex;
+	width: 29px;
+	height: 15px;
+	border-radius: 20px;
+	vertical-align: top;
+	background: rgba(255, 255, 255, 0.2);
+	transition: .2s;
+}
+
+.subs__checkbox .subs__checkbox-span:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	display: inline-flex;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: white;
+	transition: .15s;
+}
+
+.subs__checkbox input[type=checkbox] {
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.subs__checkbox-text {
+	opacity: 0.5;
+}
+
+.subs__checkbox input[type=checkbox]:not(:disabled):active+.subs__checkbox-span:before {
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+}
+
+.subs__checkbox input[type=checkbox]:checked+.subs__checkbox-span {
+	background: linear-gradient(89.7deg, #F9E312 1.47%, #FCFF62 99.74%);
+}
+
+.subs__checkbox input[type=checkbox]:checked+.subs__checkbox-span:before {
+	transform: translateX(12px);
+}
+
+/* Hover */
+.subs__checkbox input[type="checkbox"]:not(:disabled)+.subs__checkbox-span {
+	cursor: pointer;
+	border-color: rgba(0, 0, 0, .3);
+}
+
+/* Disabled */
+.subs__checkbox input[type=checkbox]:disabled+.subs__checkbox-span {
+	filter: grayscale(70%);
+	border-color: rgba(0, 0, 0, .1);
+}
+
+.subs__checkbox input[type=checkbox]:disabled+.subs__checkbox-span:before {
+	background: #eee;
+}
+
+/* Focus */
+.subs__checkbox.focused .subs__checkbox-span:before {
+	box-shadow: inset 0px 0px 4px #ff5623;
+}

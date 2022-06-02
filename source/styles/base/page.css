@@ -1,9 +1,7 @@
-.page {
-box-sizing: border-box;
-}
-
 *,
-*::after,
-*::before {
-	box-sizing: inherit;
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }

@@ -1,0 +1,13 @@
+.swiper {
+	max-width: 1500px;
+	min-height: 300px;
+}
+
+.swiper-wrapper {
+	gap: 12px;
+}
+
+.slide__img--slide {
+	min-height: 165px;
+	background-image: url('../images/main/slider/meta-slide.png');
+}

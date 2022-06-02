@@ -1,0 +1,43 @@
+.event {
+	margin-bottom: 30px;
+}
+
+.event__main-card {
+	padding: 25px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.event__main-card--hand {
+	background-image: url('../images/main/event/hand.png');
+}
+
+.event__main-card--head {
+	background-image: url('../images/main/event/head.png');
+}
+
+.event__main-card:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.event__title {
+	font-size: 22px;
+	line-height: 105.5%;
+	max-width: 210px;
+}
+
+.event__text {
+	max-width: 213px;
+}
+
+.event__button--smal {
+	max-width: 93px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.event__button--large {
+	max-width: 191px;
+	font-size: 14px;
+	line-height: 14px;
+}
