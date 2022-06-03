@@ -16,8 +16,10 @@
 	background-image: url('../images/main/event/head.png');
 }
 
-.event__main-card:not(:last-child) {
-	margin-bottom: 15px;
+.event__content {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .event__title {
@@ -40,4 +42,47 @@
 	max-width: 191px;
 	font-size: 14px;
 	line-height: 14px;
+}
+
+@media (min-width: 1220px) {
+	.event__content {
+		flex-direction: row;
+		gap: 30px;
+	}
+
+	.event__main-card {
+		max-width: 632px;
+		width: 100%;
+		padding: 50px;
+		gap: 25px;
+		justify-content: space-between;
+	}
+
+	.event__main-card--hand {
+		background-image: url('../images/main/event/hands-desctop.png');
+	}
+
+	.event__main-card--head {
+		background-image: url('../images/main/event/hand-decktop.png');
+	}
+
+	.event__title {
+		font-size: 42px;
+		max-width: 389px;
+	}
+
+	.event__text {
+		max-width: 377px;
+	}
+
+	.event__button--smal {
+		max-width: 139px;
+		font-size: 16px;
+	}
+
+	.event__button--large {
+		max-width: 236px;
+		font-size: 16px;
+	}
+
 }

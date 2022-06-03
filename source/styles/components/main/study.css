@@ -36,3 +36,37 @@
 	color: rgba(20, 34, 67, 1);
 	background-color: #fff;
 }
+
+@media (min-width: 1220px) {
+
+	.study__title {
+		font-size: 42px;
+		max-width: 877px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.study__main-card {
+		gap: 30px;
+max-width: 410px;
+width: 100%;
+	}
+
+	.study__input {
+
+		padding-right: 150px;
+	}
+
+	.study__content {
+		flex-direction: row;
+		gap: 30px;
+		justify-content: space-between;
+	}
+
+	.study-main-card__title {
+		font-size: 30px;
+		max-width: 329px;
+	}
+
+
+}

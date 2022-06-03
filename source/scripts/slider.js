@@ -5,6 +5,13 @@ const swiper = new Swiper('.swiper', {
 	slidesPerView: 1.25,
 	direction: 'horizontal',
 
+	breakpoints: {
+		// when window width is >= 320px
+		1200: {
+			slidesPerView: 0,
+		},
+	},
+
 	// Navigation arrows
 	navigation: {
 		nextEl: '.swiper-button-next',

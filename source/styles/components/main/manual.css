@@ -16,8 +16,10 @@
 	background-image: url('../images/main/manual/cubs.png');
 }
 
-.manual__main-card:not(:last-child) {
-	margin-bottom: 15px;
+.manual__content {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .manual__title {
@@ -36,3 +38,31 @@
 	line-height: 14px;
 }
 
+@media (min-width: 1220px) {
+
+	.manual__content {
+		flex-direction: row;
+		gap: 30px;
+	}
+
+	.manual__main-card {
+		padding: 76px 50px;
+		max-width: 632px;
+		width: 100%;
+		gap: 25px;
+	}
+
+	.manual__title {
+		font-size: 42px;
+		line-height: 105.5%;
+		max-width: 401px;
+	}
+
+	.manual__text {
+		max-width: 265px;
+	}
+
+	.manual__main-card--book {
+		background-image: url('../images/main/manual/book-desk.png');
+	}
+}

@@ -30,3 +30,25 @@
 .nav__button-link {
 	padding: 6px 20px;
 }
+
+@media (min-width: 1220px) {
+
+
+	.nav__title {
+		font-size: 42px;
+		max-width: 720px;
+		margin-bottom: 55px;
+	}
+
+	.nav__topic {
+		display: flex;
+		gap: 87px;
+	}
+
+	.nav__level {
+		display: flex;
+		gap: 57px;
+	}
+
+
+}

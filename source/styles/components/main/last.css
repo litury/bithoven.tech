@@ -1,7 +1,11 @@
+.last__link {
+	display: none;
+}
 
 .last {
-	margin-bottom: 30px;
+
 }
+
 .last__top {
 	margin-bottom: 15px;
 }
@@ -10,10 +14,6 @@
 	font-size: 22px;
 	line-height: 105.5%;
 	text-align: left;
-}
-
-.last__link {
-	display: none;
 }
 
 .last__content-top {
@@ -30,4 +30,71 @@
 .last__img--porto {
 	min-height: 135px;
 	background-image: url('../images/main/last/porto.png');
+}
+
+@media (min-width: 1220px) {
+	.last {
+		padding: 50px 0;
+	}
+
+	.last__top {
+		margin-bottom: 55px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.last__link {
+		display: inline-flex;
+		border: 1px solid #FFFFFF;
+		border-radius: 50px;
+		padding: 8px 20px;
+	}
+
+	.last__title {
+		font-size: 42px;
+	}
+
+
+	.last__content-top {
+		display: grid;
+		grid-template-columns: repeat(3, 410px);
+		grid-template-rows: 540px 320px;
+		grid-gap: 30px;
+	}
+
+	.item1 {
+		grid-area: 1 / 1 / 2 / 2;
+		gap: 30px;
+	}
+
+	.item2 {
+		grid-area: 1 / 2 / 2 / 3;
+		gap: 30px;
+	}
+
+	.item3 {
+		grid-area: 1 / 3 / 2 / 4;
+		justify-content: space-between;
+	}
+
+	.item4 {
+		grid-area: 2 / 1 / 3 / 3;
+		justify-content: space-between;
+
+	}
+
+	.item5 {
+		grid-area: 2 / 3 / 3 / 4;
+		justify-content: space-between;
+	}
+
+	.last__main-card-img {
+		min-height: 210px;
+	}
+
+	.last__main-card-link {
+		position: absolute;
+		bottom: 30px;
+	}
+
 }
