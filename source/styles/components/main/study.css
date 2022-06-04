@@ -25,7 +25,8 @@
 }
 
 .study__form-button {
-	top: 65px;
+	top: 107px;
+	right: 17%;
 }
 
 .study__text {
@@ -46,16 +47,22 @@
 		margin-bottom: 40px;
 	}
 
+
+
 	.study__main-card {
 		gap: 30px;
-max-width: 410px;
-width: 100%;
+padding-bottom: 99px;
+		width: 100%;
+
 	}
 
-	.study__input {
-
-		padding-right: 150px;
+	.study-main-card__title-wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: auto;
 	}
+
 
 	.study__content {
 		flex-direction: row;
@@ -68,5 +75,10 @@ width: 100%;
 		max-width: 329px;
 	}
 
+
+	.main-card__link-btn {
+	position: absolute;
+	bottom: 30px;
+	}
 
 }

@@ -37,11 +37,6 @@
 	max-width: 146px;
 }
 
-
-
-
-
-
 .subs__checkbox {
 	display: inline-flex;
 	gap: 23px;
@@ -121,4 +116,64 @@
 /* Focus */
 .subs__checkbox.focused .subs__checkbox-span:before {
 	box-shadow: inset 0px 0px 4px #ff5623;
+}
+
+
+@media (min-width: 1220px) {
+
+	.subs__title--desktop,
+	.subs__form-button--desktop {
+		display: block;
+	}
+
+	.subs__title--mobile,
+	.subs__form-button--mobile {
+		display: none;
+	}
+
+	.subs__form-button--desktop {
+		max-width: 188px;
+		width: 100%;
+	}
+
+	.subs__main-card {
+		padding: 60px;
+		flex-direction: row;
+		justify-content: space-between;
+		background-position: top left;
+
+		background: url('../images/main/subs/mail-desktop.png') no-repeat,
+		linear-gradient(162.89deg, #4D506C 15.08%, #212339 109.2%),
+			linear-gradient(99.65deg, #495D85 -64.33%, #162A54 91.31%);
+
+	}
+
+	.subs__title {
+		font-size: 42px;
+		max-width: 415px;
+		margin-bottom: 0;
+	}
+
+	.subs__text {
+		max-width: 351px;
+		margin-bottom: 0;
+	}
+
+	.subs__mail {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.subs__form {}
+
+	.subs__input {
+		padding: 13px;
+	}
+
+	.subs__input-wrapper {
+		display: inline-flex;
+		gap: 20px;
+	}
+
 }
