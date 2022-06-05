@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
 	loop: true,
 	slidesPerView: 1.25,
 	direction: 'horizontal',
+	spaceBetween: 1,
 
 
 	breakpoints: {
