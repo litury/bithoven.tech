@@ -30,6 +30,7 @@
 .main-card__title {
 	font-size: 20px;
 	line-height: 105.5%;
+	overflow: hidden;
 }
 
 /* .main-card__text {
