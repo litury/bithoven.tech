@@ -58,6 +58,9 @@
 		margin-left: auto;
 	}
 
+	.swiper-wrapper {
+gap: 24%;
+	}
 
 
 	.swiper-button {
