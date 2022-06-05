@@ -80,6 +80,7 @@
 	.popular__grid-item5 {
 		grid-area: 3 / 2 / 4 / 4;
 		flex-direction: row;
+		position: relative;
 	}
 
 	.popular__img--btc {
