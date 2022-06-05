@@ -7,6 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 13px;
+	background: linear-gradient(102.23deg, #4D506C 33.72%, #212339 100.64%);
 }
 
 .main-card__img {
