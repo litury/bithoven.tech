@@ -658,6 +658,9 @@
 				<h2 class="text">
 					Время прочтения
 				</h2>
+
+				<div class="range-slider"></div>
+
 				<div class="filter__time">
 					<div class="filter__time-scrol">
 						<button class="button_form_none header__button-bottom header__button_type_search filter__circle-left"
@@ -666,7 +669,8 @@
 								<use href="assets/images/svg/sprite.svg#circle"></use>
 							</svg>
 						</button>
-						<div class="filter__clock">
+
+						<!-- <div class="filter__clock">
 							<span class="filter__clockfilter__clockspan1"> 1m </span>
 							<span class="filter__clock--span1 filter__clock--span2"> 3m </span>
 							<span class="filter__clock--span1 filter__clock--span3"> 5m </span>
@@ -675,16 +679,18 @@
 						<span class="filter__clock--span1 filter__clock--span5"> 15m </span>
 						<span class="filter__clock--span1 filter__clock--span6"> 20m </span>
 						<span class="filter__clock--span1 sfilter__clock--pan7"> ∞ </span>
+					</div> -->
+<input type="range" min="0" max="25" step="5" value="50">
+
+						<button class="button_form_none header__button-bottom header__button_type_search filter__circle-rights"
+							type="button">
+							<svg class="header__svg" width="25" height="26" aria-hidden="true" focusable="false">
+								<use href="assets/images/svg/sprite.svg#circle"></use>
+							</svg>
+						</button>
 					</div>
-					<button class="button_form_none header__button-bottom header__button_type_search filter__circle-rights"
-						type="button">
-						<svg class="header__svg" width="25" height="26" aria-hidden="true" focusable="false">
-							<use href="assets/images/svg/sprite.svg#circle"></use>
-						</svg>
-					</button>
 				</div>
 			</div>
-		</div>
 	</article>
 
 	<div class="filter__bottom">
@@ -1617,9 +1623,8 @@
 		</а>
 	</footer>
 
-	<script src="assets/scripts/footer.js"></script>
-	<script src="assets/scripts/index.js"></script>
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="assets/nouislider.js"></script>
+	<script src="assets/range.js"></script>
 </body>
 
 </html>

@@ -89,6 +89,7 @@
 	background-image: url('../images/main/hero/market.svg');
 }
 
+
 .hero__link-wallet_subject_curve {
 	background-image: url('../images/main/hero/curve.png');
 	bottom: 8%;
@@ -106,6 +107,7 @@
 	top: 13%;
 	right: 14%;
 }
+
 .hero__span_name_0 {
 	position: absolute;
 	top: 25%;
@@ -135,12 +137,6 @@
 	top: 25%;
 	left: 10%;
 }
-
-
-
-
-
-
 
 
 @media (min-width: 1220px) {

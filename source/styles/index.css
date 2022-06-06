@@ -21,6 +21,9 @@
 @import "components/quote.css";
 @import "components/text.css";
 @import "components/filter.css";
+@import "components/nouislider.css";
+@import "components/range.css";
+
 
 @import "components/header-nav.css";
 @import "components/visually-hidden.css";
