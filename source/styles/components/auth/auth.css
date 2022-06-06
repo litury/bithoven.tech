@@ -26,9 +26,10 @@
 .auth__wrap {
 	display: grid;
 	grid-row-gap: 40px;
-	grid-column-gap: 60px;
-	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 25px;
+	grid-template-columns: repeat(2, 130px);
 	margin-bottom: 50px;
+	justify-content: center;
 }
 
 .auth__link-wallet {
