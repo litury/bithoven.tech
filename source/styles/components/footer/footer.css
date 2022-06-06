@@ -21,17 +21,14 @@
 }
 
 .footer__img-link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	background: #37394D;
 	width: 138px;
 	height: 49px;
 	border-radius: 10px;
 }
-
-.social__icon-play {
-	position: relative;
-	top: 10px;
-}
-
 
 .footer {
 	padding: 25px 0 25px;
