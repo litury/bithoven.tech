@@ -1,26 +1,16 @@
-const navBtn = document.querySelector('.glossary__nav-button');
-const alphabet = document.querySelector('.glossary__alphabet');
-const arrow = document.querySelector('.glossary__nav-button');
+;(() => {
+	"use strict";
 
-navBtn.addEventListener('click', () => {
-	alphabet.classList.toggle('glossary__alphabet--yes');
-	arrow.classList.toggle('glossary__nav-button--rot');
-});
+	const glossary = document.querySelector(".glossary");
+	const glossarySearchButton = glossary.querySelector(".glossary__search-button");
+	const glossaryFilter = glossary.querySelector(".glossary__filter");
 
+	const toggleFilter = (event) => {
+		const currentButton = event.currentTarget;
 
+		currentButton.classList.toggle("glossary__search-button_state_active");
+		glossaryFilter.classList.toggle("glossary__filter_state_hidden");
+	};
 
-
-
-
-
-
-const headers = document.querySelectorAll(".glossary__pretitle-wrap");
-
-headers.forEach(function (item) {
-	item.addEventListener("click", headerClick);
-});
-
-function headerClick() {
-	this.nextElementSibling.classList.toggle("glossary__text--yes");
-	this.previousElementSibling.classList.toggle("glossary__vector--rotate");
-}
+	glossarySearchButton.addEventListener("click", toggleFilter);
+})();

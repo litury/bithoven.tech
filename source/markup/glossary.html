@@ -488,576 +488,310 @@
 	</header>
 
 	<section class="glossary">
-		<div class="glossary__top-wrap container">
-			<div class="glossary__top">
-				<a class="link glossary_link" href="#">
-					Главная >
-				</a>
-				<a class="link glossary_link" href="#">
-					Глоссарий
-				</a>
-			</div>
-
-			<h1 class="title glossary_title">
+		<header class="glossary__header container">
+			<a
+				class="glossary__back back"
+				href="/"
+			>
+				<svg
+					class="back__icon"
+					width="7"
+					height="10"
+					aria-hidden="true"
+					focusable="false"
+				>
+					<use href="assets/images/svg/sprite.svg#arrow-left"></use>
+				</svg>
+				<span class="visually-hidden">
+					Вернуться на главную страницу
+				</span>
+			</a>
+			<nav
+				class="c-breadcrumb"
+				aria-label="Хлебные крошки"
+			>
+				<ol class="c-breadcrumb__list reset-list">
+					<li class="c-breadcrumb__item">
+						<a
+							class="c-breadcrumb__link"
+							href="/"
+						>
+							Главная
+						</a>
+					</li>
+					<li class="c-breadcrumb__item">
+						<span
+							class="c-breadcrumb__link"
+							aria-current="page"
+						>
+							Глоссарий
+						</span>
+					</li>
+				</ol>
+			</nav>
+			<h1 class="glossary__title title title_size_large">
 				Слова из криптовалютного мира
 			</h1>
-		</div>
-
-		<nav class="glossary__nav">
-			<div class="glossary__nav-wrap container">
-				<div class="glossary__search">
-
-					<form action="" class="glossary__form" method="post">
-						<input class="glossary__input" type="text" name="text" placeholder="Поиск по глоссарию" value=""
-							id="glossarySearch">
-
-						<button class="button_form_none glossary__form-button" type="button" name="button">
-							<svg class="form__form-of" width="17" height="17" aria-hidden="true" focusable="false">
-								<use href="assets/images/svg/sprite.svg#searglos"></use>
-							</svg>
-						</button>
-					</form>
-
-					<button class="button_form_none  glossary__nav-button" type="button" name="">
-						<svg class="glossary__svg" width="11" height="7" aria-hidden="true" focusable="false">
-							<use href="assets/images/svg/sprite.svg#vector"></use>
-						</svg>
-					</button>
-				</div>
-
-				<ul class="menu glossary__alphabet">
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
+		</header>
+		<div class="glossary__search">
+			<div class="glossary__search-wrapper container">
+				<form
+					class="glossary__form"
+					action=""
+					method=""
+				>
+					<input
+						class="glossary__form-search"
+						type="text"
+						name="glossary_search"
+						placeholder="Поиск по глоссарию"
+						required
+					>
+				</form>
+				<button
+					class="glossary__search-button"
+				>
+					<span class="visually-hidden">
+						Показать фильтр
+					</span>
+				</button>
+				<ul
+					class="glossary__filter glossary__filter_state_hidden reset-list"
+				>
+					<li class="glosary__filter-item">
+						<a
+							class="glossary__filter-link glossary__filter-link_state_active"
+							href="#"
+						>
 							#
-						</button>
+						</a>
 					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							A
-						</button>
+					<li class="glosary__filter-item">
+						<a
+							class="glossary__filter-link"
+							href="#"
+						>
+							a
+						</a>
 					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							B
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							C
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							D
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							E
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							F
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							G
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							H
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							I
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							J
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							K
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							L
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							M
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							N
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							O
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							P
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							Q
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							E
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							S
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							T
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							U
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							V
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							W
-						</button>
-					</li>
-
-					<li class="glossary__alphabet-item">
-						<button class="glossary__alphabet-link" type="button">
-							Z
-						</button>
+					<li class="glosary__filter-item">
+						<a
+							class="glossary__filter-link"
+							href="#"
+						>
+							b
+						</a>
 					</li>
 				</ul>
 			</div>
-		</nav>
-
-		<div class="glossary__category glossary__category--hash">
-			<div class="glossary__content-wrap glossary__content-wrap--first container">
-
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						51% Attack
-					</h2>
-
-					<p class="text glossary__text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining
-						hashrate or computational power.
-					</p>
-				</div>
-				<p class="text glossary__text glossary__text--non">
-					Active management (or active investing) refers to a strategy deployed by fund managers or brokers where they
-					trade
-					financial assets aiming to profit from both bull and bear markets. Typically, active managers seek market
-					inefficiencies, hoping that their positions reach a target return or outperform a particular index, such as
-					the
-					S&P500.
-					On an individual level, active management is simply the act of buying and selling assets frequently, based on
-					seemingly good market opportunities that arise. On a broader context, however, active management relates to a
-					group
-					of managers or brokers that try to make profits by trading a select group of assets.
-				</p>
-				<span class="text alpha__text tage">#</span>
-			</div>
 		</div>
 
-		<!-- <div class="glossary__line"></div> -->
+		<!-- category -->
+		<div class="glossary__category">
+			<div class="glossary__category-wrapper container">
+				<a
+					class="glossary__category-letter"
+					href="#"
+				>
+					#
+				</a>
 
-		<div class="glossary__category glossary__category--alpha">
-
-			<div class="glossary__content-wrap glossary__content-wrap--first container">
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						Absolute Advantage
-					</h2>
-					<p class="text glossary__text">
-						An economics concept in which one party has a direct advantage in efficiency in producing/providing a
-						specific
-						good or service over another party..
-					</p>
+				<!-- accordion -->
+				<div class="glossary__accordion accordion accordion_state_active">
+					<button
+						class="accordion__button"
+						type="button"
+					>
+						<h2 class="accordion__title title title_size_small">
+							Active Management
+						</h2>
+					</button>
+					<div class="accordion__body">
+						<p class="accordion__paragraph paragraph">
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+					</div>
 				</div>
+				<!-- /accordion -->
 
-				<div class="text glossary__text glossary__text--non">
-					<p class="text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining hashrate or computational power.
-					</p>
-
-					<p class="text">
-						Therefore, the success rate of an active investing strategy is heavily dependent on the subjective
-						interpretation of its managers and, thus, on their ability to successfully predict the market. Active
-						managers need to follow the market trends closely, so they can increase their chances of making profitable
-						trades.
-					</p>
+				<!-- accordion -->
+				<div class="glossary__accordion accordion">
+					<button
+						class="accordion__button"
+						type="button"
+					>
+						<h2 class="accordion__title title title_size_small">
+							Active Management
+						</h2>
+					</button>
+					<div class="accordion__body">
+						<p class="accordion__paragraph paragraph">
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+					</div>
 				</div>
-				<span class="text alpha__text tage">A</span>
-			</div>
+				<!-- /accordion -->
 
-			<div class="glossary__content-wrap container">
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						Ad Hoc
-					</h2>
-					<p class="text glossary__text">
-						A phrase of Latin origin that is used in modern English to mean 'for this purpose' or 'specifically for
-						this.'
-					</p>
+				<!-- accordion -->
+				<div class="glossary__accordion accordion accordion_state_active">
+					<button
+						class="accordion__button"
+						type="button"
+					>
+						<h2 class="accordion__title title title_size_small">
+							Active Management
+						</h2>
+					</button>
+					<div class="accordion__body">
+						<p class="accordion__paragraph paragraph">
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+					</div>
 				</div>
-
-				<div class="text glossary__text glossary__text--non">
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500.On an individual level, active management is simply the act of buying and selling assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-
-					<p class="text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining hashrate or computational power.
-					</p>
-
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500. On an individual level, active management is simply the act of buying and selling assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-
-					<p class="text">
-						Therefore, the success rate of an active investing strategy is heavily dependent on the subjective
-						interpretation of its managers and, thus, on their ability to successfully predict the market. Active
-						managers need to follow the market trends closely, so they can increase their chances of making profitable
-						trades.
-					</p>
-				</div>
-			</div>
-
-			<div class="glossary__content-wrap container">
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						Address
-					</h2>
-					<p class="text glossary__text">
-						String of text that designates the location of a particular wallet on the blockchain. Often a hashed version
-						of a public key.
-					</p>
-				</div>
-				<div class="text glossary__text glossary__text--non">
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500.On an individual level, active management is simply the act of buying and selling assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining hashrate or computational power.
-					</p>
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500. On an individual level, active management is simply the act of buying and selling
-						assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Therefore, the success rate of an active investing strategy is heavily dependent on the subjective
-						interpretation of its managers and, thus, on their ability to successfully predict the market. Active
-						managers need to follow the market trends closely, so they can increase their chances of making profitable
-						trades.
-					</p>
-				</div>
+				<!-- /accordion -->
 			</div>
 		</div>
+		<!-- /category -->
 
-		<div class="glossary__category glossary__category--beta">
 
-			<div class="glossary__content-wrap glossary__content-wrap--first container">
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						Bags
-					</h2>
-					<p class="text glossary__text">
-						The portfolio of coins and tokens one is holding. Often related to a poorly performing bag of assets that
-						investors insist to hold.
-					</p>
-				</div>
-				<div class="text glossary__text glossary__text--non">
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500.On an individual level, active management is simply the act of buying and selling assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining hashrate or computational power.
-					</p>
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500. On an individual level, active management is simply the act of buying and selling
-						assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Therefore, the success rate of an active investing strategy is heavily dependent on the subjective
-						interpretation of its managers and, thus, on their ability to successfully predict the market. Active
-						managers need to follow the market trends closely, so they can increase their chances of making profitable
-						trades.
-					</p>
-				</div>
-					<span class="text alpha__text tage">B</span>
-			</div>
+		<!-- category -->
+		<div class="glossary__category">
+			<div class="glossary__category-wrapper container">
+				<a
+					class="glossary__category-letter"
+					href="#"
+				>
+					a
+				</a>
 
-			<div class="glossary__content-wrap container">
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						Bear Market
-					</h2>
-					<p class="text glossary__text">
-						A negative trend in prices of a market. It is widely used not only in the cryptocurrency space but also in
-						the
-						traditional markets.
-					</p>
+				<!-- accordion -->
+				<div class="glossary__accordion accordion">
+					<button
+						class="accordion__button"
+						type="button"
+					>
+						<h2 class="accordion__title title title_size_small">
+							Active Management
+						</h2>
+					</button>
+					<div class="accordion__body">
+						<p class="accordion__paragraph paragraph">
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+					</div>
 				</div>
-				<div class="text glossary__text glossary__text--non">
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500.On an individual level, active management is simply the act of buying and selling assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining hashrate or computational power.
-					</p>
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500. On an individual level, active management is simply the act of buying and selling
-						assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Therefore, the success rate of an active investing strategy is heavily dependent on the subjective
-						interpretation of its managers and, thus, on their ability to successfully predict the market. Active
-						managers need to follow the market trends closely, so they can increase their chances of making profitable
-						trades.
-					</p>
-				</div>
-			</div>
+				<!-- /accordion -->
 
-			<div class="glossary__content-wrap container">
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						Benchmark
-					</h2>
-					<p class="text glossary__text">
-						A measurement standard which can be used to gauge the performance of a particular asset or investment
-						portfolio.
-					</p>
+				<!-- accordion -->
+				<div class="glossary__accordion accordion accordion_state_active">
+					<button
+						class="accordion__button"
+						type="button"
+					>
+						<h2 class="accordion__title title title_size_small">
+							Active Management
+						</h2>
+					</button>
+					<div class="accordion__body">
+						<p class="accordion__paragraph paragraph">
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+					</div>
 				</div>
-				<div class="text glossary__text glossary__text--non">
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500.On an individual level, active management is simply the act of buying and selling assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining hashrate or computational power.
-					</p>
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500. On an individual level, active management is simply the act of buying and selling
-						assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Therefore, the success rate of an active investing strategy is heavily dependent on the subjective
-						interpretation of its managers and, thus, on their ability to successfully predict the market. Active
-						managers need to follow the market trends closely, so they can increase their chances of making profitable
-						trades.
-					</p>
-				</div>
-			</div>
+				<!-- /accordion -->
 
-			<div class="glossary__content-wrap container">
-				<button class="button_form_none glossary__pretitle-button" type="button" name="">
-					<svg class="glossary__vector" width="11" height="7" aria-hidden="true" focusable="false">
-						<use href="assets/images/svg/sprite.svg#vector"></use>
-					</svg>
-				</button>
-				<div class="glossary__pretitle-wrap">
-					<h2 class="title glossary__pretitle">
-						BEP-2
-					</h2>
-					<p class="text glossary__text">
-						A technical standard that defines a set of rules for the issuance and management of tokens in the Binance
-						Chain
-						ecosystem.
-					</p>
+				<!-- accordion -->
+				<div class="glossary__accordion accordion accordion_state_active">
+					<button
+						class="accordion__button"
+						type="button"
+					>
+						<h2 class="accordion__title title title_size_small">
+							Active Management
+						</h2>
+					</button>
+					<div class="accordion__body">
+						<p class="accordion__paragraph paragraph">
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+						<p
+							class="accordion__paragraph paragraph"
+							hidden
+						>
+							An economics concept in which one party has a direct advantage in efficiency in producing/providing a specific good or service over another party.
+						</p>
+					</div>
 				</div>
-				<div class="text glossary__text glossary__text--non">
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500.On an individual level, active management is simply the act of buying and selling assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Also known as a Majority Attack. When one or a group of miners control greater than 50% of the network's
-						mining hashrate or computational power.
-					</p>
-					<p class="text">
-						Active management (or active investing) refers to a strategy deployed by fund managers or brokers where
-						they
-						trade financial assets aiming to profit from both bull and bear markets. Typically, active managers seek
-						market inefficiencies, hoping that their positions reach a target return or outperform a particular index,
-						such as the S&P500. On an individual level, active management is simply the act of buying and selling
-						assets
-						frequently, based on seemingly good market opportunities that arise. On a broader context, however, active
-						management relates to a group of managers or brokers that try to make profits by trading a select group of
-						assets.
-					</p>
-					<p class="text">
-						Therefore, the success rate of an active investing strategy is heavily dependent on the subjective
-						interpretation of its managers and, thus, on their ability to successfully predict the market. Active
-						managers need to follow the market trends closely, so they can increase their chances of making profitable
-						trades.
-					</p>
-				</div>
+				<!-- /accordion -->
 			</div>
 		</div>
+		<!-- /category -->
 	</section>
 
 	<footer class="footer container">
@@ -1417,7 +1151,8 @@
 		</а>
 	</footer>
 	<script src="assets/scripts/glossary.js"></script>
-	<script src="assets/scripts/index.js"></script>
+	<script src="assets/scripts/accordion.js"></script>
+	<!-- <script src="assets/scripts/index.js"></script> -->
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 

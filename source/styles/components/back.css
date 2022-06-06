@@ -1,0 +1,10 @@
+.back {
+	display: inline-flex;
+
+	background-color: #3d4057;
+	border-radius: 50%;
+}
+
+.back__icon {
+	margin: auto;
+}
