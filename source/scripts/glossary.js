@@ -7,9 +7,16 @@
 
 	const toggleFilter = (event) => {
 		const currentButton = event.currentTarget;
+		const a11yText = currentButton.querySelector(".visually-hidden");
 
 		currentButton.classList.toggle("glossary__search-button_state_active");
 		glossaryFilter.classList.toggle("glossary__filter_state_hidden");
+
+		if (currentButton.classList.contains("glossary__search-button_state_active")) {
+			a11yText.textContent = "Скрыть фильтр";
+		} else {
+			a11yText.textContent = "Показать фильтр";
+		}
 	};
 
 	glossarySearchButton.addEventListener("click", toggleFilter);
