@@ -1,7 +1,3 @@
-.check {
-	padding-left: 1.2em;
-}
-
 .check__input {
 	appearance: none;
 	-webkit-appearance: none;
@@ -13,18 +9,30 @@
 	padding: 6px 20px 6px 13px;
 	background-color: #fff;
 	color: rgba(33, 41, 67, 1);
-	margin-left: -1.2em;
 	opacity: 0.5;
 	border-radius: 50px;
 	position: relative;
 }
+
 .check__box::before {
 	content: '+';
-		position: absolute;
-		width: 1em;
-		height: 1em;
-		right: 0
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	right: 0
 }
+
+.check-radio__box {
+	padding: 9px 36px;
+	border-radius: 50px;
+	position: relative;
+}
+
+.check-radio__input:checked+.check-radio__box {
+border: 1px solid #FFFFFF;
+border-radius: 100px;
+}
+
 
 /* Checked */
 .check__input:checked+.check__box {
@@ -51,7 +59,6 @@
 
 .filter__all-desktop {
 	display: none;
-
 }
 
 .filter {
@@ -65,7 +72,10 @@
 }
 
 .filter__top {
-	padding: 20px 0;
+
+	display: inline-flex;
+	gap: 26px;
+	margin-bottom: 45px;
 }
 
 .filter__button {
@@ -117,7 +127,6 @@
 	background-repeat: no-repeat;
 	height: 3px;
 	position: absolute;
-
 	width: 100%;
 	top: 50%;
 	left: 2px;
@@ -259,13 +268,8 @@
 		opacity: .5;
 	}
 
-
-
-
-
-
 	.filter__all {
-		column-gap: 8px;
+		gap: 8px;
 		row-gap: 20px;
 	}
 
@@ -290,7 +294,7 @@
 	.filter__all-desktop {
 		display: flex;
 		flex-wrap: wrap;
-		column-gap: 8px;
+		gap: 8px;
 		row-gap: 20px;
 	}
 
