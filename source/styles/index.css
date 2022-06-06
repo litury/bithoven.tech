@@ -50,5 +50,6 @@
 @import "components/main/manual.css";
 @import "components/main/study.css";
 @import "components/main/subs.css";
-
-
+@import "components/reset-list.css";
+@import "components/back.css";
+@import "components/accordion.css";

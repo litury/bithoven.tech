@@ -1,0 +1,75 @@
+.accordion {
+	--gap: 18px;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.accordion {
+		padding: 36px 31px;
+
+		border-radius: 20px;
+	}
+}
+
+@media (min-width: 768px) { /* tablet */
+	.accordion:hover {
+		background-color: #31344c;
+	}
+}
+
+.accordion__button {
+	--space-y: 10px;
+
+	padding: var(--space-y) 0;
+	width: 100%;
+
+	border: none;
+	background-color: transparent;
+}
+
+.accordion_state_active .accordion__button:hover {
+	cursor: pointer;
+}
+
+.accordion_state_active .accordion__button {
+	--icon: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 4.45487L9.14221 0.66205C9.48909 0.300829 10.0669 0.300829 10.4137 0.66205C10.7413 1.00315 10.7413 1.54197 10.4137 1.88308L6.22128 6.24889C5.82774 6.6587 5.17226 6.6587 4.77872 6.24889L0.58627 1.88308C0.258711 1.54197 0.258711 1.00315 0.58627 0.66205C0.933147 0.300829 1.51091 0.300829 1.85779 0.662049L5.5 4.45487Z' fill='%23A6A7B0'/%3E%3C/svg%3E%0A");
+
+	background-image: var(--icon);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.accordion_state_active .accordion__button_state_active {
+	--icon: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 2.54513L1.85779 6.33795C1.51091 6.69917 0.933147 6.69917 0.58627 6.33795C0.258711 5.99685 0.258711 5.45803 0.58627 5.11692L4.77872 0.751109C5.17226 0.341297 5.82775 0.341297 6.22128 0.751109L10.4137 5.11692C10.7413 5.45803 10.7413 5.99685 10.4137 6.33795C10.0669 6.69917 9.48909 6.69917 9.14221 6.33795L5.5 2.54513Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.accordion__title {
+	--space-y: 0;
+
+	margin-top: var(--space-y);
+	margin-bottom: var(--space-y);
+
+	color: #ffffff;
+	text-align: left;
+	word-break: break-all;
+}
+
+.accordion__body {
+	--gap: 15px;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+
+	text-align: left;
+}
+
+.accordion__paragraph {
+	--text-size: 18px;
+
+	font-size: var(--text-size);
+	word-break: break-all;
+}

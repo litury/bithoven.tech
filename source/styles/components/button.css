@@ -16,10 +16,19 @@
 
 
 .button_form_clear {
+	--background: transparent;
+
 	border: 1px solid #FFFFFF;
-	background-color: transparent;
+	background-color: var(--background);
 	border-radius: 50px;
 	color: rgba(255, 255, 255, 1);
+	font-family: 'NeueMachina';
+}
+
+.button_form_clear:hover {
+	--background: #ffffff;
+
+	color: #293c74;
 }
 
 .button_form_none {
@@ -29,6 +38,7 @@
 	padding: 0;
 	border: none;
 	display: inline-block;
+	color: #8F93A4;
 }
 
 .button:hover {

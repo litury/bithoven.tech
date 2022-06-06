@@ -390,3 +390,19 @@ background-color: rgba(255, 255, 255, 1);
 		width: 100%;
 	}
 }
+
+.filter__box {
+	--space-y: 35px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: var(--space-y);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.filter__box {
+		--space-y: 40px;
+	}
+}

@@ -488,21 +488,48 @@
 	</header>
 
 	<article class="filter education__filter container">
-		<nav aria-label="Breadcrumb" class="content__top breadcrumb">
-			<ol class="menu breadcrumb__menu">
+		<div class="filter__box">
+			<a
+			class="back"
+			href="/"
+		>
+			<svg
+				class="back__icon"
+				width="7"
+				height="10"
+				aria-hidden="true"
+				focusable="false"
+			>
+				<use href="assets/images/svg/sprite.svg#arrow-left"></use>
+			</svg>
+			<span class="visually-hidden">
+				Вернуться на главную страницу
+			</span>
+		</a>
+		<nav
+			class="breadcrumb"
+			aria-label="Хлебные крошки"
+		>
+			<ol class="breadcrumb__list reset-list">
 				<li class="breadcrumb__item">
-					<a class="link content_link" href="#"> Главная </a>
+					<a
+						class="breadcrumb__link"
+						href="/"
+					>
+						Главная
+					</a>
 				</li>
 				<li class="breadcrumb__item">
-					<span aria-current="page">Статьи</span>
+					<span
+						class="breadcrumb__link"
+						aria-current="page"
+					>
+						Статьи
+					</span>
 				</li>
 			</ol>
-			<a class="breadcrumb__back" href="#">
-				<svg class="breadcrumb__svg" width="7" height="10" aria-hidden="true" focusable="false">
-					<use href="assets/images/svg/sprite.svg#armob"></use>
-				</svg>
-			</a>
 		</nav>
+		</div>
 
 		<h2 class="text education__title">
 			Навигация
