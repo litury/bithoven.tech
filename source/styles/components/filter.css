@@ -1,3 +1,72 @@
+.check {
+	padding-left: 1.2em;
+}
+
+.check__input {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	position: absolute;
+}
+
+.check__box {
+	padding: 6px 20px 6px 13px;
+	background-color: #fff;
+	color: rgba(33, 41, 67, 1);
+	margin-left: -1.2em;
+	opacity: 0.5;
+	border-radius: 50px;
+	position: relative;
+}
+
+
+/* Checked */
+.check__input:checked+.check__box {
+	opacity: 1;
+	content: '✓';
+}
+
+.check__input:checked+.check__box::before {
+	position: absolute;
+	content: '✓';
+	width: 1em;
+	height: 1em;
+	right: 0
+}
+
+/* Focused */
+/*
+.check__input:focus+.check__box {
+	opacity: 1;
+}
+
+
+.check__input:disabled+.check__box {
+	opacity: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .custom-checkbox {
 	position: absolute;
 	z-index: -1;
@@ -33,7 +102,7 @@
 }
  */
 
-/* для элемента input c type="radio" */
+/* для элемента input c type="radio" *
 .custom-radio>input {
 	position: absolute;
 	z-index: -1;
@@ -43,8 +112,8 @@
 .custom-radio {
 	position: relative;
 }
-
-/* для элемента label связанного с .custom-radio */
+*/
+/* для элемента label связанного с .custom-radio *
 .custom-radio>span {
 	display: inline-flex;
 	align-items: center;
@@ -58,8 +127,8 @@
 .custom-radio>span:focus {
 	background-color: rgba(255, 255, 255, 1);
 }
-
-/* создание в label псевдоэлемента  before со следующими стилями */
+*/
+/* создание в label псевдоэлемента  before со следующими стилями *
 .custom-radio>span::before {
 	content: '+';
 	display: inline-block;
@@ -75,40 +144,40 @@
 	right: 0;
 	top: 7px;
 }
-
-/* стили при наведении курсора */
+*/
+/* стили при наведении курсора
 .custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
 	background-color: rgba(255, 255, 255, 1);
-
 }
+*/
 
-/* стили для активной радиокнопки (при нажатии на неё) */
+/* стили для активной радиокнопки (при нажатии на неё)
 .custom-radio>input:not(:disabled):active+span::before {
 background-color: rgba(255, 255, 255, 1);
-
 }
+*/
 
-/* стили для радиокнопки, находящейся в фокусе */
+/* стили для радиокнопки, находящейся в фокусе
 .custom-radio>input:focus+span::before {
 background-color: rgba(255, 255, 255, 1);
-
 }
-
-/* стили для кнопки, находящейся в фокусе и не находящейся в состоянии checked */
+*/
+/* стили для кнопки, находящейся в фокусе и не находящейся в состоянии checked
 .custom-radio>input:focus:not(:checked)+span::before {
 	content: '+';
 }
+*/
 
-/* стили для кнопки, находящейся в состоянии checked */
+/* стили для кнопки, находящейся в состоянии checked
 .custom-radio>input:checked+span::before {
 	content: '✓';
 }
-
-/* стили для радиокнопки, находящейся в состоянии disabled */
+*/
+/* стили для радиокнопки, находящейся в состоянии disabled
 .custom-radio>input:disabled+span::before {
 	background-color: rgba(255, 255, 255, 1);
-
 }
+*/
 
 
 
@@ -401,7 +470,9 @@ background-color: rgba(255, 255, 255, 1);
 	margin-bottom: var(--space-y);
 }
 
-@media (min-width: 768px) { /* tablet */
+@media (min-width: 768px) {
+
+	/* tablet */
 	.filter__box {
 		--space-y: 40px;
 	}
