@@ -35,13 +35,6 @@
 	}
 }
 
-.glossary__back {
-	--size: 30px;
-
-	width: var(--size);
-	height: var(--size);
-}
-
 .glossary__title {
 	grid-column: span 2;
 	max-width: 580px;

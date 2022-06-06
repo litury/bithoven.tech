@@ -1,5 +1,9 @@
 .back {
+	--size: 30px;
+
 	display: inline-flex;
+	width: var(--size);
+	height: var(--size);
 
 	background-color: #3d4057;
 	border-radius: 50%;
