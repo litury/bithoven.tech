@@ -1,11 +1,8 @@
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
-	loop: true,
+	loop: false,
 	slidesPerView: 1.25,
 	direction: 'horizontal',
-	spaceBetween: 1,
-	spaceBetween: 500,
-
 
 	breakpoints: {
 		// when window width is >= 320px
