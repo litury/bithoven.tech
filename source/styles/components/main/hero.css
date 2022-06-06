@@ -5,6 +5,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 15px 0 100px 0;
+	position: relative;
 }
 
 .hero__container {
@@ -21,11 +22,131 @@
 	line-height: 105.5%;
 }
 
+.hero__span {
+	background: #212339;
+	box-shadow: 20px 30px 18px rgba(24, 26, 55, 0.63);
+	border-radius: 50px;
+	position: absolute;
+	padding: 7px 15px;
+}
+
+.hero__span-svg {
+	padding: 7px 18px 7px 38px;
+	position: relative;
+}
+
+.hero__span-svg:before {
+	content: " ";
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 10px;
+	position: absolute;
+	width: 10px;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%)
+}
+
+.hero__span_name_gambiling {
+	position: absolute;
+	left: 0;
+	top: 70%;
+}
+
+.hero__span_name_gambiling::before {
+	background-image: url('../images/main/hero/game.svg');
+}
+
+.hero__span_name_finance {
+	position: absolute;
+	top: 0;
+	left: 40%;
+}
+
+.hero__span_name_finance::before {
+	background-image: url('../images/main/hero/finance.svg');
+}
+
+.hero__link-wallet_subject_panke {
+	background-image: url('../images/main/hero/panke.png');
+	bottom: 4%;
+	left: 11%;
+}
+
+.hero__span_name_1548 {
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+}
+
+.hero__span_name_market {
+	position: relative;
+	left: 10%;
+	bottom: 0;
+}
+
+.hero__span_name_market::before {
+	background-image: url('../images/main/hero/market.svg');
+}
+
+.hero__link-wallet_subject_curve {
+	background-image: url('../images/main/hero/curve.png');
+	bottom: 8%;
+	right: 11%;
+}
+
+.hero__span_name_842 {
+	position: absolute;
+	bottom: 5%;
+	right: 10%;
+}
+
+.hero__link-wallet_subject_uni {
+	background-image: url('../images/main/hero/uni.png');
+	top: 13%;
+	right: 14%;
+}
+.hero__span_name_0 {
+	position: absolute;
+	top: 25%;
+	right: 15%;
+}
+
+
+.hero__link-wallet {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+.hero__link-wallet_subject_metamask {
+	top: 15%;
+	left: 11%;
+	background-image: url('../images/main/hero/matamask.png');
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.hero__span_name_1549 {
+	position: absolute;
+	top: 25%;
+	left: 10%;
+}
+
+
+
+
+
+
+
 
 @media (min-width: 1220px) {
-.hero__container {
-	gap: 44px;
-}
+	.hero__container {
+		gap: 44px;
+	}
 
 
 	.hero__title {
