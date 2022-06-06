@@ -18,7 +18,13 @@
 	border-radius: 50px;
 	position: relative;
 }
-
+.check__box::before {
+	content: '+';
+		position: absolute;
+		width: 1em;
+		height: 1em;
+		right: 0
+}
 
 /* Checked */
 .check__input:checked+.check__box {
@@ -34,176 +40,18 @@
 	right: 0
 }
 
-/* Focused */
-/*
-.check__input:focus+.check__box {
+/* .check__input:focus+.check__box {
 	opacity: 1;
 }
-
 
 .check__input:disabled+.check__box {
 	opacity: 1;
 } */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .custom-checkbox {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-}
-
-
-
-.custom-checkbox+label {
-	display: inline-flex;
-	align-items: center;
-	user-select: none;
-}
-
-.custom-checkbox+label::before {
-	content: '';
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	flex-shrink: 0;
-	flex-grow: 0;
-	border: 1px solid #adb5bd;
-	border-radius: 0.25em;
-	margin-right: 0.5em;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 50% 50%;
-}
-
-
-.custom-checkbox:checked+label::before {
-	content: '✓';
-}
- */
-
-/* для элемента input c type="radio" *
-.custom-radio>input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-}
-
-.custom-radio {
-	position: relative;
-}
-*/
-/* для элемента label связанного с .custom-radio *
-.custom-radio>span {
-	display: inline-flex;
-	align-items: center;
-	user-select: none;
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 50px;
-	color: rgba(33, 41, 67, 1);
-	padding: 6px 23px 6px 19px;
-}
-
-.custom-radio>span:focus {
-	background-color: rgba(255, 255, 255, 1);
-}
-*/
-/* создание в label псевдоэлемента  before со следующими стилями *
-.custom-radio>span::before {
-	content: '+';
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	flex-shrink: 0;
-	flex-grow: 0;
-	border-radius: 50%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 50% 50%;
-	position: absolute;
-	right: 0;
-	top: 7px;
-}
-*/
-/* стили при наведении курсора
-.custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
-	background-color: rgba(255, 255, 255, 1);
-}
-*/
-
-/* стили для активной радиокнопки (при нажатии на неё)
-.custom-radio>input:not(:disabled):active+span::before {
-background-color: rgba(255, 255, 255, 1);
-}
-*/
-
-/* стили для радиокнопки, находящейся в фокусе
-.custom-radio>input:focus+span::before {
-background-color: rgba(255, 255, 255, 1);
-}
-*/
-/* стили для кнопки, находящейся в фокусе и не находящейся в состоянии checked
-.custom-radio>input:focus:not(:checked)+span::before {
-	content: '+';
-}
-*/
-
-/* стили для кнопки, находящейся в состоянии checked
-.custom-radio>input:checked+span::before {
-	content: '✓';
-}
-*/
-/* стили для радиокнопки, находящейся в состоянии disabled
-.custom-radio>input:disabled+span::before {
-	background-color: rgba(255, 255, 255, 1);
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .filter__all-desktop {
 	display: none;
+
 }
 
 .filter {
@@ -417,7 +265,8 @@ background-color: rgba(255, 255, 255, 1);
 
 
 	.filter__all {
-		gap: 12px;
+		column-gap: 8px;
+		row-gap: 20px;
 	}
 
 	.filter__bottom::after {
@@ -441,7 +290,8 @@ background-color: rgba(255, 255, 255, 1);
 	.filter__all-desktop {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 12px;
+		column-gap: 8px;
+		row-gap: 20px;
 	}
 
 	.filter__inner {
