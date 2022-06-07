@@ -22,12 +22,27 @@
 	}
 }
 
-.page__c-mobile-header {
+.page__body_state_no-scroll {
+	overflow-y: hidden;
+}
+
+.page__c-mobile-header,
+.page__c-mobile-header-menu  {
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 10;
+	z-index: var(--z-index-level);
+}
+
+.page__c-mobile-header {
+	--z-index-level: 10;
+}
+
+.page__c-mobile-header-menu {
+	--z-index-level: 11;
+
+	bottom: 0;
 }
 
 .page__c-menu,
@@ -40,7 +55,7 @@
 }
 
 .page__c-menu {
-	--z-index-level: 10;
+	--z-index-level: 20;
 }
 
 .page__c-mobile-search {

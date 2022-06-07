@@ -1,0 +1,42 @@
+.c-mobile-header-menu {
+	--display: none;
+
+	display: var(--display);
+	padding-top: 24px;
+	padding-right: 50px;
+	padding-bottom: 24px;
+	padding-left: 19px;
+
+	background-color: #212339;
+}
+
+@media (min-width: 1200px) { /* desktop */
+	.c-mobile-header-menu {
+		--display: none;
+	}
+}
+
+.c-mobile-header-menu_state_active {
+	--display: block;
+}
+
+.c-mobile-header-menu__close {
+	--coordinates: 20px;
+	--size: 25px;
+
+	position: absolute;
+	top: var(--coordinates);
+	right: var(--coordinates);
+
+	display: flex;
+	width: var(--size);
+	height: var(--size);
+	padding: 0;
+
+	background-color: transparent;
+	border: none;
+}
+
+.c-mobile-header-menu__close-icon {
+	margin: auto;
+}
