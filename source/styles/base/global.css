@@ -30,10 +30,19 @@
 	z-index: 10;
 }
 
-.page__c-menu {
+.page__c-menu,
+.page__c-mobile-search {
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	z-index: 10;
+	z-index: var(--z-index-level);
+}
+
+.page__c-menu {
+	--z-index-level: 10;
+}
+
+.page__c-mobile-search {
+	--z-index-level: 11;
 }

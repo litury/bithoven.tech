@@ -50,7 +50,7 @@
 			</button>
 			
 			<button
-				class="c-mobile-header__button"
+				class="c-mobile-header__button c-mobile-header__button_type_search"
 				type="button"
 			>
 				<svg
@@ -653,6 +653,39 @@
 		</nav>
 		<!-- /c-menu -->
 
+		<!-- c-mobile-search -->
+		<form
+			class="page__c-mobile-search c-mobile-search"
+			action=""
+			method=""
+		>
+			<input
+				class="c-mobile-search__input"
+				type="text"
+				name="website_search"
+				placeholder="Поиск по сайту"
+			>
+			<button
+				class="c-mobile-search__close"
+				type="button"
+			>
+				<svg
+					class="c-mobile-search__close-icon"
+					width="13"
+					height="13"
+					aria-hidden="true"
+					focusable="false"
+				>
+					<use href="assets/images/svg/sprite.svg#mobile-search"></use>
+				</svg>
+				<span class="visually-hidden">
+					Закрыть
+				</span>
+			</button>
+		</form>
+		<!-- /c-mobile-search -->
+
+		<script src="assets/scripts/toggle-element.js"></script>
 		<script src="assets/scripts/c-header.js"></script>
 	</body>
 </html>
