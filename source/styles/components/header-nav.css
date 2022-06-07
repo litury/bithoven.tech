@@ -184,6 +184,11 @@ display: grid;
 }
 
 /*  Кнопка выбора языка */
+.header__button-lang--hover {
+	color: #ffffff !important;
+	font-size: 16px !important;
+}
+
 .header__button-lang--hover:hover::after {
 	transform: rotate(180deg);
 	transition-duration: 0.5s;
@@ -226,4 +231,26 @@ display: grid;
 }
 
 
+}
+
+.form.header__button--yes .form__form {
+	position: relative;
+}
+
+.form.header__button--yes .form__button {
+	position: absolute;
+	top: 50%;
+	right: 9px;
+
+	transform: translateY(-50%);
+}
+
+.form.header__button--yes .form__input {
+	position: static;
+	transform: none;
+}
+
+
+.form.header__button--yes input {
+	width: 100%;
 }

@@ -356,7 +356,7 @@ padding: 10px 25px;
 
 	.header__user-nav {
 		display: flex;
-		gap: 30px;
+		gap: 15px;
 		align-items: center;
 		margin-left: auto;
 		margin-right: 30px;
@@ -365,6 +365,8 @@ padding: 10px 25px;
 
 	.header__button-acc {
 		position: relative;
+
+		padding-right: 15px;
 	}
 
 	.header__button-acc::before {
@@ -374,10 +376,12 @@ padding: 10px 25px;
 		height: 14px;
 		background-color: #fff;
 		position: absolute;
-		width: 2px;
-		top: 7px;
-		right: -16px;
+		width: 1px;
+		top: 50%;
+		right: 0;
 		opacity: 0.5;
+
+		transform: translateY(-50%);
 	}
 
 	.header__button-leng {
@@ -397,10 +401,14 @@ padding: 10px 25px;
 		position: absolute;
 		width: 9px;
 		top: 50%;
-		right: 0;
+		right: 17px;
 		background-image: url('../images/footer/arrow.svg');
 
 		transform: translateY(-50%);
+	}
+
+	.header__button-leng {
+		padding-right: 29px;
 	}
 
 	.header__button-leng::before {
@@ -410,10 +418,11 @@ padding: 10px 25px;
 		height: 14px;
 		background-color: #fff;
 		position: absolute;
-		width: 2px;
-		top: 0;
-		right: -16px;
+		width: 1px;
+		top: 50%;
+		right: 0;
 		opacity: 0.5;
+		transform: translateY(-50%);
 	}
 
 	.header__menu-wrap {
