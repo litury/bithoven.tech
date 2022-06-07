@@ -6,7 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bithoven</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+	<link rel="stylesheet" href="https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.css">
 	<link rel="stylesheet" href="assets/styles/index.css">
 </head>
 
@@ -524,8 +526,7 @@
 
 				<div class="filter__top">
 					<label class="radio">
-						<input class="visually-hidden radio__input" type="radio" name="articles" value="indigo"
-							checked>
+						<input class="visually-hidden radio__input" type="radio" name="articles" value="indigo" checked>
 						<span class="radio__box">Образовательные статьи</span>
 					</label>
 
@@ -646,53 +647,72 @@
 						Уровень
 					</h2>
 					<div class="filter__level-wrap">
-						<a class="link link_level_new" href="#">
-							Новичек
-						</a>
-						<a class="link link_level_advanced" href="#">
-							Продвинутый +
-						</a>
-						<a class="link link_level_pro" href="#">
-							Профессионал +
-						</a>
+
+						<label class="tag">
+							<input class="visually-hidden tag__input tag__input_level_beginner" type="checkbox" name="color"
+								value="indigo">
+							<span class="tag__box tag__box_level_beginner">Новичек</span>
+						</label>
+
+						<label class="tag">
+							<input class="visually-hidden tag__input tag__input_level_advanced" type="checkbox" name="color"
+								value="indigo">
+							<span class="tag__box tag__box_level_advanced">Продвинутый</span>
+						</label>
+
+						<label class="tag">
+							<input class="visually-hidden tag__input tag__input_level_professional" type="checkbox" name="color"
+								value="indigo">
+							<span class="tag__box tag__box_level_professional">Профессионал</span>
+						</label>
 					</div>
 				</div>
 				<h2 class="text">
 					Время прочтения
 				</h2>
 
-				<div class="range-slider"></div>
+
 
 				<div class="filter__time">
-					<div class="filter__time-scrol">
-						<button class="button_form_none header__button-bottom header__button_type_search filter__circle-left"
+
+
+					<!-- <button class="button_form_none header__button-bottom header__button_type_search filter__circle-left"
 							type="button">
 							<svg class="header__svg" width="25" height="26" aria-hidden="true" focusable="false">
 								<use href="assets/images/svg/sprite.svg#circle"></use>
 							</svg>
-						</button>
+						</button> -->
 
-						<!-- <div class="filter__clock">
-							<span class="filter__clockfilter__clockspan1"> 1m </span>
-							<span class="filter__clock--span1 filter__clock--span2"> 3m </span>
-							<span class="filter__clock--span1 filter__clock--span3"> 5m </span>
+					<div class="filter-range">
+						<div id="nonlinear" class="noUi-target noUi-ltr noUi-horizontal"></div>
+
+						<div class="filter__clock">
+							<span class="filter__clock_range_min"> 1m </span>
+							<span class="filter__clock_range_2m"> 3m </span>
+							<span class="filter__clock_range_3m"> 5m </span>
+							<span class="filter__clock_range_4m"> 10m </span>
+							<span class="filter__clock_range_5m"> 15m </span>
+							<span class="filter__clock_range_6m"> 20m </span>
+							<span class="filter__clock_range_max"> ∞ </span>
 						</div>
-						<span class="filter__clock--span1 filter__clock--span4"> 10m </span>
-						<span class="filter__clock--span1 filter__clock--span5"> 15m </span>
-						<span class="filter__clock--span1 filter__clock--span6"> 20m </span>
-						<span class="filter__clock--span1 sfilter__clock--pan7"> ∞ </span>
-					</div> -->
-<input type="range" min="0" max="25" step="5" value="50">
+					</div>
 
-						<button class="button_form_none header__button-bottom header__button_type_search filter__circle-rights"
+					<span id="slider-snap-value-lower"></span>
+					<span id="slider-snap-value-upper"></span>
+				</div>
+
+
+
+
+				<!-- <button class="button_form_none header__button-bottom header__button_type_search filter__circle-rights"
 							type="button">
 							<svg class="header__svg" width="25" height="26" aria-hidden="true" focusable="false">
 								<use href="assets/images/svg/sprite.svg#circle"></use>
 							</svg>
-						</button>
-					</div>
-				</div>
+						</button> -->
+
 			</div>
+		</div>
 	</article>
 
 	<div class="filter__bottom">
@@ -1621,9 +1641,10 @@
 
 		</а>
 	</footer>
-
-	<script src="assets/nouislider.js"></script>
-	<script src="assets/range.js"></script>
+	<script src="https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.js"></script>
+	<script src="assets/scripts/range.js"></script>
+	<script src="assets/scripts/main.js"></script>
+	<script src="assets/scripts/index.js"></script>
 </body>
 
 </html>
