@@ -1,0 +1,43 @@
+.c-mobile-header {
+	--display: flex;
+
+	display: var(--display);
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	padding: 20px 15px;
+
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+@media (min-width: 1200px) { /* desktop */
+	.c-mobile-header {
+		--display: none;
+	}
+}
+
+.c-mobile-header_state_scroll {
+	background-color: #373d5a;
+}
+
+.c-mobile-header__logotype {
+	margin-right: auto;
+}
+
+.c-mobile-header__button {
+	--size: 35px;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: var(--size);
+	height: var(--size);
+	padding: 0;
+
+	text-transform: uppercase;
+	color: #ffffff;
+
+	background-color: transparent;
+	border: none;
+}
