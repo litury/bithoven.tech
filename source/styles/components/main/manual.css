@@ -9,11 +9,17 @@
 }
 
 .manual__main-card--book {
-	background-image: url('../images/main/manual/book.png');
+	background: url('../images/main/manual/book.png') no-repeat right bottom,
+		linear-gradient(79.81deg, #4D506C -60%, #212339 100.33%);
+	backdrop-filter: blur(26.0819px);
 }
 
 .manual__main-card--coobs {
-	background-image: url('../images/main/manual/cubs.png');
+	background: url('../images/main/manual/cubs.png') no-repeat right bottom,
+		linear-gradient(79.81deg, #4D506C -60%, #212339 100.33%);
+	backdrop-filter: blur(26.0819px);
+
+
 }
 
 .manual__content {
@@ -63,6 +69,8 @@
 	}
 
 	.manual__main-card--book {
-		background-image: url('../images/main/manual/book-desk.png');
+		background: url('../images/main/manual/book-desk.png') no-repeat right bottom,
+			linear-gradient(79.81deg, #4D506C -60%, #212339 100.33%);
+		backdrop-filter: blur(26.0819px);
 	}
 }

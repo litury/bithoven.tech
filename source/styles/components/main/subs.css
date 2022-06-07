@@ -7,13 +7,14 @@
 .subs__main-card {
 	padding: 115px 25px 25px 25px;
 	background: linear-gradient(142.63deg, #4D506C -0.01%, #212339 104.7%), rgba(98, 100, 123, 0.2);
+	background: url('../images/main/subs/mail.png') no-repeat,
+		linear-gradient(162.89deg, #4D506C 15.08%, #212339 109.2%),
+		linear-gradient(99.65deg, #495D85 -64.33%, #162A54 91.31%);
 	backdrop-filter: blur(33px);
 	border-radius: 20px;
 	background-position: top right;
 	background-repeat: no-repeat;
-	background-image: url('../images/main/subs/mail.png');
 }
-
 
 .subs__title {
 	font-size: 22px;
@@ -31,6 +32,14 @@
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+}
+
+.subs__form-search {
+	all: unset;
+	padding: 12px 50px 12px 25px;
+	border: 1px solid #8F93A4;
+	backdrop-filter: blur(4px);
+	border-radius: 20px;
 }
 
 .subs__form-button--mobile {
@@ -141,11 +150,11 @@
 		flex-direction: row;
 		justify-content: space-between;
 		background-position: top left;
-
+		background: linear-gradient(142.63deg, #4D506C -0.01%, #212339 104.7%),
+			rgba(98, 100, 123, 0.2);
 		background: url('../images/main/subs/mail-desktop.png') no-repeat,
-		linear-gradient(162.89deg, #4D506C 15.08%, #212339 109.2%),
+			linear-gradient(162.89deg, #4D506C 15.08%, #212339 109.2%),
 			linear-gradient(99.65deg, #495D85 -64.33%, #162A54 91.31%);
-
 	}
 
 	.subs__title {
@@ -165,11 +174,6 @@
 		gap: 30px;
 	}
 
-	.subs__form {}
-
-	.subs__input {
-		padding: 13px;
-	}
 
 	.subs__input-wrapper {
 		display: inline-flex;

@@ -4,7 +4,7 @@
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 15px 0 100px 0;
+	padding: 15px 0;
 	position: relative;
 }
 
@@ -15,6 +15,12 @@
 	gap: 16px;
 }
 
+@media (min-width: 1220px) {
+	.hero__container {
+		gap: 44px;
+	}
+}
+
 .hero__title {
 	font-size: 34px;
 	padding-top: 86px;
@@ -22,17 +28,39 @@
 	line-height: 105.5%;
 }
 
+@media (min-width: 1220px) {
+	.hero__title {
+		font-size: 60px;
+		max-width: 934px;
+		padding-top: 400px;
+	}
+}
+
 .hero__span {
 	background: #212339;
-	box-shadow: 20px 30px 18px rgba(24, 26, 55, 0.63);
+	box-shadow: 13.0435px 14.5946px 11.7391px rgba(24, 26, 55, 0.53);
 	border-radius: 50px;
-	position: absolute;
+	font-size: 10px;
 	padding: 7px 15px;
+	position: absolute;
+}
+
+@media (min-width: 1220px) {
+	.hero__span {
+		font-size: 18px;
+		box-shadow: 20px 30px 18px rgba(24, 26, 55, 0.63);
+	}
 }
 
 .hero__span-svg {
-	padding: 7px 18px 7px 38px;
+	padding: 7px 15px 7px 28px;
 	position: relative;
+}
+
+@media (min-width: 1220px) {
+	.hero__span-svg {
+		padding: 7px 15px 7px 38px;
+	}
 }
 
 .hero__span-svg:before {
@@ -49,34 +77,66 @@
 
 .hero__span_name_gambiling {
 	position: absolute;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	top: 70%;
+}
+
+@media (min-width: 1220px) {
+	.hero__span_name_gambiling {
+		left: 0;
+	}
 }
 
 .hero__span_name_gambiling::before {
 	background-image: url('../images/main/hero/game.svg');
 }
 
+
 .hero__span_name_finance {
 	position: absolute;
-	top: 0;
+	top: 20%;
 	left: 40%;
+}
+
+@media (min-width: 1220px) {
+	.hero__span_name_finance {
+		top: 0;
+		left: 40%;
+	}
 }
 
 .hero__span_name_finance::before {
 	background-image: url('../images/main/hero/finance.svg');
 }
 
+
 .hero__link-wallet_subject_panke {
-	background-image: url('../images/main/hero/panke.png');
-	bottom: 4%;
-	left: 11%;
+	background-image: url('../images/main/hero/panke-mob.png');
+	bottom: 30%;
+	left: 13%;
+}
+
+@media (min-width: 1220px) {
+	.hero__link-wallet_subject_panke {
+		background-image: url('../images/main/hero/panke.png');
+		bottom: 4%;
+		left: 11%;
+	}
 }
 
 .hero__span_name_1548 {
 	position: absolute;
-	bottom: 0;
-	left: 10%;
+	bottom: 30%;
+	left: 15%;
+}
+
+@media (min-width: 1220px) {
+	.hero__span_name_1548 {
+		position: absolute;
+		bottom: 0;
+		left: 10%;
+	}
 }
 
 .hero__span_name_market {
@@ -89,23 +149,45 @@
 	background-image: url('../images/main/hero/market.svg');
 }
 
-
 .hero__link-wallet_subject_curve {
-	background-image: url('../images/main/hero/curve.png');
-	bottom: 8%;
-	right: 11%;
+	background-image: url('../images/main/hero/curve-mob.png');
+	bottom: 25%;
+	right: 7%;
+}
+
+@media (min-width: 1220px) {
+	.hero__link-wallet_subject_curve {
+		background-image: url('../images/main/hero/curve.png');
+		bottom: 8%;
+		right: 11%;
+	}
 }
 
 .hero__span_name_842 {
 	position: absolute;
-	bottom: 5%;
+	bottom: 25%;
 	right: 10%;
 }
 
+@media (min-width: 1220px) {
+	.hero__span_name_842 {
+		bottom: 5%;
+		right: 10%;
+	}
+}
+
 .hero__link-wallet_subject_uni {
-	background-image: url('../images/main/hero/uni.png');
-	top: 13%;
-	right: 14%;
+	background-image: url('../images/main/hero/uni-mob.png');
+	top: 16%;
+	right: 9%;
+}
+
+@media (min-width: 1220px) {
+	.hero__link-wallet_subject_uni {
+		background-image: url('../images/main/hero/uni.png');
+		top: 13%;
+		right: 14%;
+	}
 }
 
 .hero__span_name_0 {
@@ -125,11 +207,24 @@
 
 
 .hero__link-wallet_subject_metamask {
-	top: 15%;
-	left: 11%;
-	background-image: url('../images/main/hero/matamask.png');
+	top: 19%;
+	left: 14%;
+	width: 47px;
+	height: 47px;
+	background-image: url('../images/main/hero/metamask-mob.png');
 	background-color: #fff;
 	border-radius: 50%;
+}
+
+
+@media (min-width: 1220px) {
+	.hero__link-wallet_subject_metamask {
+		top: 15%;
+		left: 11%;
+		background-image: url('../images/main/hero/matamask.png');
+		background-color: #fff;
+		border-radius: 50%;
+	}
 }
 
 .hero__span_name_1549 {
@@ -138,27 +233,3 @@
 	left: 10%;
 }
 
-
-@media (min-width: 1220px) {
-	.hero__container {
-		gap: 44px;
-	}
-
-
-	.hero__title {
-		font-size: 60px;
-		max-width: 934px;
-		padding-top: 400px;
-	}
-
-
-
-
-
-
-
-
-
-
-
-}
