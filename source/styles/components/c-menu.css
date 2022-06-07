@@ -1,0 +1,45 @@
+.c-menu {
+	--gap: 30px;
+	--display: flex;
+
+	display: var(--display);
+	justify-content: space-between;
+	gap: var(--gap);
+	padding: 8px 23px;
+
+	background-color: #373d5a;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.c-menu {
+		--gap: 47px;
+	}
+}
+
+@media (min-width: 1200px) { /* desktop */
+	.c-menu {
+		--display: none;
+	}
+}
+
+.c-menu__button {
+	--text-color: #8f93a4;
+	--icon-color: var(--text-color);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 7px;
+	padding: 0;
+
+	font-family: inherit;
+	text-decoration: none;
+	color: var(--text-color);
+
+	background-color: transparent;
+	border: none;
+}
+
+.c-menu__button_state_active {
+	--text-color: #ffffff;
+}
