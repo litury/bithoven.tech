@@ -17,7 +17,7 @@
 }
 
 .title_size_large {
-	--text-size: 30px;
+	--text-size: 34px;
 }
 
 @media (min-width: 768px) { /* tablet */
