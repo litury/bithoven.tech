@@ -16,6 +16,13 @@
 	--text-size: 22px;
 }
 
+@media (min-width: 1220px) {
+	.title_size_small {
+		--text-size: 42px;
+	}
+
+}
+
 .title_size_large {
 	--text-size: 34px;
 }

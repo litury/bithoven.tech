@@ -1,6 +1,6 @@
 .subs__title--desktop,
 .subs__form-button,
-.subs__form-button--desktop {
+.subs__form-button-desktop {
 	display: none;
 }
 
@@ -42,7 +42,7 @@
 	border-radius: 20px;
 }
 
-.subs__form-button--mobile {
+.subs__form-button-mobile {
 	max-width: 146px;
 }
 
@@ -131,16 +131,16 @@
 @media (min-width: 1220px) {
 
 	.subs__title--desktop,
-	.subs__form-button--desktop {
+	.subs__form-button-desktop {
 		display: block;
 	}
 
 	.subs__title--mobile,
-	.subs__form-button--mobile {
+	.subs__form-button-mobile {
 		display: none;
 	}
 
-	.subs__form-button--desktop {
+	.subs__form-button-desktop {
 		max-width: 188px;
 		width: 100%;
 	}

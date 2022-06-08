@@ -2,16 +2,8 @@
 	display: none;
 }
 
-
-
 .last__top {
 	margin-bottom: 15px;
-}
-
-.last__title {
-	font-size: 22px;
-	line-height: 105.5%;
-	text-align: left;
 }
 
 .last__content-top {
@@ -48,10 +40,6 @@
 		padding: 8px 20px;
 	}
 
-	.last__title {
-		font-size: 42px;
-	}
-
 
 	.last__content-top {
 		display: grid;
@@ -85,9 +73,6 @@
 		justify-content: space-between;
 	}
 
-	.last__main-card-img {
-		min-height: 210px;
-	}
 
 	.last__main-card-link {
 		position: absolute;

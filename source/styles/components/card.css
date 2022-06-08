@@ -1,14 +1,25 @@
 .card {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
-	max-width: 328px;
-	width: 100%;
+	gap: 13px;
 	padding: 15px;
-	background: linear-gradient(119.35deg, #4D506C 49.8%, #212339 100.05%);
+	text-align: left;
 	border-radius: 20px;
-	font-size: 12px;
+	background: #37394D;
+	backdrop-filter: blur(26.0819px);
+	background: linear-gradient(102.23deg, #4D506C 33.72%, #212339 100.64%);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .card__top {
 	display: flex;

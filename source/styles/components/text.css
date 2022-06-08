@@ -6,7 +6,6 @@
 	margin-bottom: var(--space-y);
 
 	font-size: var(--text-size);
-	font-family: "NeueMachina";
 	font-weight: 400;
 	line-height: 1;
 	word-wrap: break-word;
@@ -18,3 +17,12 @@
 	}
 }
 
+.text_size_small {
+	--text-size: 12px;
+}
+
+@media (min-width: 1220px) {
+	.text_size_small {
+		--text-size: 16px;
+	}
+}
