@@ -17,8 +17,8 @@ class toggleElement {
 				block => block.classList.remove(block.getAttribute("data-menu-class"))
 			);
 
-			this.menuButtons.forEach(button => button.classList.remove(this.MENU_ACTIVE_CLASS_NAME));
 			this.toggleElement.classList.toggle(this.className);
+			this.menuButtons.forEach(button => button.classList.remove(this.MENU_ACTIVE_CLASS_NAME));
 			this.element.classList.toggle("c-menu__button_state_active");
 			this.callback(this.toggleElement);
 		});
