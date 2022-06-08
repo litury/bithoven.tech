@@ -8,6 +8,12 @@
 	padding-top: var(--header-height);
 }
 
+@media (min-width: 1200px) {
+	.page__body {
+		padding-top: var(--main-header-height);
+	}
+}
+
 .container {
 	max-width: 1330px;
 	min-width: 325px;

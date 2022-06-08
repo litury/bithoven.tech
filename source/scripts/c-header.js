@@ -146,4 +146,12 @@
 		"c-mobile-info_state_active",
 		mobileInfoToggle
 	).init();
+
+	const mainHeader = document.querySelector(".c-main-header");
+	const MAIN_HEADER_SPACE = 29;
+
+	body.style.setProperty(
+		"--main-header-height",
+		`${mainHeader.offsetHeight + MAIN_HEADER_SPACE * 2}px`
+	);
 })();
