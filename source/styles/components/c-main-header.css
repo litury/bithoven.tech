@@ -82,7 +82,7 @@
 	}
 
 	.c-main-header__submenu {
-		--gap: 25px;
+		--gap: 60px;
 
 		position: absolute;
 		bottom: 0;
