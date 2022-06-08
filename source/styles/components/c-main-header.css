@@ -1,107 +1,109 @@
-.c-main-header {
-	background-color: #30334c;
-	border-radius: 100px;
-}
+@media (min-width: 1200px) {
+	.c-main-header {
+		background-color: #30334c;
+		border-radius: 100px;
+	}
 
-.c-main-header__wrapper {
-	--space-y: 29px;
+	.c-main-header__wrapper {
+		--space-y: 29px;
 
-	display: flex;
-	align-items: center;
-	padding-top: var(--space-y);
-	padding-bottom: var(--space-y);
-	gap: 34px;
-}
+		display: flex;
+		align-items: center;
+		padding-top: var(--space-y);
+		padding-bottom: var(--space-y);
+		gap: 34px;
+	}
 
-.c-main-header__button {
-	position: relative;
+	.c-main-header__button {
+		position: relative;
 
-	display: flex;
-	align-items: center;
-	gap: 7px;
-	padding-top: 0;
-	padding-right: 14px;
-	padding-bottom: 0;
-	padding-left: 0;
+		display: flex;
+		align-items: center;
+		gap: 7px;
+		padding-top: 0;
+		padding-right: 14px;
+		padding-bottom: 0;
+		padding-left: 0;
 
-	font-family: "NeueMachina";
-	font-size: 16px;
-	color: #ffffff;
+		font-family: "NeueMachina";
+		font-size: 16px;
+		color: #ffffff;
 
-	background-color: transparent;
-	border: none;
+		background-color: transparent;
+		border: none;
 
-	transition-property: transform;
-	transition-duration: 0.75s;
-}
+		transition-property: transform;
+		transition-duration: 0.75s;
+	}
 
-.c-main-header__button:hover {
-	cursor: pointer;
-}
+	.c-main-header__button:hover {
+		cursor: pointer;
+	}
 
-.c-main-header__button::before {
-	content: "";
+	.c-main-header__button::before {
+		content: "";
 
-	position: absolute;
-	top: 50%;
-	right: 0;
+		position: absolute;
+		top: 50%;
+		right: 0;
 
-	width: 9px;
-	height: 6px;
+		width: 9px;
+		height: 6px;
 
-	background-image: url("data:image/svg+xml, %3Csvg class='c-main-header__button-icon' xmlns='http://www.w3.org/2000/svg' width='9' height='6' fill='none' aria-hidden='true' focusable='false' %3E%3Cpath d='M4.5 3.818 7.457.593a.737.737 0 1 1 1.086.996L5.237 5.196a1 1 0 0 1-1.474 0L.457 1.589A.737.737 0 1 1 1.543.593L4.5 3.818Z' fill='%23fff' /%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml, %3Csvg class='c-main-header__button-icon' xmlns='http://www.w3.org/2000/svg' width='9' height='6' fill='none' aria-hidden='true' focusable='false' %3E%3Cpath d='M4.5 3.818 7.457.593a.737.737 0 1 1 1.086.996L5.237 5.196a1 1 0 0 1-1.474 0L.457 1.589A.737.737 0 1 1 1.543.593L4.5 3.818Z' fill='%23fff' /%3E%3C/svg%3E");
 
-	transform: translateY(-50%);
+		transform: translateY(-50%);
 
-	transition-property: transform;
-	transition-duration: 0.5s;
-}
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
 
-.c-main-header__button:hover::before {
-	transform: translateY(-50%) rotate(0.5turn);
-}
+	.c-main-header__button:hover::before {
+		transform: translateY(-50%) rotate(0.5turn);
+	}
 
-.c-main-header__logotype {
-	--space-x: auto;
+	.c-main-header__logotype {
+		--space-x: auto;
 
-	margin-right: var(--space-x);
-	margin-left: var(--space-x);
-}
+		margin-right: var(--space-x);
+		margin-left: var(--space-x);
+	}
 
-.c-main-header__submenu {
-	--gap: 25px;
+	.c-main-header__submenu {
+		--gap: 25px;
 
-	position: absolute;
-	bottom: 0;
-	left: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
 
-	display: none;
-	padding: 25px 20px;
-	width: 329px;
+		display: none;
+		padding: 25px 20px;
+		width: 329px;
 
-	background-color: #ffffff;
-	border-radius: 10px;
+		background-color: #ffffff;
+		border-radius: 10px;
 
-	transform: translateY(calc(100% + var(--gap)));
-}
+		transform: translateY(calc(100% + var(--gap)));
+	}
 
-.c-main-header__button:hover .c-main-header__submenu {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 15px;
-}
+	.c-main-header__button:hover .c-main-header__submenu {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
 
-.c-main-header__submenu-button {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	padding: 6px 32px;
+	.c-main-header__submenu-button {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		padding: 6px 32px;
 
-	border: 1px solid #182446;
-	border-radius: 50px;
-}
+		border: 1px solid #182446;
+		border-radius: 50px;
+	}
 
-.c-main-header__submenu-button:hover {
-	background-color: #e6e8f2;
-	border-color: #e6e8f2;
+	.c-main-header__submenu-button:hover {
+		background-color: #e6e8f2;
+		border-color: #e6e8f2;
+	}
 }
