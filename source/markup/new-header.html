@@ -7,6 +7,73 @@
 		<link rel="stylesheet" href="assets/styles/index.css">
 	</head>
 	<body class="page__body">
+		<!-- c-mobile-header-auth -->
+		<div class="page__c-mobile-header-auth c-mobile-header-auth auth">
+			<button
+				class="c-mobile-header-auth__close"
+				type="button"
+			>
+				<svg
+					class="c-mobile-header-auth__close-icon"
+					width="18"
+					height="18"
+					aria-hidden="true"
+					focusable="false"
+				>
+					<use href="assets/images/svg/sprite.svg#onof"></use>
+				</svg>
+				<span class="visually-hidden">
+					Закрыть
+				</span>
+			</button>
+			<div class="auth__auth-form c-mobile-header-auth__form">
+				<h1 class="c-mobile-header-auth__title title auth__title">
+					Вам нужен кошелек Ethereum,
+					чтобы использовать Bithoven
+				</h1>
+
+				<p class="c-mobile-header-auth__paragraph paragraph auth__paragraph">
+					Подключитесь к одному из наших доступных поставщиков
+					кошельков или создайте новый
+				</p>
+				<div class="auth__wrap">
+					<a class="auth__link-wallet auth__link-wallet_subject_metamask">
+						<p class="paragraph">
+							Meta Mask
+						</p>
+					</a>
+
+					<a class="auth__link-wallet auth__link-wallet_subject_binance">
+						<p class="paragraph">
+							Binance Wallet
+						</p>
+					</a>
+
+					<a class="auth__link-wallet auth__link-wallet_subject_coinbase">
+						<p class="paragraph">
+							Coinbase Wallet
+						</p>
+					</a>
+
+					<a class="auth__link-wallet auth__link-wallet_subject_all">
+						<p class="paragraph">
+							Дополнительно
+						</p>
+					</a>
+				</div>
+
+				<p class="paragraph auth__text">
+					У вас еще нет притокашелька?
+				</p>
+
+				<a class="button auth__button">
+					Как подключить
+				</a>
+			</div>
+		</div>
+		<!-- /c-mobile-header-auth -->
+
+
 		<!-- c-header-block -->
 		<div class="page__c-mobile-header-menu c-mobile-header-menu">
 			<button
@@ -26,8 +93,45 @@
 					Закрыть
 				</span>
 			</button>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero deserunt, sunt ea perspiciatis adipisci soluta dolore asperiores ratione possimus delectus numquam dicta pariatur modi cum magni sint nostrum vel sit.
-
+			<button
+				class="c-mobile-header-menu__button"
+				type="button"
+			>
+				Темы
+			</button>
+			<div class="c-mobile-header-menu__themes">
+				<a class="button" href="#">Altcoin</a>
+				<a class="button" href="#">Altcoin 2</a>
+				<a class="button" href="#">Altcoin 3</a>
+				<a class="button" href="#">Altcoin 4</a>
+				<a class="button" href="#">Altcoin 5</a>
+			</div>
+			<ul class="c-mobile-header-menu__list reset-list">
+				<li class="c-mobile-header-menu__list-item">
+					<a
+						class="c-mobile-header-menu__list-link"
+						href="#"
+					>
+						Глоссарий
+					</a>
+				</li>
+				<li class="c-mobile-header-menu__list-item">
+					<a
+						class="c-mobile-header-menu__list-link"
+						href="#"
+					>
+						Викторина
+					</a>
+				</li>
+				<li class="c-mobile-header-menu__list-item">
+					<a
+						class="c-mobile-header-menu__list-link"
+						href="#"
+					>
+						Купить криптовалюту
+					</a>
+				</li>
+			</ul>
 		</div>
 		<!-- /c-header-block -->
 
@@ -646,7 +750,7 @@
 			</button>
 
 			<button
-				class="c-menu__button"
+				class="c-menu__button c-menu__button_type_auth"
 				type="button"
 			>
 				<svg
@@ -711,5 +815,6 @@
 
 		<script src="assets/scripts/toggle-element.js"></script>
 		<script src="assets/scripts/c-header.js"></script>
+		<script src="assets/scripts/c-menu.js"></script>
 	</body>
 </html>

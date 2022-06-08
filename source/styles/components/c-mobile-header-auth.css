@@ -1,0 +1,53 @@
+.c-mobile-header-auth {
+	--display: none;
+
+	display: var(--display);
+	padding: 0;
+	padding-bottom: var(--header-height);
+
+	background-color: #212339;
+}
+
+.c-mobile-header-auth_state_active {
+	--display: flex;
+}
+
+.c-mobile-header-auth__close {
+	--coordinates: 20px;
+	--size: 25px;
+
+	position: absolute;
+	top: var(--coordinates);
+	right: var(--coordinates);
+
+	display: flex;
+	width: var(--size);
+	height: var(--size);
+	padding: 0;
+
+	background-color: transparent;
+	border: none;
+}
+
+.c-mobile-header-auth__close-icon {
+	margin: auto;
+}
+
+.c-mobile-header-auth__title {
+	margin-bottom: 15px;
+}
+
+.c-mobile-header-auth__paragraph {
+	margin-bottom: 30px;
+}
+
+.c-mobile-header-auth__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	height: 100%;
+
+	text-align: center;
+}
