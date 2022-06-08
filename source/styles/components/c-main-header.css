@@ -1,5 +1,13 @@
+.c-main-header {
+	--display: none;
+
+	display: var(--display);
+}
+
 @media (min-width: 1200px) {
 	.c-main-header {
+		--display: block;
+		
 		background-color: #30334c;
 		border-radius: 100px;
 	}
