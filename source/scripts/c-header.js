@@ -104,6 +104,15 @@
 	new toggleElement(
 		languageButton,
 		languageBlock,
-		"c-mobile-info_state_active"
+		"c-mobile-info_state_active",
+		() => {}
+	).init();
+
+	// info
+	new toggleElement(
+		document.querySelector(".c-mobile-header__button_type_info"),
+		document.querySelector(".c-mobile-info[data-mobile-info='info']"),
+		"c-mobile-info_state_active",
+		() => {}
 	).init();
 })();
