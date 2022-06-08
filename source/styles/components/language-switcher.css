@@ -1,0 +1,17 @@
+.language-switcher {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 55px;
+	row-gap: 15px;
+}
+
+.language-switcher__link {
+	--text-color: #8f93a4;
+
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.language-switcher__link_state_active {
+	--text-color: #212943;
+}

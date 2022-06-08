@@ -63,3 +63,12 @@
 .page__c-mobile-search {
 	--z-index-level: 35;
 }
+
+.page__c-mobile-info {
+	--space-x: 5px;
+
+	position: fixed;
+	right: var(--space-x);
+	left: var(--space-x);
+	bottom: var(--mobile-menu);
+}

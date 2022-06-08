@@ -1,6 +1,11 @@
 ;(() => {
 	"use strict";
 
+	document.querySelector(".page__body").style.setProperty(
+		"--mobile-menu",
+		`${document.querySelector(".c-menu").offsetHeight}px`
+	);
+
 	const mobileMenuButton = document.querySelector(".c-mobile-header-menu__button");
 	const mobileMenuThemes = document.querySelector(".c-mobile-header-menu__themes");
 

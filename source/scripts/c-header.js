@@ -88,4 +88,19 @@
 		"c-mobile-header-auth_state_active",
 		toggleAuth,
 	).init();
+
+	// language switcher
+	const languageButton = document.querySelector(".c-mobile-header__button_type_language");
+	const languageBlock = document.querySelector(".c-mobile-info");
+	const mobileInfoClose = document.querySelector(".c-mobile-info__button");
+
+	mobileInfoClose.addEventListener("click", () => {
+		document.querySelector(".c-mobile-info").classList.remove("c-mobile-info_state_active");
+	});
+
+	new toggleElement(
+		languageButton,
+		languageBlock,
+		"c-mobile-info_state_active"
+	).init();
 })();
