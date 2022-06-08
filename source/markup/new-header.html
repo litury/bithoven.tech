@@ -305,23 +305,6 @@
 					Поиск
 				</span>
 			</button>
-
-			<button
-				class="c-mobile-header__button"
-				type="button"
-			>
-				<svg
-					width="26"
-					height="15"
-					aria-hidden="true"
-					focusable="false"
-				>
-					<use href="assets/images/svg/sprite.svg#noauth"></use>
-				</svg>
-				<span class="visually-hidden">
-					Меню
-				</span>
-			</button>
 		</header>
 		<!-- /c-mobile-header -->
 
@@ -924,6 +907,86 @@
 			</button>
 		</form>
 		<!-- /c-mobile-search -->
+
+		<!-- c-main-header -->
+		<header class="page__c-main-header c-main-header">
+			<div class="c-main-header__wrapper container">
+				<button
+					class="c-main-header__button"
+					type="button"
+				>
+					Узнать
+				</button>
+				<button
+					class="c-main-header__button"
+					type="button"
+				>
+					Темы
+					<div class="c-main-header__submenu">
+						<a class="c-main-header__submenu-button button" href="#">Altcoin</a>
+						<a class="c-main-header__submenu-button button" href="#">Altcoin</a>
+						<a class="c-main-header__submenu-button button" href="#">Altcoin</a>
+						<a class="c-main-header__submenu-button button" href="#">Altcoin</a>
+						<a class="c-main-header__submenu-button button" href="#">Altcoin</a>
+					</div>
+				</button>
+				<a
+					class="c-main-header__logotype logotype"
+					href="/"
+				>
+					<img
+						class="logotype__image"
+						width="108"
+						height="45"
+						src="assets/images/main-logo.svg"
+						alt="Логотип компании Bithoven"
+					>
+				</a>
+				<div class="c-main-header__box">
+					<div class="c-main-header__user">
+						<img class="c-main-header__user-image" src="https://picsum.photos/200/300" width="24" height="24" alt="">
+						<span class="c-main-header__user-text">
+							[Vip]
+						</span>
+					</div>
+					<button
+						class="c-main-header__button"
+						type="button"
+					>
+						<span class="c-main-header__button-text">ru</span>
+					</button>
+					<form
+						class="c-main-header__form"
+						action=""
+						method=""
+					>
+						<input
+							class="c-main-header__form-input"
+							type="text"
+							name="website_search"
+						>
+						<button
+							class="c-main-header__form-reset"
+							type="button"
+						>
+							<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.5 4.27797L9.77797 0L11 1.22203L6.72203 5.5L11 9.77797L9.77797 11L5.5 6.72203L1.22203 11L0 9.77797L4.27797 5.5L0 1.22203L1.22203 0L5.5 4.27797Z" fill="white"/>
+							</svg>
+							<span class="visually-hidden">
+								Сбросить значение формы
+							</span>
+						</button>
+					</form>
+				</div>
+				<a
+					class="button button_color_yellow"
+					href="/auth.html"
+				>
+					Авторизация
+				</a>
+			</div>
+		</header>
+		<!-- /c-main-header -->
 
 		<script src="assets/scripts/toggle-element.js"></script>
 		<script src="assets/scripts/c-header.js"></script>
