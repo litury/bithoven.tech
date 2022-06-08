@@ -71,4 +71,9 @@
 	right: var(--space-x);
 	left: var(--space-x);
 	bottom: var(--mobile-menu);
+	z-index: 99;
+}
+
+.page__blur {
+	filter: blur(5px);
 }
