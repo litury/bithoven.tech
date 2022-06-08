@@ -93,10 +93,41 @@
 	const languageButton = document.querySelector(".c-mobile-header__button_type_language");
 	const languageBlock = document.querySelector(".c-mobile-info[data-mobile-info='language']");
 	const mobileInfoClose = document.querySelectorAll(".c-mobile-info__button");
+	const mobileInfoLayout = document.querySelectorAll(".c-mobile-info__layout");
+
+	mobileInfoLayout.forEach(layout => layout.addEventListener("click", (event) => {
+		const currentLayout = event.currentTarget;
+		const block = currentLayout.closest(".c-mobile-info");
+		block.classList.remove("c-mobile-info_state_active");
+
+		const pageNodes = document.querySelectorAll(".page__body > *");
+		pageNodes.forEach(node => node.classList.remove("page__blur"));
+	}));
+
+	function mobileInfoToggle() {
+		const pageNodes = document.querySelectorAll(".page__body > *");
+
+		for (let index = 0; index < pageNodes.length; index++) {
+			const node = pageNodes[index];
+
+			if (
+				node.tagName === "SCRIPT" ||
+				node.classList.contains("c-mobile-info") ||
+				node.classList.contains("c-menu")
+			) {
+				continue;
+			} else {
+				node.classList.toggle("page__blur");
+			}
+		}
+	}
 
 	mobileInfoClose.forEach(button => button.addEventListener("click", (event) => {
+			const pageNodes = document.querySelectorAll(".page__body > *");
 			const currentButton = event.currentTarget;
 			const block = currentButton.closest(".c-mobile-info");
+
+			pageNodes.forEach(node => node.classList.remove("page__blur"));
 
 			block.classList.remove("c-mobile-info_state_active");
 	}));
@@ -105,7 +136,7 @@
 		languageButton,
 		languageBlock,
 		"c-mobile-info_state_active",
-		() => {}
+		mobileInfoToggle
 	).init();
 
 	// info
@@ -113,6 +144,6 @@
 		document.querySelector(".c-mobile-header__button_type_info"),
 		document.querySelector(".c-mobile-info[data-mobile-info='info']"),
 		"c-mobile-info_state_active",
-		() => {}
+		mobileInfoToggle
 	).init();
 })();
