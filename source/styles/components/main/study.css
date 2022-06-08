@@ -74,12 +74,6 @@
 
 
 
-	.study-main-card__title-wrap {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		margin-top: auto;
-	}
 
 
 	.study__content {

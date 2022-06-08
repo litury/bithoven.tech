@@ -1,9 +1,21 @@
 .event {
-	padding: 30px 0;
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
+	padding: 30px 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
+
+@media (min-width: 1220px) {
+
+	.event {
+		flex-direction: row;
+		gap: 30px;
+	}
+}
+
+
+
+
 
 .event__main-card {
 	padding: 25px;
@@ -45,10 +57,8 @@
 }
 
 @media (min-width: 1220px) {
-	.event__content {
-		flex-direction: row;
-		gap: 30px;
-	}
+
+
 
 	.event__main-card {
 		max-width: 632px;

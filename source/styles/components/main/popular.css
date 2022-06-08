@@ -13,13 +13,14 @@
 .popular__title {
 	font-size: 18px;
 	line-height: 99.2%;
-	max-width: 149px;
+	max-width: 165px;
 }
 
 .popular__top-link {
 	padding: 11px 19px;
 	border: 1px solid #FFFFFF;
 	border-radius: 50px;
+	font-size: 14px;
 }
 
 .popular__content {

@@ -877,7 +877,7 @@
 
 
 		<div class="last__top">
-			<h2 class="title title_size_small last__title">
+			<h2 class="title title_size_small">
 				Последние выпуски
 			</h2>
 			<a class="link last__link" href="">
@@ -1108,7 +1108,7 @@
 	<section class="popular">
 		<div class="container">
 			<div class="popular__top">
-				<h2 class="text popular__title">
+				<h2 class="title title_size_small popular__title">
 					Популярные
 					статьи “Основы”
 				</h2>
@@ -1118,27 +1118,28 @@
 			</div>
 
 			<div class="popular__content">
-
-				<div class="main-card popular__grid-item1">
-					<div class="main-card__link">
-						<a class="button main-card__button" href="#">
+				<div class="main-card main-card_height_large popular__grid-item1">
+					<div class="main-card__tag-wrapper main-card__tag-wrapper_position_top">
+						<a class="button main-card__tag" href="#">
 							Торговля
 						</a>
-						<a class="button main-card__button" href="#">
+						<a class="button main-card__tag" href="#">
 							Основы
 						</a>
-						<a class="button main-card__button" href="#">
+						<a class="button main-card__tag" href="#">
 							Технический анализ
 						</a>
-						<a class="button main-card__button" href="#">
+						<a class="button main-card__tag" href="#">
 							+1
 						</a>
 					</div>
 					<h2 class="title main-card__title">
-						Полное руководство по торговле криптовалютой для начинающих
+						<a class="link main-card__title-link" href="#">
+							Полное руководство по торговле криптовалютой для начинающих
+						</a>
 					</h2>
 					<div class="main-card__info">
-						<p class="text main-card__time">
+						<p class="text text_size_small main-card__time">
 							63 минуты
 						</p>
 						<a class="link link_level_new" href="#">
@@ -1149,28 +1150,34 @@
 
 				<div class="main-card popular__grid-item2">
 					<div class="main-card__info">
-						<p class="text main-card__time">
+						<p class="text text_size_small main-card__time">
 							4 минуты
 						</p>
 						<a class="link link_level_advanced" href="#">
 							Продвинутый
 						</a>
 					</div>
-					<h2 class="title main-card__title">
-						12 популярных свечных моделей и паттернов, используемых в техническом анализе
-					</h2>
-					<div class="main-card__img popular__img--binance">
-						<div class="main-card__link popular__main-card-link">
-							<a class="button main-card__button" href="#">
-								Торговля
-							</a>
-							<a class="button main-card__button" href="#">
-								Основы
-							</a>
-							<a class="button main-card__button" href="#">
-								+3
-							</a>
-						</div>
+					<a class="link main-card__title-link" href="#">
+						<h2 class="title main-card__title">
+							12 популярных свечных моделей и паттернов, используемых в техническом анализе
+						</h2>
+					</a>
+
+					<a class="link main-card__img-link" href="#">
+						<img class="main-card__img main-card__img_size_large" src="assets/images/main/popular/bnb-des.jpg"
+							alt="Логотип биржи binance">
+					</a>
+
+					<div class="main-card__tag-wrapper main-card__tag-wrapper_position_none">
+						<a class="button main-card__tag" href="#">
+							Торговля
+						</a>
+						<a class="button main-card__tag" href="#">
+							Основы
+						</a>
+						<a class="button main-card__tag" href="#">
+							+3
+						</a>
 					</div>
 				</div>
 
@@ -1296,29 +1303,24 @@
 					</h2>
 
 					<form action="" class="study__form" method="post">
-						<input class="study__input" type="text" name="text" placeholder="Поиск по глоссарию" value=""
+						<input class="study__input" type="text" name="glossary_search" placeholder="Поиск по глоссарию" value=""
 							id="glossarySearch">
 
-						<button class="study__form-button" type="button" name="button">
-							<svg class="form__form-of" width="17" height="17" aria-hidden="true" focusable="false">
-								<use href="assets/images/svg/sprite.svg#study-search"></use>
-							</svg>
-						</button>
+						<svg class="form__form-of" width="17" height="17" aria-hidden="true" focusable="false">
+							<use href="assets/images/svg/sprite.svg#study-search"></use>
+						</svg>
 					</form>
 
-					<div class="study-main-card__title-wrap">
-						<h2 class="title study-main-card__title">
-							242
-						</h2>
-						<p class="text study__text">
-							Это количество терминов в нашем глоссарии. Сколько знаете вы?
-						</p>
-					</div>
+					<h2 class="title study-main-card__title">
+						242
+					</h2>
+					<p class="text study__text">
+						Это количество терминов в нашем глоссарии. Сколько знаете вы?
+					</p>
 
 					<a class="link main-card__link-btn main-card__link-btn--small main-card__link-btn--active" href="">
 						В глоссарий
 					</a>
-
 				</div>
 
 				<div class="main-card study__main-card">
