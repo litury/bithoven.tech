@@ -81,8 +81,9 @@
 }
 
 .main-card__tag-wrapper_position_none {
-		top: 148px;
+		top: unset;
 		left: 26px;
+		bottom: 124px;
 }
 
 @media (min-width: 1220px) {
