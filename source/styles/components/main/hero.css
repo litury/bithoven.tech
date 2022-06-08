@@ -4,16 +4,15 @@
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
 }
 
 .hero__container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 16px;
-	height: 100vh;
-	justify-content: center;
+	gap: 26px;
+	text-align: center;
 }
 
 @media (min-width: 1220px) {
@@ -23,25 +22,92 @@
 }
 
 .hero__title {
-	font-size: 34px;
-	max-width: 328px;
-	line-height: 105.5%;
+	max-width: 330px;
+	padding-top: 104px;
 }
 
 @media (min-width: 1220px) {
 	.hero__title {
-		font-size: 60px;
 		max-width: 934px;
+		padding-top: 404px;
 	}
 }
 
+.hero__text {
+	max-width: 282px;
+}
+
+@media (min-width: 1220px) {
+	.hero__text {
+		max-width: 500px;
+	}
+}
+
+.hero__icon-wrapper {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero__icon-wrapper_subject_metamask {
+	top: 14px;
+	left: 7px;
+}
+
+@media (min-width: 1220px) {
+	.hero__icon-wrapper_subject_metamask {
+		top: 100px;
+		left: 100px;
+	}
+}
+
+.hero__link-wallet {
+	width: 48px;
+	height: 48px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 1220px) {
+	.hero__link-wallet {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+.hero__link-wallet_subject_metamask {
+	margin-bottom: -6px;
+	background-image: url('../images/main/hero/metamask-mob.png');
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+
+@media (min-width: 1220px) {
+	.hero__link-wallet_subject_metamask {
+		background-image: url('../images/main/hero/matamask.png');
+		background-color: #fff;
+		border-radius: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 .hero__span {
+	padding: 7px 15px;
+	font-size: 10px;
 	background: #212339;
 	box-shadow: 13.0435px 14.5946px 11.7391px rgba(24, 26, 55, 0.53);
 	border-radius: 50px;
-	font-size: 10px;
-	padding: 7px 15px;
-	position: absolute;
 }
 
 @media (min-width: 1220px) {
@@ -51,9 +117,25 @@
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero__span-svg {
-	padding: 7px 15px 7px 28px;
 	position: relative;
+	padding: 7px 15px 7px 28px;
 }
 
 @media (min-width: 1220px) {
@@ -194,43 +276,3 @@
 	top: 25%;
 	right: 15%;
 }
-
-
-.hero__link-wallet {
-	position: absolute;
-	width: 90px;
-	height: 90px;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-
-.hero__link-wallet_subject_metamask {
-	top: 19%;
-	left: 14%;
-	width: 47px;
-	height: 47px;
-	background-image: url('../images/main/hero/metamask-mob.png');
-	background-color: #fff;
-	border-radius: 50%;
-}
-
-
-@media (min-width: 1220px) {
-	.hero__link-wallet_subject_metamask {
-		top: 15%;
-		left: 11%;
-		width: 75px;
-		height: 75px;
-		background-image: url('../images/main/hero/matamask.png');
-		background-color: #fff;
-		border-radius: 50%;
-	}
-}
-
-.hero__span_name_1549 {
-	position: absolute;
-	top: 25%;
-	left: 10%;
-}
-
