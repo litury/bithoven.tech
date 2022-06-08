@@ -27,7 +27,8 @@
 }
 
 .page__c-mobile-header,
-.page__c-mobile-header-menu  {
+.page__c-mobile-header-menu,
+.page__c-mobile-header-auth {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -39,7 +40,8 @@
 	--z-index-level: 10;
 }
 
-.page__c-mobile-header-menu {
+.page__c-mobile-header-menu,
+.page__c-mobile-header-auth {
 	--z-index-level: 11;
 
 	bottom: 0;
@@ -59,5 +61,14 @@
 }
 
 .page__c-mobile-search {
-	--z-index-level: 11;
+	--z-index-level: 35;
+}
+
+.page__c-mobile-info {
+	--space-x: 5px;
+
+	position: fixed;
+	right: var(--space-x);
+	left: var(--space-x);
+	bottom: var(--mobile-menu);
 }
