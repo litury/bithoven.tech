@@ -77,3 +77,13 @@
 .page__blur {
 	filter: blur(5px);
 }
+
+.page__c-main-header {
+	--space: 30px;
+
+	position: fixed;
+	top: var(--space);
+	right: var(--space);
+	left: var(--space);
+	z-index: 10
+}
