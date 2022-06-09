@@ -44,6 +44,10 @@
 		transition-duration: 0.75s;
 	}
 
+	.c-main-header__button_type_main {
+		margin-right: 30px;
+	}
+
 	.c-main-header__button:hover {
 		cursor: pointer;
 	}
@@ -82,26 +86,46 @@
 	}
 
 	.c-main-header__submenu {
-		--gap: 60px;
+		--display: none;
 
 		position: absolute;
 		bottom: 0;
 		left: 0;
 
-		display: none;
-		padding: 25px 20px;
+		display: var(--display);
 		width: 329px;
+		padding-top: 60px;
 
-		background-color: #ffffff;
-		border-radius: 10px;
+		transform: translateY(100%);
+	}
 
-		transform: translateY(calc(100% + var(--gap)));
+	.c-main-header__submenu_type_external {
+		width: 368px;
 	}
 
 	.c-main-header__button:hover .c-main-header__submenu {
+		--display: flex;
+
+		flex-wrap: wrap;
+	}
+
+	.c-main-header__submenu-wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 15px;
+		padding: 25px 20px;
+
+		background-color: #ffffff;
+		border-radius: 10px;
+	}
+
+	.c-main-header__submenu-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.c-main-header__external {
+		gap: 5px;
 	}
 
 	.c-main-header__submenu-button {
@@ -219,6 +243,7 @@
 
 	.c-main-header__form-input:focus ~ .c-main-header__form-reset {
 		--display: flex;
+
 		justify-content: center;
 		align-items: center;
 	}
@@ -259,5 +284,9 @@
 
 	.c-main-header__user-text {
 		font-size: 16px;
+	}
+
+	.c-main-header__external {
+		text-align: left;
 	}
 }

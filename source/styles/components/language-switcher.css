@@ -5,6 +5,16 @@
 	row-gap: 15px;
 }
 
+.language-switcher__item {
+	padding: 10px 15px;
+
+	border-radius: 5px;
+}
+
+.language-switcher__item:hover {
+	background-color: #e6e8f2;
+}
+
 .language-switcher__link {
 	--text-color: #8f93a4;
 
