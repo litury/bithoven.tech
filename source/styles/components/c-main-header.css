@@ -44,6 +44,10 @@
 		transition-duration: 0.75s;
 	}
 
+	.c-main-header__button_type_main {
+		margin-right: 30px;
+	}
+
 	.c-main-header__button:hover {
 		cursor: pointer;
 	}
