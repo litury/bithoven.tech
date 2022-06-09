@@ -45,6 +45,20 @@
 	background-image: url('../images/main/popular/btc.png');
 }
 
+.popular__card-tag-wrapper {
+	top: unset;
+	left: 26px;
+	bottom: 124px;
+}
+
+@media (min-width: 1220px) {
+	.popular__card-tag-wrapper {
+		position: absolute;
+		top: 70%;
+		left: 50%
+	}
+}
+
 
 @media (min-width: 1220px) {
 	.popular__title {
@@ -125,4 +139,11 @@
 	.popular__img--mean {
 		min-height: 290px;
 	}
+
+	.popular__card-info {
+		position: absolute;
+		top: 30px;
+		left: 50%;
+	}
+
 }

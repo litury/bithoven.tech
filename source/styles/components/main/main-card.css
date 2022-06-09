@@ -67,7 +67,13 @@
 		max-width: 350px;
 		height: 268px;
 	}
+
+	.main-card__img_size_long {
+		max-width: 344px;
+		height: 158px;
+	}
 }
+
 
 .main-card__tag-wrapper {
 	position: absolute;
@@ -81,9 +87,10 @@
 }
 
 .main-card__tag-wrapper_position_none {
-		top: unset;
-		left: 26px;
-		bottom: 124px;
+	top: unset;
+	left: 26px;
+	bottom: 124px;
+
 }
 
 @media (min-width: 1220px) {
