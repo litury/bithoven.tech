@@ -267,23 +267,41 @@
 }
 
 .filter__clock {
-	padding-top: 31px;
-	max-width: 589px;
+	padding-top: 21px;
+	max-width: 325px;
 	width: 100%;
+	font-size: 14px;
 }
 
-.filter__clock--span2 {
-	margin-right: 50px;
+@media (min-width: 1220px) {
+	.filter__clock {
+		padding-top: 31px;
+		max-width: 589px;
+		width: 100%;
+		font-size: 14px;
+	}
 }
-
 
 .filter__clock_range_min {
 	margin-right: 20px;
 }
 
+@media (min-width: 1200px) {
+	.filter__clock_range_min {
+		margin-right: 13px;
+	}
+}
+
+
 .filter__clock_range_2m {
-	margin-right: 10px;
+	margin-right: 5px;
 	position: relative;
+}
+
+@media (min-width: 1200px) {
+	.filter__clock_range_2m {
+		margin-right: 10px;
+	}
 }
 
 .filter__clock_range_2m::before {
@@ -292,13 +310,19 @@
 	height: 22px;
 	background-color: #FFFFFF;
 	position: absolute;
-	top: -44px;
+	top: -35px;
 	left: 5px;
 }
 
 .filter__clock_range_3m {
-	margin-right: 70px;
+	margin-right: 35px;
 	position: relative;
+}
+
+@media (min-width: 1200px) {
+	.filter__clock_range_3m {
+		margin-right: 70px;
+	}
 }
 
 .filter__clock_range_3m::before {
@@ -307,14 +331,20 @@
 	height: 22px;
 	background-color: #FFFFFF;
 	position: absolute;
-	top: -44px;
+	top: -35px;
 	left: 5px;
 }
 
 
 .filter__clock_range_4m {
-	margin-right: 70px;
+	margin-right: 35px;
 	position: relative;
+}
+
+@media (min-width: 1200px) {
+	.filter__clock_range_4m {
+		margin-right: 70px;
+	}
 }
 
 .filter__clock_range_4m::before {
@@ -323,13 +353,19 @@
 	height: 22px;
 	background-color: #FFFFFF;
 	position: absolute;
-	top: -44px;
+	top: -35px;
 	left: 5px;
 }
 
 .filter__clock_range_5m {
-	margin-right: 70px;
+	margin-right: 35px;
 	position: relative;
+}
+
+@media (min-width: 1200px) {
+	.filter__clock_range_5m {
+		margin-right: 70px;
+	}
 }
 
 .filter__clock_range_5m::before {
@@ -338,13 +374,19 @@
 	height: 22px;
 	background-color: #FFFFFF;
 	position: absolute;
-	top: -44px;
+	top: -35px;
 	left: 5px;
 }
 
 .filter__clock_range_6m {
-	margin-right: 148px;
+	margin-right: 35px;
 	position: relative;
+}
+
+@media (min-width: 1200px) {
+	.filter__clock_range_6m {
+		margin-right: 148px;
+	}
 }
 
 .filter__clock_range_6m::before {
@@ -353,7 +395,7 @@
 	height: 22px;
 	background-color: #FFFFFF;
 	position: absolute;
-	top: -44px;
+	top: -35px;
 	left: 3px;
 }
 
