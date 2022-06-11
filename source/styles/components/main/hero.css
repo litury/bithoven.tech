@@ -1,16 +1,17 @@
 .hero {
-	min-height: 100vh;
 	background-image: url('../images/main/hero/bg.png');
-	background-position: bottom center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .hero__container {
+	min-height: 100vh;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: 26px;
 	text-align: center;
 }
@@ -24,13 +25,13 @@
 
 .hero__title {
 	max-width: 330px;
-	padding-top: 104px;
+
 }
 
 @media (min-width: 1220px) {
 	.hero__title {
 		max-width: 934px;
-		padding-top: 404px;
+
 	}
 }
 
@@ -54,13 +55,13 @@
 }
 
 .hero__icon-wrapper_subject_metamask {
-	top: 14px;
-	left: 7px;
+	left: 18px;
+	top: 110px;
 }
 
 @media (min-width: 1220px) {
 	.hero__icon-wrapper_subject_metamask {
-		top: 100px;
+		top: 21%;
 		left: 100px;
 	}
 }
@@ -101,12 +102,13 @@
 	background: #212339;
 	box-shadow: 13.0435px 14.5946px 11.7391px rgba(24, 26, 55, 0.53);
 	border-radius: 50px;
+	z-index: 2;
 }
 
 @media (min-width: 1220px) {
 	.hero__span {
 		padding: 7px 15px;
-		font-size: 18px;
+		font-size: 14px;
 		box-shadow: 20px 30px 18px rgba(24, 26, 55, 0.63);
 	}
 }
@@ -141,15 +143,15 @@
 .hero__span_subject_finance {
 	position: absolute;
 	padding-left: 20px;
-	top: 9%;
-	left: 37%;
+	left: 135px;
+	top: 127px;
 }
 
 @media (min-width: 1220px) {
 	.hero__span_subject_finance {
 		padding-left: 44px;
-		top: 15%;
-		left: 35%;
+		top: 24%;
+		left: 33%;
 	}
 }
 
@@ -168,14 +170,15 @@
 
 
 .hero__icon-wrapper_subject_uni {
-	top: 24px;
-	left: 76%;
+	left: 271px;
+	top: 119px;
+
 }
 
 @media (min-width: 1220px) {
 	.hero__icon-wrapper_subject_uni {
-		top: 20%;
-		left: 80%;
+		top: 29%;
+		left: 77%;
 	}
 }
 
@@ -192,25 +195,30 @@
 
 
 .hero__icon-wrapper_subject_curve {
-	top: 116%;
-	left: 75%;
+	left: 262px;
+	top: 484px;
 }
 
 @media (min-width: 1220px) {
 	.hero__icon-wrapper_subject_curve {
-		top: 99%;
-		left: 80%;
+		top: 60%;
+		left: 88%;
 	}
 }
 
 
 .hero__link-wallet_subject_curve {
 	background-image: url('../images/main/hero/curve-mob.png');
+
 }
 
 @media (min-width: 1220px) {
 	.hero__link-wallet_subject_curve {
 		background-image: url('../images/main/hero/curve.png');
+		position: relative;
+		left: -36px;
+		bottom: -16px;
+		z-index: 1;
 	}
 }
 
@@ -218,15 +226,15 @@
 .hero__span_subject_market {
 	position: absolute;
 	padding-left: 20px;
-	top: 134%;
-	left: 23%;
+	left: 86px;
+	top: 535px;
 }
 
 @media (min-width: 1220px) {
 	.hero__span_subject_market {
 		padding-left: 44px;
-		top: 110%;
-		left: 40%;
+		top: 71%;
+		left: 51%;
 	}
 }
 
@@ -245,15 +253,15 @@
 .hero__span_subject_gambiling {
 	position: absolute;
 	padding-left: 20px;
-	top: 111%;
-	left: 43%;
+	left: 157px;
+	top: 467px;
 }
 
 @media (min-width: 1220px) {
 	.hero__span_subject_gambiling {
 		padding-left: 44px;
-		top: 60%;
-		left: 10%;
+		top: 51%;
+		left: 0;
 	}
 }
 
@@ -270,14 +278,14 @@
 
 
 .hero__icon-wrapper_subject_panke {
-	top: 103%;
-	left: 7%;
+	left: 29.65px;
+	top: 452px;
 }
 
 @media (min-width: 1220px) {
 	.hero__icon-wrapper_subject_panke {
-		top: 110%;
-		left: 10%;
+		top: 66%;
+		left: 4%;
 	}
 }
 
