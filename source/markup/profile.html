@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Личный кабинет</title>
+		<link rel="stylesheet" href="assets/styles/index.css">
+	</head>
+	<body class="page__body">
+		<div class="profile container">
+			<div class="profile__background"></div>
+			<figure class="profile__avatar">
+				<img
+					class="profile__avatar-image"
+					src="https://picsum.photos/140/140"
+					width="80"
+					height="80"
+					alt="Имя пользователя"
+				>
+				<figcaption class="profile__avatar-info">
+					<div class="profile__avatar-status">
+						<svg
+							class="profile__avatar-icon"
+							width="12"
+							height="12"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<use href="assets/images/svg/sprite.svg#star"></use>
+						</svg>
+						<abbr
+							class="profile__avatar-text"
+							title="Very important person"
+						>
+							vip
+						</abbr>
+					</div>
+					<form
+						class="profile__block"
+						action=""
+						method=""
+					>
+						<a
+							class="profile__nickname"
+							href="#"
+						>
+							@Caesar777
+						</a>
+						<input
+							class="profile__input"
+							type="text"
+							name="user_nickname"
+							hidden
+						>
+						<button
+							class="profile__edit"
+							type="button"
+						>
+							<svg
+								class="profile__edit-icon"
+								width="17"
+								height="17"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<use href="assets/images/svg/sprite.svg#edit"></use>
+							</svg>
+							<span class="visually-hidden">
+								Редактировать никнейм
+							</span>
+						</button>
+					</form>
+					<p class="profile__wallet">
+						xF....57C5
+					</p>
+				</figcaption>
+			</figure>
+			<div class="profile__wrapper">
+				<div class="profile__text">
+					<p class="profile__paragraph paragraph">
+						Позравляем со вступелние в наши ряды!
+					</p>
+					<p class="profile__paragraph paragraph">
+						Здесь пока пусто,мы работаем над наполнением. А пока предлогаем почитать наш <a class="profile__link" href="#">глоссарий</a> и <a class="profile__link" href="#">статьи</a> :)
+					</p>
+				</div>
+				<ul class="profile__navigation reset-list">
+					<li class="profile__navigation-item">
+						<a class="button" href="#">Глоссарий</a>
+					</li>
+					<li class="profile__navigation-item">
+						<a class="button" href="#">Статьи</a>
+					</li>
+					<li class="profile__navigation-item">
+						<a class="button" href="#">Викторины</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="assets/scripts/profile.js"></script>
+	</body>
+</html>

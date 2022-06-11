@@ -1,0 +1,266 @@
+.profile {
+	--space-y: 20px;
+
+	position: relative;
+
+	padding-top: var(--space-y);
+	padding-bottom: var(--space-y);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile {
+		--space-y: 60px;
+	}
+}
+
+.profile__background {
+	--space-x: 15px;
+	--block-height: 100px;
+
+	position: absolute;
+	top: var(--space-y);
+	right: var(--space-x);
+	left: var(--space-x);
+	z-index: -1;
+
+	height: var(--block-height);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("https://picsum.photos/200/300");
+	border-radius: 20px;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__background {
+		--block-height: 220px;
+	}
+}
+
+.profile__avatar {
+	--space-y: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	margin-top: 55px;
+	margin-bottom: var(--space-y);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__avatar {
+		--space-y: 55px;
+
+		margin-top: 145px;
+	}
+}
+
+.profile__avatar-image {
+	--size: 80px;
+
+	width: var(--size);
+	height: var(--size);
+
+	border-radius: 50%;
+	border: 5px solid #212339;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__avatar-image {
+		--size: 140px;
+	}
+}
+
+.profile__avatar-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile__avatar-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 5px 12px;
+
+	background-color: #454965;
+	border-radius: 60px;
+
+	transform: translateY(-40%);
+}
+
+.profile__avatar-text {
+	font-weight: 500;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.profile__block {
+	--column-size: 145px;
+
+	position: relative;
+
+	display: grid;
+	grid-template-columns: var(--column-size) auto;
+	align-items: center;
+	gap: 9px;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__block {
+		--column-size: 211px;
+	}
+}
+
+.profile__nickname {
+	--text-size: 22px;
+
+	color: #ffffff;
+	font-size: var(--text-size);
+	font-weight: 800;
+	font-family: "NeueMachina";
+	text-align: center;
+	text-decoration: none;
+	word-wrap: break-word;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__nickname {
+		--text-size: 32px;
+	}
+}
+
+.profile__edit {
+	--size: 20px;
+	--gap: 4px;
+
+	position: absolute;
+	top: 50%;
+	right: 0;
+
+	display: flex;
+	padding: 0;
+	width: var(--size);
+	height: var(--size);
+
+	background-color: transparent;
+	border: none;
+
+	transform: translateX(calc(100% + var(--gap))) translateY(-50%);
+}
+
+.profile__edit:hover {
+	cursor: pointer;
+}
+
+.profile__edit-icon {
+	--icon-color: #8f93a4;
+
+	margin: auto;
+}
+
+.profile__edit-icon:hover {
+	--icon-color: #ffffff;
+}
+
+.profile__input {
+	--text-size: 22px;
+
+	padding: 0;
+
+	color: #ffffff;
+	font-size: var(--text-size);
+	font-weight: 800;
+	font-family: "NeueMachina";
+
+	background-color: transparent;
+	border: none;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__input {
+		--text-size: 32px;
+	}
+}
+
+.profile__input:focus {
+	outline: none;
+}
+
+.profile__wallet {
+	--space-y: 0;
+
+	margin-top: var(--space-y);
+	margin-bottom: var(--space-y);
+	max-width: 200px;
+
+	font-size: 16px;
+	color: #8f93a4;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.profile__wrapper {
+	--gap: 20px;
+	--space-x: auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	max-width: 567px;
+	width: 100%;
+	margin-right: var(--space-x);
+	margin-left: var(--space-x);
+
+	text-align: center;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__wrapper {
+		--gap: 30px;
+	}
+}
+
+.profile__text {
+	--space: 15px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: var(--space);
+
+	background-color: #31344c;
+	border-radius: 20px;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__text {
+		--space: 60px;
+	}
+}
+
+.profile__link {
+	color: #f9e531;
+}
+
+.profile__link:hover {
+	text-decoration: none;
+}
+
+.profile__navigation {
+	--gap: 12px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: var(--gap);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.profile__navigation {
+		--gap: 20px;
+	}
+}
