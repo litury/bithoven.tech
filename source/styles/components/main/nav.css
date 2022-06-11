@@ -1,8 +1,12 @@
 .nav {
 	text-align: left;
-	margin-bottom: 30px;
+	padding-top: 100px;
+	margin-bottom: 111px;
 	padding-bottom: 18px;
 	border-bottom: 1px solid #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .nav__title {
@@ -17,8 +21,14 @@
 
 .nav__topic-title {
 	font-size: 18px;
-	line-height: 99.2%;
 	margin-bottom: 12px;
+}
+
+@media (min-width: 1220px) {
+	.nav__topic-title {
+		font-size: 30px;
+		margin-bottom: 12px;
+	}
 }
 
 .nav__topic-wrap {
@@ -32,12 +42,10 @@
 }
 
 @media (min-width: 1220px) {
-
-
 	.nav__title {
 		font-size: 42px;
 		max-width: 720px;
-		margin-bottom: 55px;
+		margin-bottom: 32px;
 	}
 
 	.nav__topic {
@@ -50,5 +58,8 @@
 		gap: 57px;
 	}
 
-
+	.nav__level-wrapper {
+		padding-top: unset;
+		margin-bottom: 45px;
+	}
 }

@@ -21,11 +21,9 @@
 	padding-top: 51px;
 }
 
-
-
 @media (min-width: 1220px) {
 	.main-card_height_large {
-		gap: 30px;
+		gap: 42px;
 		padding-top: 92px;
 		padding-bottom: 99px;
 		width: 100%;
@@ -95,7 +93,8 @@
 
 @media (min-width: 1220px) {
 	.main-card__tag-wrapper {
-		top: 84%;
+		top: unset;
+		bottom: 30px;
 		left: 30px;
 	}
 

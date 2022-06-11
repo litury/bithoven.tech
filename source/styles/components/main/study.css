@@ -2,6 +2,12 @@
 	margin-bottom: 30px;
 }
 
+@media (min-width: 1220px) {
+	.study {
+		margin-bottom: 118px;
+	}
+}
+
 .study__main-card-glossary {
 	background: transparent;
 	border: 1px solid #fff;
@@ -11,6 +17,7 @@
 	font-size: 22px;
 	line-height: 105.5%;
 	margin-bottom: 18px;
+	text-align: center;
 }
 
 
@@ -29,6 +36,12 @@
 .study__form {
 	margin-bottom: 23px;
 	position: relative;
+}
+
+@media (min-width: 1220px) {
+	.study__form {
+		margin-bottom: 200px;
+	}
 }
 
 .study__input {
@@ -70,6 +83,10 @@
 }
 
 
+
+
+
+
 @media (min-width: 1220px) {
 
 	.study__title {
@@ -79,7 +96,9 @@
 		margin-bottom: 40px;
 	}
 
-
+	.study__card {
+		min-height: 523px;
+	}
 
 
 

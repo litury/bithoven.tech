@@ -2,6 +2,13 @@
 	margin-bottom: 30px;
 }
 
+@media (min-width: 1220px) {
+	.manual {
+		margin-bottom: 100px;
+	}
+
+}
+
 .manual__main-card {
 	padding: 25px;
 	background-position: right bottom;
@@ -39,7 +46,7 @@
 }
 
 .manual__button {
-	max-width: 146px;
+	max-width: 188px;
 	font-size: 14px;
 	line-height: 14px;
 }
@@ -55,7 +62,7 @@
 		padding: 76px 50px;
 		max-width: 632px;
 		width: 100%;
-		gap: 25px;
+		gap: 35px;
 	}
 
 	.manual__title {

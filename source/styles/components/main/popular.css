@@ -1,13 +1,24 @@
 .popular {
 	text-align: left;
 	margin-bottom: 30px;
+}
 
+@media (min-width: 1220px) {
+	.popular {
+		margin-bottom: 70px;
+	}
 }
 
 .popular__top {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 18px;
+}
+
+@media (min-width: 1220px) {
+.popular__top {
+	margin-bottom: 40px;
+}
 }
 
 .popular__title {

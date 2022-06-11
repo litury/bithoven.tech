@@ -26,3 +26,13 @@
 		--text-size: 16px;
 	}
 }
+
+.text_size_normal {
+	--text-size: 18px;
+}
+
+@media (min-width: 1220px) {
+	.text_size_normal {
+		--text-size: 30px;
+	}
+}
