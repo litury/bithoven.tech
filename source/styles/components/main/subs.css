@@ -6,10 +6,9 @@
 
 .subs__main-card {
 	padding: 115px 25px 25px 25px;
-	background: linear-gradient(142.63deg, #4D506C -0.01%, #212339 104.7%), rgba(98, 100, 123, 0.2);
-	background: url('../images/main/subs/mail.png') no-repeat,
-		linear-gradient(162.89deg, #4D506C 15.08%, #212339 109.2%),
-		linear-gradient(99.65deg, #495D85 -64.33%, #162A54 91.31%);
+
+	background: linear-gradient(142deg, #4D506C -0.01%, #212339 104%), rgba(98, 100, 123, 0.2);
+	background: url('../images/main/subs/mail.png') no-repeat, linear-gradient(162deg, #4D506C 15%, #212339 109%), linear-gradient(99deg, #495D85 -64%, #162A54 91%);
 	backdrop-filter: blur(33px);
 	border-radius: 20px;
 	background-position: top right;
@@ -17,10 +16,11 @@
 }
 
 .subs__title {
-	font-size: 22px;
-	line-height: 105.5%;
 	max-width: 198px;
 	margin-bottom: 16px;
+
+	font-size: 22px;
+	line-height: 105.5%;
 }
 
 .subs__text {
@@ -37,6 +37,7 @@
 .subs__form-search {
 	all: unset;
 	padding: 12px 50px 12px 25px;
+
 	border: 1px solid #8F93A4;
 	backdrop-filter: blur(4px);
 	border-radius: 20px;
@@ -47,10 +48,12 @@
 }
 
 .subs__checkbox {
+	position: relative;
+
 	display: inline-flex;
 	gap: 23px;
 	height: 28px;
-	position: relative;
+
 	vertical-align: middle;
 	font-size: 12px;
 	user-select: none;
@@ -58,12 +61,15 @@
 
 .subs__checkbox .subs__checkbox-span {
 	position: relative;
+
 	display: inline-flex;
 	width: 29px;
 	height: 15px;
+
 	border-radius: 20px;
 	vertical-align: top;
 	background: rgba(255, 255, 255, 0.2);
+
 	transition: .2s;
 }
 
@@ -72,20 +78,24 @@
 	position: absolute;
 	top: 2px;
 	left: 1px;
+
 	display: inline-flex;
 	width: 11px;
 	height: 11px;
+
 	border-radius: 50%;
 	background: white;
 	transition: .15s;
 }
 
 .subs__checkbox input[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+
 	display: block;
 	width: 0;
 	height: 0;
-	position: absolute;
-	z-index: -1;
+
 	opacity: 0;
 
 }
@@ -150,17 +160,15 @@
 		flex-direction: row;
 		justify-content: space-between;
 		background-position: top left;
-		background: linear-gradient(142.63deg, #4D506C -0.01%, #212339 104.7%),
-			rgba(98, 100, 123, 0.2);
-		background: url('../images/main/subs/mail-desktop.png') no-repeat,
-			linear-gradient(162.89deg, #4D506C 15.08%, #212339 109.2%),
-			linear-gradient(99.65deg, #495D85 -64.33%, #162A54 91.31%);
+		background: linear-gradient(142deg, #4D506C -0.01%, #212339 104%), rgba(98, 100, 123, 0.2);
+		background: url('../images/main/subs/mail-desktop.png') no-repeat, linear-gradient(162deg, #4D506C 15%, #212339 109%), linear-gradient(99deg, #495D85 -64%, #162A54 91%);
 	}
 
 	.subs__title {
-		font-size: 42px;
 		max-width: 415px;
 		margin-bottom: 0;
+
+		font-size: 42px;
 	}
 
 	.subs__text {

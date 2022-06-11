@@ -1,6 +1,8 @@
 .popular {
-	text-align: left;
+	margin-top: 30px;
 	margin-bottom: 30px;
+
+	text-align: left;
 }
 
 @media (min-width: 1220px) {
@@ -22,13 +24,15 @@
 }
 
 .popular__title {
+	max-width: 165px;
+
 	font-size: 18px;
 	line-height: 99.2%;
-	max-width: 165px;
 }
 
 .popular__top-link {
 	padding: 11px 19px;
+
 	border: 1px solid #FFFFFF;
 	border-radius: 50px;
 	font-size: 14px;
@@ -43,23 +47,26 @@
 
 .popular__img--binance {
 	min-height: 135px;
+
 	background-image: url('../images/main/popular/binance.png');
 }
 
 .popular__img--mean {
 	min-height: 135px;
+
 	background-image: url('../images/main/popular/mean.png');
 }
 
 .popular__img--btc {
 	min-height: 135px;
+
 	background-image: url('../images/main/popular/btc.png');
 }
 
 .popular__card-tag-wrapper {
 	top: unset;
-	left: 26px;
 	bottom: 124px;
+	left: 26px;
 }
 
 @media (min-width: 1220px) {
@@ -73,8 +80,9 @@
 
 @media (min-width: 1220px) {
 	.popular__title {
+		max-width: unset;
+
 		font-size: 30px;
-		max-width: none;
 	}
 
 	.popular__content {

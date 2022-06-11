@@ -14,9 +14,10 @@
 }
 
 .study__title {
+	margin-bottom: 18px;
+
 	font-size: 22px;
 	line-height: 105.5%;
-	margin-bottom: 18px;
 	text-align: center;
 }
 
@@ -28,14 +29,27 @@
 }
 
 .study-main-card__title {
+	max-width: 227px;
+
 	font-size: 20px;
 	line-height: 105.5%;
-	max-width: 227px;
+}
+
+.study__main-card-title {
+	margin-bottom: 18px;
+}
+
+@media (min-width: 1220px) {
+	.study__main-card-title {
+		margin-bottom: 30px;
+	}
+
 }
 
 .study__form {
-	margin-bottom: 23px;
 	position: relative;
+
+	margin-bottom: 23px;
 }
 
 @media (min-width: 1220px) {
@@ -59,7 +73,6 @@
 	background-position: right 16px center;
 }
 
-
 .study__form-button {
 	all: unset;
 	position: absolute;
@@ -68,24 +81,14 @@
 	right: 55px;
 }
 
-
-
-
 .study__text {
 	max-width: 270px;
 }
-
-
 
 .main-card__link-btn--active {
 	color: rgba(20, 34, 67, 1);
 	background-color: #fff;
 }
-
-
-
-
-
 
 @media (min-width: 1220px) {
 
@@ -100,8 +103,6 @@
 		min-height: 523px;
 	}
 
-
-
 	.study__content {
 		flex-direction: row;
 		gap: 30px;
@@ -113,7 +114,6 @@
 		max-width: 329px;
 	}
 
-
 	.main-card__link-btn {
 		position: absolute;
 		bottom: 30px;
@@ -122,5 +122,4 @@
 	.study__form-button {
 		right: 90px;
 	}
-
 }

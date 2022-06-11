@@ -1,18 +1,20 @@
 .nav {
-	text-align: left;
-	padding-top: 100px;
-	margin-bottom: 111px;
-	padding-bottom: 18px;
-	border-bottom: 1px solid #fff;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	padding-top: 100px;
+	padding-bottom: 18px;
+	margin-bottom: 111px;
+
+	text-align: left;
+	border-bottom: 1px solid #fff;
 }
 
 .nav__title {
+	margin-bottom: 18px;
+
 	font-size: 22px;
 	line-height: 105.5%;
-	margin-bottom: 18px;
 }
 
 .nav__topic {
@@ -20,14 +22,16 @@
 }
 
 .nav__topic-title {
-	font-size: 18px;
 	margin-bottom: 12px;
+
+	font-size: 18px;
 }
 
 @media (min-width: 1220px) {
 	.nav__topic-title {
-		font-size: 30px;
 		margin-bottom: 12px;
+
+		font-size: 30px;
 	}
 }
 
@@ -43,9 +47,10 @@
 
 @media (min-width: 1220px) {
 	.nav__title {
-		font-size: 42px;
 		max-width: 720px;
 		margin-bottom: 32px;
+
+		font-size: 42px;
 	}
 
 	.nav__topic {

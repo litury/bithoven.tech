@@ -11,17 +11,21 @@
 	}
 }
 
+
+
 .slider {
+	position: relative;
+
 	max-width: 1500px;
 	width: 100%;
-	position: relative;
 	margin: 0 auto;
 }
 
 .swiper {
+	position: relative;
+
 	max-width: 1280px;
 	min-height: 290px;
-	position: relative;
 }
 
 .slide__card-img {
@@ -38,6 +42,7 @@
 
 .slider__main-card-title {
 	position: absolute;
+
 	bottom: 65px;
 	left: 24px;
 }
@@ -45,8 +50,9 @@
 @media (min-width: 1220px) {
 	.slider__main-card-title {
 		position: absolute;
-		top: 92px;
-		left: 60%;
+		top: 85px;
+		left: 56%;
+
 		max-width: 367px;
 	}
 }
@@ -54,8 +60,9 @@
 @media (min-width: 1220px) {
 	.slider__card-info {
 		position: absolute;
-		top: 30px;
-		left: 60%;
+
+		top: 22px;
+		left: 56%;
 	}
 }
 
@@ -84,8 +91,8 @@
 
 	.slider__card-tag-wrapper {
 		position: absolute;
-		top: 84%;
-		left: 61%;
+
+		top: 80%;
+		left: 56%;
 	}
 }
-
