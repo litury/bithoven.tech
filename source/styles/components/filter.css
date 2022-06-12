@@ -30,7 +30,6 @@
 	border-radius: 50%;
 }
 
-
 .tag__box_level_advanced {
 	padding-left: 25px;
 	--bg-color: rgba(177, 142, 27, 1);
@@ -87,6 +86,7 @@
 .tag__input:checked+.tag__box {
 	background-color: #FFFFFF;
 	content: '✓';
+	transition: background-color .2s ease
 }
 
 .tag__input:checked+.tag__box_level_beginner {
@@ -111,7 +111,6 @@
 	height: 1em;
 	right: 9px;
 }
-
 
 .radio__box {
 	--border-color: transparent;
@@ -145,10 +144,6 @@
 	border: none;
 }
 
-
-
-
-
 .filter-range {
 	display: flex;
 	justify-content: space-between;
@@ -157,18 +152,21 @@
 	margin: 0 auto;
 }
 
-
 .noUi-horizontal {
 	width: 100%;
 }
 
-.stars {
-	display: flex;
-}
-
-
 .filter__all-desktop {
 	display: none;
+}
+
+@media (min-width: 768px) {
+	.filter__all-desktop {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		row-gap: 20px;
+	}
 }
 
 .filter {
@@ -183,12 +181,6 @@
 
 .filter__top {
 	margin-bottom: 52px;
-}
-
-.filter__button {
-	padding: 12px 22px;
-	margin-right: 5px;
-
 }
 
 .filter__all {
@@ -257,6 +249,10 @@
 .noUi-handle {
 	border: none;
 	box-shadow: none;
+}
+
+.noUi-handle:hover {
+	cursor: pointer;
 }
 
 .noUi-horizontal .noUi-handle {
@@ -456,9 +452,6 @@
 	right: -3px;
 }
 
-.filter__bottom-deck {
-	display: block;
-}
 
 .filter__bottom {
 	padding: 20px 16px;
@@ -520,10 +513,6 @@
 		padding-left: 20px;
 	}
 
-	.filter__button-sort {
-		display: inline-flex;
-	}
-
 	.filter__button-hide {
 		position: relative;
 	}
@@ -553,7 +542,7 @@
 
 	.filter__menu-span {
 		margin-right: 25px;
-		height: 23px;
+
 	}
 
 	.filter__bottom-button {
@@ -561,12 +550,6 @@
 		color: rgba(166, 167, 176, 1);
 	}
 
-	.filter__all-desktop {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 8px;
-		row-gap: 20px;
-	}
 
 	.filter__inner {
 		display: flex;
@@ -600,4 +583,12 @@
 	.filter__box {
 		--space-y: 40px;
 	}
+}
+
+.filter__button {
+	--icon-color: #8f93a4;
+}
+
+.filter__button_state_active {
+	--icon-color: #ffffff;
 }

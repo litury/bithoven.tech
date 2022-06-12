@@ -195,24 +195,33 @@
 	<div class="filter__bottom">
 		<div class="filter__bottom-inner container">
 			<div class="filter__button-wrap">
-				<button class="button_form_none filter__bottom-deck filter__bottom-button filter__button-sort" type="button">
-					<span class="filter__menu-span filter__button-none ">
-						Сортировка
+				<span class="filter__menu-span filter__button-none">
+					Сортировка
+				</span>
+
+				<button class="button_form_none filter__button" type="button">
+					<span class="visually-hidden">
+						Сортировка плиткой
 					</span>
-					<svg class="header__svg" width="22" height="22" aria-hidden="true" focusable="false">
+					<svg class="filter__svg" width="22" height="22" aria-hidden="true" focusable="false">
 						<use href="assets/images/svg/sprite.svg#deck"></use>
 					</svg>
 				</button>
-				<button class="button_form_none filter__button-menu" type="button">
-					<svg class="header__svg" width="19" height="18" aria-hidden="true" focusable="false">
+
+				<button class="button_form_none filter__button" type="button">
+					<span class="visually-hidden">
+						Сортировка строкой
+					</span>
+					<svg class="filter__svg" width="19" height="18" aria-hidden="true" focusable="false">
 						<use href="assets/images/svg/sprite.svg#menuFilter"></use>
 					</svg>
 				</button>
 			</div>
-			<button class="button_form_none filter__bottom-button" type="button">
+
+			<button class="button_form_none filter__bottom-button" type="submit">
 				Применить
 			</button>
-			<button class="button_form_none filter__button-clear filter__bottom-button" type="button">
+			<button class="button_form_none filter__button-clear filter__bottom-button" type="reset">
 				Очистить
 			</button>
 			<button class="button_form_none filter__bottom-button filter__button-none filter__button-hide" type="button">
@@ -658,9 +667,15 @@
 
 				<div class="main-card popular__grid-item3">
 					<div class="main-card__info">
+
+
+
 						<p class="text text_size_small main-card__time">
 							4 минуты
 						</p>
+
+
+
 						<a class="link link_level_advanced" href="#">
 							Продвинутый
 						</a>
@@ -1174,8 +1189,7 @@
 	</footer>
 	<script src="https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.js"></script>
 	<script src="assets/scripts/range.js"></script>
-	<!-- <script src="assets/scripts/main.js"></script>
-	<script src="assets/scripts/index.js"></script> -->
+<script src="assets/scripts/filter.js"></script>
 </body>
 
 </html>
