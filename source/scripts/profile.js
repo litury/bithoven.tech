@@ -5,7 +5,7 @@
 	const profileEdit = profile.querySelector(".profile__edit");
 	const profileNickname = profile.querySelector(".profile__nickname");
 	const profileInput = profile.querySelector(".profile__input");
-	const profileBlock = document.querySelector(".profile__block");
+	const profileBlock = document.querySelector(".profile");
 
 	const editNickname = () => {
 		if (!profileNickname.hidden) {

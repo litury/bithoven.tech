@@ -7,16 +7,36 @@
 		<link rel="stylesheet" href="assets/styles/index.css">
 	</head>
 	<body class="page__body">
-		<div class="profile container">
-			<div class="profile__background"></div>
+		<form
+			class="profile container"
+			method=""
+			action=""
+		>
+			<div class="profile__background" aria-hidden="true"></div>
 			<figure class="profile__avatar">
-				<img
-					class="profile__avatar-image"
-					src="https://picsum.photos/140/140"
-					width="80"
-					height="80"
-					alt="Имя пользователя"
-				>
+				<div class="profile__avatar-container">
+					<label
+						class="profile__avatar-file-text"
+						for="user-image"
+					>
+						Загрузить <br>
+						фото
+					</label>
+					<input
+						class="visually-hidden"
+						id="user-image"
+						type="file"
+					>
+					<!--
+					Показываем, когда пользователь загрузил фото
+					<img
+						class="profile__avatar-image"
+						src="https://picsum.photos/140/140"
+						width="80"
+						height="80"
+						alt="Имя пользователя"
+					> -->
+				</div>
 				<figcaption class="profile__avatar-info">
 					<div class="profile__avatar-info-wrapper">
 						<button
@@ -77,11 +97,7 @@
 							</button>
 						</div>
 					</div>
-					<form
-						class="profile__block"
-						action=""
-						method=""
-					>
+					<div class="profile__block">
 						<a
 							class="profile__nickname"
 							href="#"
@@ -112,13 +128,15 @@
 								Редактировать никнейм
 							</span>
 						</button>
-					</form>
+					</div>
 					<p class="profile__wallet">
 						xF....57C5
 					</p>
 				</figcaption>
 			</figure>
+
 			<div class="profile__wrapper">
+
 				<div class="profile__text">
 					<p class="profile__paragraph paragraph">
 						Позравляем со вступелние в наши ряды!
@@ -127,6 +145,7 @@
 						Здесь пока пусто,мы работаем над наполнением. А пока предлогаем почитать наш <a class="profile__link" href="#">глоссарий</a> и <a class="profile__link" href="#">статьи</a> :)
 					</p>
 				</div>
+
 				<ul class="profile__navigation reset-list">
 					<li class="profile__navigation-item">
 						<a class="button" href="#">Глоссарий</a>
@@ -139,7 +158,8 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+
+		</form>
 		<script src="assets/scripts/profile.js"></script>
 	</body>
 </html>
