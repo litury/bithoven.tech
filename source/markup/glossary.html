@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -54,17 +54,18 @@
 					</button>
 					<ul class="glossary__filter glossary__filter_state_hidden reset-list">
 						<li class="glosary__filter-item">
-							<a class="glossary__filter-link glossary__filter-link_state_active" href="#">
+							<a
+								class="glossary__filter-link glossary__filter-link_state_active"
+								href="#all"
+							>
 								#
 							</a>
 						</li>
 						<li class="glosary__filter-item">
-							<a class="glossary__filter-link" href="#">
-								a
-							</a>
-						</li>
-						<li class="glosary__filter-item">
-							<a class="glossary__filter-link" href="#">
+							<a
+								class="glossary__filter-link"
+								href="#letter-b"
+							>
 								b
 							</a>
 						</li>
@@ -73,11 +74,12 @@
 			</div>
 
 			<!-- category -->
-			<div class="glossary__category">
+			<div
+				class="glossary__category"
+				id="all"
+			>
 				<div class="glossary__category-wrapper container">
-					<a class="glossary__category-letter" href="#">
-						#
-					</a>
+					<span class="glossary__category-letter glossary__category-letter_state_active">#</span>
 
 					<!-- accordion -->
 					<div class="glossary__accordion accordion">
@@ -123,11 +125,12 @@
 			<!-- /category -->
 
 			<!-- category -->
-			<div class="glossary__category">
+			<div
+				class="glossary__category"
+				id="letter-b"
+			>
 				<div class="glossary__category-wrapper container">
-					<a class="glossary__category-letter" href="#">
-						b
-					</a>
+					<span class="glossary__category-letter">b</span>
 
 					<!-- accordion -->
 					<div class="glossary__accordion accordion">

@@ -190,6 +190,7 @@
 	text-transform: uppercase;
 }
 
+.glossary__filter-link:hover,
 .glossary__filter-link_state_active {
 	--text-color: #ffffff;
 }
@@ -249,7 +250,7 @@
 	}
 }
 
-.glossary__category-letter:hover {
+.glossary__category-letter_state_active {
 	--text-color: #ffffff;
 }
 
