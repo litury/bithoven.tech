@@ -50,8 +50,7 @@
 		grid-gap: 30px;
 	}
 
-
-	.last__grid:nth-child(5n+4) {
+	.last__grid-item:nth-child(5n+4) {
 		grid-column: span 2;
 	}
 
