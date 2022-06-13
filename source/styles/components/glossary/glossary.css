@@ -45,6 +45,10 @@
 .glossary__search {
 	--space-y: 15px;
 
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
 	padding-top: var(--space-y);
 	padding-bottom: var(--space-y);
 
@@ -237,9 +241,10 @@
 @media (min-width: 768px) { /* tablet */
 	.glossary__category-letter {
 		--text-size: 63px;
+		--gap: 20px;
 
 		position: sticky;
-		top: 20px;
+		top: calc(var(--search-height) + var(--gap));
 		left: 0;
 	}
 }

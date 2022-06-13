@@ -2,8 +2,23 @@
 	"use strict";
 
 	const glossary = document.querySelector(".glossary");
+	const glossarySearch = glossary.querySelector(".glossary__search");
+	const glossaryLetters = glossary.querySelectorAll(".glossary__category-letter");
 	const glossarySearchButton = glossary.querySelector(".glossary__search-button");
 	const glossaryFilter = glossary.querySelector(".glossary__filter");
+
+	const setLetterSpace = (letter) => {
+		letter.style.setProperty(
+				"--search-height",
+				`${glossarySearch.offsetHeight}px`
+			);
+	};
+
+	glossaryLetters.forEach(letter => setLetterSpace(letter));
+	window.addEventListener("resize", () => {
+		glossaryLetters.forEach(letter => setLetterSpace(letter));
+	});
+
 
 	const toggleFilter = (event) => {
 		const currentButton = event.currentTarget;
