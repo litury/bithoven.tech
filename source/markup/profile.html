@@ -39,10 +39,11 @@
 				</div>
 				<figcaption class="profile__avatar-info">
 					<div class="profile__avatar-info-wrapper">
-						<button
-							class="profile__avatar-status"
-							type="button"
-						>
+						<span class="profile__avatar-status">
+							<!--
+								0. Admin => #admin
+								1. User => #user
+							-->
 							<svg
 								class="profile__avatar-icon"
 								width="12"
@@ -58,44 +59,7 @@
 							>
 								vip
 							</abbr>
-						</button>
-						<div class="profile__avatar-info-block">
-							<button
-								class="profile__avatar-status"
-								type="button"
-							>
-								<svg
-									class="profile__avatar-icon"
-									width="10"
-									height="12"
-									aria-hidden="true"
-									focusable="false"
-								>
-									<use href="assets/images/svg/sprite.svg#admin"></use>
-								</svg>
-								<span class="profile__avatar-text">
-									Admin
-								</span>
-							</button>
-							
-							<button
-								class="profile__avatar-status"
-								type="button"
-							>
-								<svg
-									class="profile__avatar-icon"
-									width="8"
-									height="8"
-									aria-hidden="true"
-									focusable="false"
-								>
-									<use href="assets/images/svg/sprite.svg#user"></use>
-								</svg>
-								<span class="profile__avatar-text">
-									User
-								</span>
-							</button>
-						</div>
+						</span>
 					</div>
 					<div class="profile__block">
 						<a
