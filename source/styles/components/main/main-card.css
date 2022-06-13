@@ -9,6 +9,7 @@
 	background: linear-gradient(102.23deg, #4D506C 33.72%, #212339 100.64%);
 	border-radius: 20px;
 	width: 100%;
+	position: relative;
 }
 
 @media (min-width: 1220px) {
