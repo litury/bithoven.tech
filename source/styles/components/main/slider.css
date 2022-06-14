@@ -19,6 +19,7 @@
 	max-width: 1500px;
 	width: 100%;
 	margin: 0 auto;
+	padding-left: 15px;
 }
 
 .swiper {
@@ -66,6 +67,14 @@
 	}
 }
 
+	.slider__card-tag-wrapper {
+		position: absolute;
+
+		top:30px;
+		left: 30px;
+	}
+
+
 @media (min-width: 1220px) {
 	.swiper-button {
 		width: 55px;
@@ -90,9 +99,8 @@
 	}
 
 	.slider__card-tag-wrapper {
-		position: absolute;
-
 		top: 80%;
 		left: 56%;
 	}
 }
+

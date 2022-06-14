@@ -161,7 +161,7 @@
 		justify-content: space-between;
 		background-position: top left;
 		background: linear-gradient(142deg, #4D506C -0.01%, #212339 104%), rgba(98, 100, 123, 0.2);
-		background: url('../images/main/subs/mail-desktop.png') no-repeat, linear-gradient(162deg, #4D506C 15%, #212339 109%), linear-gradient(99deg, #495D85 -64%, #162A54 91%);
+		background: url('../images/main/subs/mail-desktop.png') no-repeat , linear-gradient(162deg, #4D506C 15%, #212339 109%), linear-gradient(99deg, #495D85 -64%, #162A54 91%);
 	}
 
 	.subs__title {

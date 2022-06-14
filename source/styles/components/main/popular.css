@@ -63,11 +63,6 @@
 	background-image: url('../images/main/popular/btc.png');
 }
 
-.popular__card-tag-wrapper {
-	top: unset;
-	bottom: 124px;
-	left: 26px;
-}
 
 @media (min-width: 1220px) {
 	.popular__card-tag-wrapper {
@@ -86,13 +81,15 @@
 	}
 
 	.popular__content {
-		display: flex;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr) 410px;
 		grid-template-rows: repeat(2, 320px) 218px;
 		grid-gap: 30px;
 	}
 
+	.popular__grid-item {
+		gap: 30px;
+	}
 
 	.popular__grid-item:nth-child(5n+1) {
 		grid-column: span 2;
@@ -110,36 +107,6 @@
 		grid-column: span 2;
 	}
 
-
-
-
-
-
-	.popular__grid-item1 {
-
-		justify-content: space-between;
-	}
-
-	.popular__grid-item2 {
-
-		gap: 30px;
-	}
-
-	.popular__grid-item3 {
-
-		gap: 20px;
-	}
-
-	.popular__grid-item4 {
-
-		justify-content: space-between;
-	}
-
-	.popular__grid-item5 {
-
-		flex-direction: row;
-		position: relative;
-	}
 
 	.popular__img--btc {
 		order: -1;
@@ -166,7 +133,6 @@
 		left: 50%;
 	}
 
-
 	.popular__img--binance {
 		min-height: 268px;
 		border-radius: 20px;
@@ -186,5 +152,4 @@
 		top: 30px;
 		left: 50%;
 	}
-
 }
