@@ -90,7 +90,7 @@
 	.quiz__info {
 		--padding: 60px 115px;
 
-		align-self: flex-end;
+		align-self: center;
 
 		text-align: center;
 	}
