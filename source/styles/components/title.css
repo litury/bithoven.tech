@@ -12,6 +12,16 @@
 	word-wrap: break-word;
 }
 
+.title_size_extra-small {
+	--text-size: 18px;
+}
+
+@media (min-width: 768px) {
+	.title_size_extra-small {
+		--text-size: 30px;
+	}
+}
+
 .title_size_small {
 	--text-size: 22px;
 }
