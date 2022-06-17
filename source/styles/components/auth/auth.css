@@ -20,6 +20,12 @@
 	padding: 50px 30px;
 	max-width: 411px;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+
 
 }
 
