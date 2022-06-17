@@ -90,8 +90,8 @@
 	).init();
 
 	// language switcher
-	const languageButton = document.querySelector(".c-mobile-header__button_type_language");
-	const languageBlock = document.querySelector(".c-mobile-info[data-mobile-info='language']");
+	// const languageButton = document.querySelector(".c-mobile-header__button_type_language");
+	// const languageBlock = document.querySelector(".c-mobile-info[data-mobile-info='language']");
 	const mobileInfoClose = document.querySelectorAll(".c-mobile-info__button");
 	const mobileInfoLayout = document.querySelectorAll(".c-mobile-info__layout");
 
@@ -132,12 +132,12 @@
 			block.classList.remove("c-mobile-info_state_active");
 	}));
 
-	new toggleElement(
-		languageButton,
-		languageBlock,
-		"c-mobile-info_state_active",
-		mobileInfoToggle
-	).init();
+	// new toggleElement(
+	// 	languageButton,
+	// 	languageBlock,
+	// 	"c-mobile-info_state_active",
+	// 	mobileInfoToggle
+	// ).init();
 
 	// info
 	new toggleElement(
