@@ -82,8 +82,7 @@
 
 	.popular__content {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr) 410px;
-		grid-template-rows: repeat(2, 320px) 218px;
+		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 30px;
 	}
 
