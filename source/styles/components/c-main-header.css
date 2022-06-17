@@ -161,23 +161,6 @@
 
 	.c-main-header__form {
 		position: relative;
-
-		padding-left: 15px;
-	}
-
-	.c-main-header__form::before {
-		content: "";
-
-		position: absolute;
-		top: 50%;
-		left: 0;
-
-		width: 1px;
-		height: 15px;
-
-		background-color: #9697a3;
-
-		transform: translateY(-50%);
 	}
 
 	.c-main-header__form-input {
