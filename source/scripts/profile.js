@@ -6,6 +6,7 @@
 	const profileNickname = profile.querySelector(".profile__nickname");
 	const profileInput = profile.querySelector(".profile__input");
 	const profileBlock = document.querySelector(".profile");
+	const profileFile = document.querySelector(".profile__avatar-container input");
 
 	const editNickname = () => {
 		if (!profileNickname.hidden) {
@@ -24,6 +25,14 @@
 		profileInput.hidden = true;
 	};
 
+	const submitForm = () => profile.submit();
+
 	profileEdit.addEventListener("click", editNickname);
 	profileBlock.addEventListener("submit", saveNickname);
+	profileFile.addEventListener("change", submitForm);
+	profileInput.addEventListener("keypress", (event) => {
+		if (event.key === "Enter") {
+			submitForm();
+		}
+	});
 })();
