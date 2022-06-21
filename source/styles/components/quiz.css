@@ -157,5 +157,10 @@
 
 .quiz__card-text {
 	word-break: break-word;
-	text-align: center;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.quiz__card-text {
+		text-align: center;
+	}
 }
