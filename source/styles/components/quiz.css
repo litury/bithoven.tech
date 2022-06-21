@@ -16,6 +16,10 @@
 	}
 }
 
+.quiz_type_card {
+	align-items: center;
+}
+
 .quiz__header {
 	--row-gap: 35px;
 
@@ -102,4 +106,56 @@
 
 .quiz__link:hover {
 	text-decoration: none;
+}
+
+.quiz__card {
+	--gap: 25px;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	align-items: center;
+	margin: 0;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.quiz__card {
+		--gap: 30px;
+	}
+}
+
+.quiz__card-image {
+	--image-height: 192px;
+
+	max-width: 350px;
+	width: 100%;
+	height: var(--image-height);
+
+	border-radius: 19px;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.quiz__card-image {
+		--image-height: 210px;
+	}
+}
+
+.quiz__card-info {
+	--gap: 18px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--gap);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.quiz__card-info {
+		--gap: 25px;
+	}
+}
+
+.quiz__card-text {
+	word-break: break-word;
+	text-align: center;
 }

@@ -93,3 +93,7 @@
 	left: var(--space);
 	z-index: 10
 }
+
+.page__quiz-card {
+  max-width: 676px;
+}
