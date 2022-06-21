@@ -16,8 +16,10 @@
 	}
 }
 
-.quiz_type_card {
-	align-items: center;
+@media (min-width: 768px) { /* tablet */
+	.quiz_type_card {
+		align-items: center;
+	}
 }
 
 .quiz__header {
@@ -114,13 +116,14 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap);
-	align-items: center;
 	margin: 0;
 }
 
 @media (min-width: 768px) { /* tablet */
 	.quiz__card {
 		--gap: 30px;
+
+		align-items: center;
 	}
 }
 
@@ -142,25 +145,30 @@
 
 .quiz__card-info {
 	--gap: 18px;
+	--direction: start;
 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: var(--direction);
 	gap: var(--gap);
 }
 
 @media (min-width: 768px) { /* tablet */
 	.quiz__card-info {
 		--gap: 25px;
+		--direction: center;
 	}
 }
 
 .quiz__card-text {
+	--text-align: left;
+
 	word-break: break-word;
+	text-align: var(--text-align);
 }
 
 @media (min-width: 768px) { /* tablet */
 	.quiz__card-text {
-		text-align: center;
+		--text-align: center;
 	}
 }
