@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Викторины | Каталог</title>
+		<link rel="stylesheet" href="assets/styles/index.css">
+	</head>
+	<body class="page__body">
+		<!-- quiz -->
+		<div class="page__quiz-card quiz quiz_type_single container">
+			<header class="quiz__header">
+				<a
+					class="back"
+					href="/"
+				>
+					<svg
+						class="back__icon"
+						width="7"
+						height="10"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="assets/images/svg/sprite.svg#arrow-left"></use>
+					</svg>
+					<span class="visually-hidden">
+						Вернуться на главную страницу
+					</span>
+				</a>
+				<nav
+					class="breadcrumb"
+					aria-label="Хлебные крошки"
+				>
+					<ol class="breadcrumb__list reset-list">
+						<li class="breadcrumb__item">
+							<a
+								class="breadcrumb__link"
+								href="/"
+							>
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumb__item">
+							<a
+								class="breadcrumb__link"
+								href="quiz-catalog.html"
+							>
+								Викторины
+							</a>
+						</li>
+						<li class="breadcrumb__item">
+							<span
+								class="breadcrumb__link"
+								aria-current="page"
+							>
+								Стартовый тест
+							</span>
+						</li>
+					</ol>
+				</nav>
+			</header>
+			<div class="quiz__progress">
+				<span class="quiz__progress-text quiz__progress-full">
+					Твой прогресс
+				</span>
+				<span class="quiz__progress-status">
+					0% пройденно
+				</span>
+				<span class="quiz__progress-text quiz__progress-text_type_time">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+						<path d="M7.5 0C11.64 0 15 3.36 15 7.5C15 11.64 11.64 15 7.5 15C3.36 15 0 11.64 0 7.5C0 3.36 3.36 0 7.5 0ZM10.152 3.7875L6.4395 7.5L7.5 8.5605L11.2125 4.848L10.152 3.7875Z" fill="#A6A7B0"/>
+					</svg>
+					0 мин
+				</span>
+				<div class="quiz__progress-bar quiz__progress-full">
+					<span class="quiz__progress-bar-step quiz__progress-bar-step_state_active"></span>
+					<span class="quiz__progress-bar-step"></span>
+					<span class="quiz__progress-bar-step"></span>
+				</div>
+			</div>
+			<h1 class="title">
+				Обновите сейчас же!
+			</h1>
+			<p class="quiz__paragraph">
+				Как удобно, Служба поддержки клиентов Binance отправила вам обновление для системы безопасности через Telegram.
+			</p>
+			<img
+				class="quiz__image"
+				src="http://placehold.jp/150x192.png"
+				alt="Альтернативный текст"
+			>
+			<div class="quiz__buttons">
+				<button
+					class="button button_state_save"
+					type="button"
+				>
+					Верно
+				</button>
+				<button
+					class="button button_state_cancel"
+					type="button"
+				>
+					Неверно
+				</button>
+			</div>
+			<div class="quiz__answer">
+				<!-- Когда ответ неверен, то quiz__answer-title добавляем класс quiz__answer-title_state_error -->
+				<p class="quiz__answer-title">
+					Правильно
+				</p>
+				<p class="quiz__answer-paragraph">
+					Домен не является https://www.binance.com . Буква "b" на самом деле является буквой "ƅ". Это известно как фишинг punycode, и его может быть очень трудно обнаружить
+				</p>
+			</div>
+		</div>
+		<!-- /quiz -->
+	</body>
+</html>
