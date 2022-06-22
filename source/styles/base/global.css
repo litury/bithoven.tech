@@ -97,3 +97,7 @@
 .page__quiz-card {
   max-width: 676px;
 }
+
+.page__quiz-card_state_hidden {
+  display: none !important;
+}

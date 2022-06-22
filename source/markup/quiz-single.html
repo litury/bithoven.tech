@@ -8,7 +8,7 @@
 	</head>
 	<body class="page__body">
 		<!-- quiz -->
-		<div class="page__quiz-card quiz quiz_type_single container">
+		<div class="page__quiz-card page__quiz-card_type_primary quiz quiz_type_single container">
 			<header class="quiz__header">
 				<a
 					class="back"
@@ -64,7 +64,7 @@
 					Твой прогресс
 				</span>
 				<span class="quiz__progress-status">
-					0% пройденно
+					<span class="quiz__progress-status-value">0%</span> пройденно
 				</span>
 				<span class="quiz__progress-text quiz__progress-text_type_time">
 					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -72,47 +72,115 @@
 					</svg>
 					0 мин
 				</span>
-				<div class="quiz__progress-bar quiz__progress-full">
-					<span class="quiz__progress-bar-step quiz__progress-bar-step_state_active"></span>
-					<span class="quiz__progress-bar-step"></span>
-					<span class="quiz__progress-bar-step"></span>
-				</div>
+				<div class="quiz__progress-bar quiz__progress-full"></div>
 			</div>
-			<h1 class="title">
-				Обновите сейчас же!
-			</h1>
-			<p class="quiz__paragraph">
-				Как удобно, Служба поддержки клиентов Binance отправила вам обновление для системы безопасности через Telegram.
-			</p>
-			<img
-				class="quiz__image"
-				src="http://placehold.jp/150x192.png"
-				alt="Альтернативный текст"
+
+			<!-- block -->
+			<div
+				class="quiz__block"
+				data-quiz-answer="no"
+				data-quiz-current
 			>
+				<h1 class="title">
+					Обновите сейчас же!
+				</h1>
+				<p class="quiz__paragraph">
+					Как удобно, Служба поддержки клиентов Binance отправила вам обновление для системы безопасности через Telegram.
+				</p>
+				<img
+					class="quiz__image"
+					src="http://placehold.jp/150x192.png"
+					alt="Альтернативный текст"
+				>
+			</div>
+			<!-- /block -->
+
+			<!-- block -->
+			<div
+				class="quiz__block quiz__block_state_hidden"
+				data-quiz-answer="no"
+			>
+				<h1 class="title">
+					Обновите сейчас же 2!
+				</h1>
+				<p class="quiz__paragraph">
+					Как удобно, Служба поддержки клиентов Binance отправила вам обновление для системы безопасности через Telegram.
+				</p>
+				<img
+					class="quiz__image"
+					src="http://placehold.jp/150x192.png"
+					alt="Альтернативный текст"
+				>
+			</div>
+			<!-- /block -->
+
+			<!-- block -->
+			<div
+				class="quiz__block quiz__block_state_hidden"
+				data-quiz-answer="yes"
+			>
+				<h1 class="title">
+					Обновите сейчас же 3!
+				</h1>
+				<p class="quiz__paragraph">
+					Как удобно, Служба поддержки клиентов Binance отправила вам обновление для системы безопасности через Telegram.
+				</p>
+				<img
+					class="quiz__image"
+					src="http://placehold.jp/150x192.png"
+					alt="Альтернативный текст"
+				>
+			</div>
+			<!-- /block -->
+
+						<!-- block -->
+			<div
+				class="quiz__block quiz__block_state_hidden"
+				data-quiz-answer="yes"
+			>
+				<h1 class="title">
+					Обновите сейчас же 4!
+				</h1>
+				<p class="quiz__paragraph">
+					Как удобно, Служба поддержки клиентов Binance отправила вам обновление для системы безопасности через Telegram.
+				</p>
+				<img
+					class="quiz__image"
+					src="http://placehold.jp/150x192.png"
+					alt="Альтернативный текст"
+				>
+			</div>
+			<!-- /block -->
+
 			<div class="quiz__buttons">
 				<button
-					class="button button_state_save"
+					class="quiz__next quiz__next_state_hidden button"
+				>
+					Дальше
+				</button>
+				<button
+					class="quiz__main-button button button_state_save"
+					data-quiz-answer="yes"
 					type="button"
 				>
 					Верно
 				</button>
 				<button
-					class="button button_state_cancel"
+					class="quiz__main-button button button_state_cancel"
+					data-quiz-answer="no"
 					type="button"
 				>
 					Неверно
 				</button>
 			</div>
-			<div class="quiz__answer">
-				<!-- Когда ответ неверен, то quiz__answer-title добавляем класс quiz__answer-title_state_error -->
-				<p class="quiz__answer-title">
-					Правильно
-				</p>
+			<div class="quiz__answer quiz__answer_state_hidden">
+				<p class="quiz__answer-title"></p>
 				<p class="quiz__answer-paragraph">
 					Домен не является https://www.binance.com . Буква "b" на самом деле является буквой "ƅ". Это известно как фишинг punycode, и его может быть очень трудно обнаружить
 				</p>
 			</div>
 		</div>
 		<!-- /quiz -->
+		<script src="assets/scripts/quiz.js"></script>
 	</body>
 </html>

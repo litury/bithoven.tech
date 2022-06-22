@@ -186,6 +186,7 @@
 	height: var(--block-height);
 	margin-bottom: var(--space-y);
 	max-width: 581px;
+	width: 100%;
 
 	border-radius: 15px;
 }
@@ -239,6 +240,10 @@
 	}
 }
 
+.quiz__answer_state_hidden {
+	display: none;
+}
+
 .quiz__answer-title {
 	--space-y: 0;
 
@@ -270,7 +275,7 @@
 	transform: translateX(calc(-100% - var(--gap))) translateY(-50%);
 }
 
-.quiz__answer-title_state_error::before {
+.quiz__answer_state_error .quiz__answer-title::before {
 	--icon: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 20.5C4.477 20.5 0 16.023 0 10.5C0 4.977 4.477 0.5 10 0.5C15.523 0.5 20 4.977 20 10.5C20 16.023 15.523 20.5 10 20.5ZM10 9.086L7.172 6.257L5.757 7.672L8.586 10.5L5.757 13.328L7.172 14.743L10 11.914L12.828 14.743L14.243 13.328L11.414 10.5L14.243 7.672L12.828 6.257L10 9.086Z' fill='%23D92B4D'/%3E%3C/svg%3E%0A");
 }
 
@@ -467,25 +472,25 @@
 .quiz__result-circle {
 	--size: 200px;
 
-  position: relative;
-  width: var(--size);
-  height: var(--size);
-  transform: rotate(-90deg);
+	position: relative;
+	width: var(--size);
+	height: var(--size);
+	transform: rotate(-90deg);
 }
 
 .quiz__result-circle circle {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: #31344C;
-  stroke-width: 10;
-  stroke-linecap: round;
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: #31344C;
+	stroke-width: 10;
+	stroke-linecap: round;
 }
 
 .quiz__result-circle  circle:last-of-type {
-  stroke-dasharray: 480px;
-  stroke-dashoffset: calc(480px - (480px * var(--percent)) / 100);
-  stroke: #F9E312; 
+	stroke-dasharray: 480px;
+	stroke-dashoffset: calc(480px - (480px * var(--percent)) / 100);
+	stroke: #F9E312; 
 }
 
 .quiz__result-block {
@@ -498,4 +503,28 @@
 	left: 50%;
 	
 	transform: translate(-59%, -53%);
+}
+
+.quiz__main-button_state_hidden {
+	display: none;
+}
+
+.quiz__block_state_hidden {
+	display: none;
+}
+
+.quiz__next_state_hidden {
+	display: none;
+
+	background-color: var(--background);
+}
+
+.quiz__next {
+	padding: 11px 34px;
+
+	font-weight: 700;
+	color: white;
+
+	background-color: var(--background);
+	border-radius: 5px;
 }
