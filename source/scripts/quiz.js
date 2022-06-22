@@ -28,6 +28,7 @@
 
 		if (currentButtonValue === currentQuizBlock) {
 			quizAnswer.classList.remove("quiz__answer_state_hidden");
+			quizAnswer.classList.remove("quiz__answer_state_error");
 			quizAnswerTitle.textContent = "Правильно";
 			quizButtons.forEach(button => button.classList.add("quiz__main-button_state_hidden"));
 			quizNext.classList.remove("quiz__next_state_hidden");
