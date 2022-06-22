@@ -445,6 +445,10 @@
 	background-color: transparent;
 }
 
+.quiz__result-reply:hover {
+	cursor: pointer;
+}
+
 @media (min-width: 768px) { /* tablet */
 	.quiz__result-reply {
 		justify-self: end;
@@ -527,4 +531,41 @@
 
 	background-color: var(--background);
 	border-radius: 5px;
+}
+
+.quiz__success {
+	--coordinates: 10px;
+
+	position: fixed;
+	opacity: 0;
+	right: var(--coordinates);
+	bottom: var(--coordinates);
+
+	padding: 10px;
+
+	background-color: #212339;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+	.quiz__success {
+		--coordinates: 25px;
+	}
+}
+
+.quiz__success_state_active {
+	animation-name: fadeInUp;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
