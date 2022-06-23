@@ -46,7 +46,6 @@
 	.last__content-top {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 540px 320px;
 		grid-gap: 30px;
 	}
 
