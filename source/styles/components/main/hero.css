@@ -1,14 +1,8 @@
 .hero {
-	position: relative;
-
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: 26px;
-	justify-content: center;
-	min-height: 100vh;
-
-	text-align: center;
+	background-image: url('../images/main/hero/bg-desk.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
 }
 
 .hero__container {
