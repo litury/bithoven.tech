@@ -83,7 +83,7 @@
 
 			const quizPercent = (JSON.parse(localStorage.getItem("correct-answer")) /  JSON.parse(localStorage.getItem("steps"))) * 100;
 
-			document.querySelector(".quiz__result-status").textContent = `${quizPercent}%`;
+			document.querySelector(".quiz__result-status").textContent = `${Math.round(quizPercent)}%`;
 			document.querySelector(".quiz__result-circle-path").style.setProperty("--percent", quizPercent);
 
 			return;
