@@ -498,8 +498,8 @@
 }
 
 .quiz__result-circle  circle:last-of-type {
-  --size: 160px;
-  --length-circle: calc(var(--size) * 3.14);
+	--size: 160px;
+	--length-circle: calc(var(--size) * 3.14);
 
 	stroke-dasharray: var(--length-circle);
 	stroke-dashoffset: calc(var(--length-circle) - (var(--length-circle) * var(--percent)) / 100);
