@@ -42,9 +42,10 @@
 }
 
 .external-list__text {
+	color: rgba(33, 41, 67, 1);
 	text-decoration: none;
-	color: inherit;
-	font-weight: bold;
+	font-family: 'FuturaPT';
+	font-weight: 500;
 }
 
 .external-list__text::before {
@@ -63,6 +64,10 @@
 
 	margin-top: var(--space-y);
 	margin-bottom: var(--space-y);
+
+	font-family: 'FuturaPT';
+	font-weight: 400;
+	color: rgba(33, 41, 67, 1);
 
 	word-break: break-all;
 }
