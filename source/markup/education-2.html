@@ -148,19 +148,19 @@
 						<div class="filter__level-wrap">
 							<label class="tag">
 								<input class="visually-hidden tag__input tag__input_level_beginner" type="checkbox" name="level"
-									value="indigo">
+									value="start">
 								<span class="tag__box tag__box_level_beginner">Новичек</span>
 							</label>
 
 							<label class="tag">
 								<input class="visually-hidden tag__input tag__input_level_advanced" type="checkbox" name="level"
-									value="indigo">
+									value="middle">
 								<span class="tag__box tag__box_level_advanced">Продвинутый</span>
 							</label>
 
 							<label class="tag">
 								<input class="visually-hidden tag__input tag__input_level_professional" type="checkbox" name="level"
-									value="indigo">
+									value="pro">
 								<span class="tag__box tag__box_level_professional">Профессионал</span>
 							</label>
 						</div>
@@ -173,6 +173,8 @@
 						<div class="filter__time">
 							<div class="filter-range">
 								<div id="nonlinear" class="noUi-target noUi-ltr noUi-horizontal"></div>
+                <input name="time_start" type="hidden">
+                <input name="time_end" type="hidden">
 								<div class="filter__clock">
 									<span class="filter__clock_range_min"> 1m </span>
 									<span class="filter__clock_range_2m"> 3m </span>
@@ -200,7 +202,7 @@
 					Сортировка
 				</span>
 
-				<button class="button_form_none filter__button" type="button">
+				<button class="button_form_none filter__button filter__button_state_active" type="button">
 					<span class="visually-hidden">
 						Сортировка плиткой
 					</span>

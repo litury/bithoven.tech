@@ -6,6 +6,28 @@
 	const filterButtonHide = document.querySelector(".filter__button-hide");
 	const filterTopInner = document.querySelector(".filter__top-inner");
 	const filterLevelInner = document.querySelector(".filter__level-inner");
+	const tags = document.querySelectorAll(".tag__input");
+	const levels = document.querySelectorAll(".filter__level-wrap .tag__input");
+
+	const params = new URLSearchParams(window.location.search);
+
+	const checkGETParams = (elements, getValue) => {
+		for (const param of params) {
+			const paramKey = param[0];
+			const paramValue = param[param.length - 1];
+
+			if (paramKey === getValue) {
+				elements.forEach(element => {
+					if (element.value === paramValue) {
+						element.checked = true;
+					}
+				})
+			}
+		}
+	};
+
+	checkGETParams(tags, "tag");
+	checkGETParams(levels, "level");
 
 	filterButtonHide.addEventListener("click", () => {
 		filterButtonHide.classList.toggle("filter__button-hide_state_active");
@@ -13,8 +35,9 @@
 		filterLevelInner.hidden = !filterLevelInner.hidden;
 	});
 
-	filterSortButtons.forEach(filterSortButtons => filterSortButtons.addEventListener("click", () => {
-		filterSortButtons.classList.toggle("filter__button_state_active");
+	filterSortButtons.forEach(button => button.addEventListener("click", () => {
+		filterSortButtons.forEach(button => button.classList.remove("filter__button_state_active"));
+		button.classList.add("filter__button_state_active");
 	}));
 
 	if (localStorage.getItem("tags")) {

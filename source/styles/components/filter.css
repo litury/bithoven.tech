@@ -600,6 +600,10 @@
 	--icon-color: #8f93a4;
 }
 
+.filter__button:hover {
+  cursor: pointer;
+}
+
 .filter__button_state_active {
 	--icon-color: #ffffff;
 }
