@@ -232,6 +232,12 @@
 	border-bottom: 1px solid #31344C;
 }
 
+@media (min-width: 768px) { /* tablet */
+	.glossary__category:target{
+		scroll-margin-top: var(--glossary-search-height);
+	}
+}
+
 .glossary__category-wrapper {
 	--columns: 1fr;
 	--gap: 20px;

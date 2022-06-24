@@ -9,6 +9,18 @@
 	const glossaryFilterLinks = glossaryFilter.querySelectorAll(".glossary__filter-link");
 	const GLOSARY_FILTER_ACTIVE_CLASS_NAME = "glossary__filter-link_state_active";
 
+	glossary.style.setProperty(
+		"--glossary-search-height",
+		`${glossarySearch.offsetHeight}px`
+	);
+
+	window.addEventListener("resize", () => {
+		glossary.style.setProperty(
+			"--glossary-search-height",
+			`${glossarySearch.offsetHeight}px`
+		);
+	});
+
 	window.addEventListener('load', () => {
 		const categories = document.querySelectorAll(".glossary__category");
 		
