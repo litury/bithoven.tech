@@ -8,6 +8,8 @@
 	color: var(--text-color);
 	border-radius: 50px;
 	position: relative;
+
+	opacity: 0.6;
 }
 
 .tag__box_level_beginner {
@@ -86,7 +88,8 @@
 .tag__input:checked+.tag__box {
 	background-color: #FFFFFF;
 	content: '✓';
-	transition: background-color .2s ease
+	transition: background-color 0.2s ease;
+	opacity: 1;
 }
 
 .tag__input:checked+.tag__box_level_beginner {
@@ -481,6 +484,7 @@
 .filter__button-wrap {
 	display: inline-flex;
 	gap: 15px;
+	margin-right: 69px;
 }
 
 .filter__button-clear {
@@ -504,7 +508,6 @@
 .filter__bottom-inner {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
 }
 
 @media (min-width: 1200px) {
@@ -518,6 +521,7 @@
 
 	.filter__button-hide {
 		position: relative;
+		margin-left: auto;
 	}
 
 	.filter__button-hide:after {
@@ -555,6 +559,7 @@
 	.filter__bottom-button {
 		font-size: 18px;
 		color: rgba(166, 167, 176, 1);
+		margin-right: 44px;
 	}
 
 	.filter__bottom-button:hover {
