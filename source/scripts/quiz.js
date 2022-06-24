@@ -20,10 +20,6 @@
 		const quizStep = document.createElement("span");
 		quizStep.classList.add("quiz__progress-bar-step");
 
-		if (!index) {
-			quizStep.classList.add("quiz__progress-bar-step_state_active");
-		}
-
 		quizProgressBar.appendChild(quizStep);
 	});
 
@@ -59,11 +55,19 @@
 		const currentBlock = document.querySelector(".page__quiz-card_type_primary [data-quiz-current]");
 		const nextBlock = currentBlock.nextElementSibling;
 		const progressBar = document.querySelectorAll(".page__quiz-card_type_primary .quiz__progress-bar-step_state_active");
-		const lastProgressBar = progressBar[progressBar.length - 1];
-		const nextProgressBar = lastProgressBar.nextElementSibling;
+		let lastProgressBar = null;
+		let nextProgressBar = null;
+
+		if (progressBar.length) {
+			lastProgressBar = progressBar[progressBar.length - 1];
+			nextProgressBar = lastProgressBar.nextElementSibling;
+		} else {
+			lastProgressBar = document.querySelector(".page__quiz-card_type_primary .quiz__progress-bar-step");
+			nextProgressBar = lastProgressBar;
+		}
 
 		if (
-			document.querySelectorAll(".page__quiz-card_type_primary .quiz__progress-bar-step_state_active").length + 1 >
+			document.querySelectorAll(".page__quiz-card_type_primary .quiz__progress-bar-step_state_active").length + 1 ===
 			document.querySelectorAll(".page__quiz-card_type_primary .quiz__progress-bar-step").length
 		) {
 			quizBlock.classList.add("page__quiz-card_state_hidden");
@@ -92,7 +96,7 @@
 		nextProgressBar.classList.add("quiz__progress-bar-step_state_active");
 		const allProgressBar = document.querySelectorAll(".page__quiz-card_type_primary .quiz__progress-bar-step");
 		const progressPercent = document.querySelectorAll(".page__quiz-card_type_primary .quiz__progress-bar-step_state_active").length /  allProgressBar.length;
-		quizPercent.textContent = `${progressPercent * 100}%`;
+		quizPercent.textContent = `${Math.round(progressPercent * 100)}%`;
 
 		currentBlock.classList.add("quiz__block_state_hidden");
 		currentBlock.removeAttribute("data-quiz-current");
