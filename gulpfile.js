@@ -103,6 +103,16 @@ const watcher = () => {
  * default task
  */
 
+exports.build = gulp.series(
+	gulp.parallel(
+		markup,
+		styles,
+		scripts,
+		images,
+		fonts,
+	)
+);
+
 exports.default = gulp.series(
 	gulp.parallel(
 		markup,
