@@ -498,8 +498,11 @@
 }
 
 .quiz__result-circle  circle:last-of-type {
-	stroke-dasharray: 480px;
-	stroke-dashoffset: calc(480px - (480px * var(--percent)) / 100);
+  --size: 160px;
+  --length-circle: calc(var(--size) * 3.14);
+
+	stroke-dasharray: var(--length-circle);
+	stroke-dashoffset: calc(var(--length-circle) - (var(--length-circle) * var(--percent)) / 100);
 	stroke: #F9E312; 
 }
 
