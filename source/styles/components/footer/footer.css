@@ -250,3 +250,22 @@
 .footer__link {
 	color: #ffffff;
 }
+
+.footer__social-link {
+	--size: 39px;
+
+	display: inline-flex;
+	width: var(--size);
+	height: var(--size);
+
+	border-radius: 50%;
+	background-color: #212339;
+}
+
+.footer__social-link svg {
+	margin: auto;
+}
+
+.footer__list button {
+	color: #ffffff;
+}
