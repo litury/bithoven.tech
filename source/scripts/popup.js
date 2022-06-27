@@ -3,7 +3,7 @@
 	"use strict";
 
 	const btns = document.querySelectorAll('.popup-button');
-	const modalOverlay = document.querySelector('.popup-overlay');
+	const modalOverlay = document.querySelector('.overlay');
 	const modals = document.querySelectorAll('.popup');
 	const modalClose = document.querySelectorAll('.popup__close');
 
@@ -17,7 +17,7 @@
 			});
 
 			document.querySelector(`[data-target="${path}"]`).classList.add('popup--visible');
-			modalOverlay.classList.add('popup-overlay--visible');
+			modalOverlay.classList.add('overlay--visible');
 		});
 	});
 
@@ -25,7 +25,7 @@
 		console.log(e.target);
 
 		if (e.target == modalOverlay) {
-			modalOverlay.classList.remove('popup-overlay--visible');
+			modalOverlay.classList.remove('overlay--visible');
 			modals.forEach((el) => {
 				el.classList.remove('popup--visible');
 			});
@@ -35,7 +35,7 @@
 	modalClose.forEach((el) => {
 		el.addEventListener('click', (e) => {
 
-			modalOverlay.classList.remove('popup-overlay--visible');
+			modalOverlay.classList.remove('overlay--visible');
 		});
 	});
 
@@ -43,7 +43,7 @@
 	document.addEventListener('keydown', function (e) {
 		if (e.key === 'Escape') {
 			//ваша функция закрытия окна
-			modalOverlay.classList.remove('popup-overlay--visible');
+			modalOverlay.classList.remove('overlay--visible');
 		}
 	});
 

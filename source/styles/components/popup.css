@@ -1,4 +1,6 @@
 .popup-button {
+	all: unset;
+
 	font-size: 42px;
 	color: #E1E1E1;
 	border: 1px solid white;
@@ -32,6 +34,8 @@
 }
 
 .popup__close {
+	all: unset;
+
 	position: absolute;
 	right: 15px;
 	top: 0;
@@ -41,7 +45,7 @@
 	font-weight: bold;
 }
 
-.popup-overlay {
+.overlay {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -63,7 +67,7 @@
 	overflow: auto;
 }
 
-.popup-overlay--visible {
+.overlay--visible {
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.3s ease-in-out;
