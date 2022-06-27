@@ -171,6 +171,7 @@ width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--gap);
+	align-items: flex-start;
 }
 
 @media (min-width: 768px) { /* tablet */
