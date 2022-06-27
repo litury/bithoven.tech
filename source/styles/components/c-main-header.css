@@ -13,7 +13,7 @@
 	}
 
 	.c-main-header__wrapper {
-		--space-y: 29px;
+		--space-y: 18px;
 
 		display: flex;
 		align-items: center;
@@ -288,5 +288,9 @@
 
 	.c-main-header__external {
 		text-align: left;
+	}
+
+	.c-main-header .button_color_yellow {
+		line-height: 1;
 	}
 }
