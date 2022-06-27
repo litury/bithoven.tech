@@ -2,48 +2,44 @@
 (() => {
 	"use strict";
 
-	const btns = document.querySelectorAll('.popup-button');
-	const modalOverlay = document.querySelector('.overlay');
-	const modals = document.querySelectorAll('.popup');
-	const modalClose = document.querySelectorAll('.popup__close');
+	const popupBtns = document.querySelectorAll('.popup-button');
+	const popupOverlay = document.querySelector('.overlay');
+	const popup = document.querySelectorAll('.popup');
+	const popuplClose = document.querySelectorAll('.popup__close');
 
 
-	btns.forEach((el) => {
+	popupBtns.forEach((el) => {
 		el.addEventListener('click', (e) => {
 			let path = e.currentTarget.getAttribute('data-path');
 
-			modals.forEach((el) => {
+			popup.forEach((el) => {
 				el.classList.remove('popup--visible');
 			});
-
 			document.querySelector(`[data-target="${path}"]`).classList.add('popup--visible');
-			modalOverlay.classList.add('overlay--visible');
+			popupOverlay.classList.add('overlay--visible');
 		});
 	});
 
-	modalOverlay.addEventListener('click', (e) => {
+	popupOverlay.addEventListener('click', (e) => {
 		console.log(e.target);
+		if (e.target == popupOverlay) {
 
-		if (e.target == modalOverlay) {
-			modalOverlay.classList.remove('overlay--visible');
-			modals.forEach((el) => {
+			popupOverlay.classList.remove('overlay--visible');
+			popup.forEach((el) => {
 				el.classList.remove('popup--visible');
 			});
 		}
 	});
 
-	modalClose.forEach((el) => {
+	popuplClose.forEach((el) => {
 		el.addEventListener('click', (e) => {
-
-			modalOverlay.classList.remove('overlay--visible');
+			popupOverlay.classList.remove('overlay--visible');
 		});
 	});
 
-
 	document.addEventListener('keydown', function (e) {
 		if (e.key === 'Escape') {
-			//ваша функция закрытия окна
-			modalOverlay.classList.remove('overlay--visible');
+			popupOverlay.classList.remove('overlay--visible');
 		}
 	});
 
