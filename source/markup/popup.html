@@ -10,13 +10,10 @@
 
 <body class="page__body">
 
+	<button class="button_form_none popup-button" data-path="form-popup">Окно 1</button>
+	<button class="button_form_none popup-button" data-path="me-popup">Окно 2</button>
 
-	<button class="button_form_none popup-button" id="myBtn" data-path="form-popup">Окно 1</button>
-	<button class="button_form_none popup-button" id="myBtn" data-path="me-popup">Окно 2</button>
-
-
-	<div class="modals">
-		<div class="modal-overlay">
+		<div class="popup-overlay">
 			<div class="popup modal--1" data-target="form-popup" role="dialog" id="myModal">
 				<button class="button_form_none popup__close" type="button" aria-label="Закрыть модальное окно">
 					<span aria-hidden="true">×</span>
@@ -33,7 +30,7 @@
 				<p class="text">Мы свяжемся с вами в ближайшее время</p>
 			</div>
 		</div>
-	</div>
+
 	<script src="assets/scripts/popup.js"></script>
 </body>
 

@@ -5,6 +5,12 @@
 	padding: 10px
 }
 
+.popup-button:hover,
+.popup__close:hover {
+	cursor: pointer;
+	color: yellow;
+}
+
 .popup {
 	background: linear-gradient(160deg, #4D506C 15%, #212339 109%), #2B2C42;
 	backdrop-filter: blur(33px);
@@ -35,16 +41,7 @@
 	font-weight: bold;
 }
 
-
-.btn {
-	border: none;
-	cursor: pointer;
-	background-color: #000;
-	color: #fff;
-	padding: 10px;
-}
-
-.modal-overlay {
+.popup-overlay {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -66,12 +63,12 @@
 	overflow: auto;
 }
 
-.modal-overlay--visible {
+.popup-overlay--visible {
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.3s ease-in-out;
 }
 
-.modal--visible {
+.popup--visible {
 	display: flex;
 }
