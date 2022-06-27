@@ -15,6 +15,7 @@
 
 	padding: 30px;
 	margin: auto;
+	min-height: 100px;
 	max-width: 478px;
 	min-width: 200px;
 
@@ -34,6 +35,14 @@
 	font-weight: bold;
 }
 
+
+.btn {
+	border: none;
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+}
 
 .modal-overlay {
 	position: fixed;

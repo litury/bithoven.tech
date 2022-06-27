@@ -59,4 +59,11 @@
 		}
 	});
 
+document.addEventListener('keydown', function (e) {
+	if (e.key === 'Escape') {
+		//ваша функция закрытия окна
+		modalOverlay.classList.remove('modal-overlay--visible');
+	}
+});
+
 })();
