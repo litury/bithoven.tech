@@ -15,9 +15,6 @@
 	// }
 
 
-
-
-
 	// window.onclick = function (event) {
 	// 	if (event.target == modal) {
 	// 		modal.style.display = "none";
@@ -27,22 +24,16 @@
 
 	const btns = document.querySelectorAll('.popup-button');
 	const modalOverlay = document.querySelector('.modal-overlay');
-	const modals = document.querySelectorAll('.modal');
-	const span = document.querySelectorAll(".popup__close");
+	const modals = document.querySelectorAll('.popup');
+	const modalClose = document.querySelectorAll(".popup__close");
 
 
-	span.forEach((el) => {
+	modalClose.forEach((el) => {
 		el.addEventListener('click', (e) => {
 
-			modalOverlay.forEach((el) => {
-				el.classList.add('modal--nonvisible');
-			});
-
-
+			modalOverlay.classList.remove('modal-overlay--visible');
 		});
 	});
-
-
 
 	btns.forEach((el) => {
 		el.addEventListener('click', (e) => {
