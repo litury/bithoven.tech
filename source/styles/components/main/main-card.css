@@ -165,8 +165,19 @@ width: 100%;
 	left: 24px;
 }
 
+.main-card__tag-wrapper {
+	--gap: 5px;
 
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
+}
 
+@media (min-width: 768px) { /* tablet */
+	.main-card__tag-wrapper {
+		--gap: 12px;
+	}
+}
 
 @media (min-width: 1220px) {
 	.main-card__tag-wrapper {
