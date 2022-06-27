@@ -147,6 +147,29 @@
 	border: none;
 }
 
+.fieldset__caption {
+	--text-size: 18px;
+	--space-x: 0;
+
+	padding-right: var(--space-x);
+	padding-left: var(--space-x);
+
+	font-size: var(--text-size);
+	font-weight: 600;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.fieldset__caption {
+		--text-size: 24px;
+	}
+}
+
+@media (min-width: 1200px) { /* desktop */
+	.fieldset__caption {
+		--text-size: 30px;
+	}
+}
+
 .filter-range {
 	display: flex;
 	justify-content: space-between;
@@ -606,7 +629,7 @@
 }
 
 .filter__button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .filter__button_state_active {
