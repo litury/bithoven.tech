@@ -109,6 +109,7 @@
 
 .content__menu--yes {
 	display: block;
+	width: 100%;
 }
 
 .content__menu--active {
@@ -220,16 +221,7 @@
 		--gap: 205px;
 
 		flex-direction: column;
-		position: absolute;
-		right: 0;
-		top: 70px;
 		gap: 31px;
-
-		transform: translateX(calc(100% + var(--gap)));
-	}
-
-	.content__social--active {
-		top: 9%;
 	}
 
 	.content__social-wrap {
