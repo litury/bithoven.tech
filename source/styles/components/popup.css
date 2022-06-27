@@ -1,11 +1,8 @@
 .popup-button {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
 	font-size: 42px;
 	color: #E1E1E1;
+	border: 1px solid white;
+	padding: 10px
 }
 
 .popup {
@@ -14,7 +11,7 @@
 	top: 0;
 	z-index: 1;
 
-	padding-top: 100px;
+	padding: 15px;
 
 	display: none;
 	width: 100%;
@@ -34,17 +31,14 @@
 
 	padding: 30px;
 	margin: auto;
-	width: 50%;
+	max-width: 478px;
+	min-width: 200px;
 
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 
-	background: linear-gradient(160deg, #4D506C 15%, #212339 109%),
-		#2B2C42;
-	backdrop-filter: blur(33px);
-	border-radius: 20px;
-	text-align: center;
+
 
 	-webkit-animation-name: animatetop;
 	-webkit-animation-duration: 0.4s;
@@ -94,4 +88,67 @@
 	color: yellow;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+
+
+.btn {
+	border: none;
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+.modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal {
+	background: linear-gradient(160deg, #4D506C 15%, #212339 109%),
+		#2B2C42;
+	backdrop-filter: blur(33px);
+	border-radius: 20px;
+	text-align: center;
+
+	position: relative;
+
+	padding: 30px;
+	margin: auto;
+	max-width: 478px;
+	min-width: 200px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	display: none;
+}
+
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+	display: flex;
+}
+
+.modal--nonvisible {
+display: none;
 }
