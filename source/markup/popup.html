@@ -10,20 +10,23 @@
 
 <body class="page__body">
 
-<a class="popup-link" href="#popup">Нажми на меня</a>
+	<button class="popup-button">Open modal</button>
 
-	<div class="popup" id="popup">
-		<div class="popup__body">
-			<div class="popup__content">
-				<a class="link popup__close" href="#">×</a>
-				<div class="popup__title">
-					Ошибка!
-				</div>
-				<div class="popup__text">
-					Мы свяжемся с вами в ближайшее время
-				</div>
-			</div>
+	<div class="popup" id="popup" role="dialog">
+		<div class="popup__content">
+			<button class="button_form_none popup__close" type="button">
+				<span aria-hidden="true">×</span>
+				<span class="visually-hidden">Закрыть модальное окно</span>
+			</button>
+			<h2 class="title title_size_small">
+				Ошибка!
+			</h2>
+			<p class="text text_size_normal">
+				Мы свяжемся с вами в ближайшее время
+			</p>
 		</div>
+		<div class="popup__overlay"> </div>
 	</div>
+</body>
 
 </html>

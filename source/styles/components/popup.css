@@ -1,50 +1,37 @@
 .popup {
 	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 2;
+
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.8);
-	top: 0;
-	left: 0;
-
-	opacity: 0;
-	visibility: hidden;
 }
 
-.popup:target {
-	opacity: 1;
-	visibility: visible;
-}
+.popup__overlay {}
 
-.popup__body {
-	min-height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 30px 10px;
-}
+
 
 .popup__content {
 	max-width: 478px;
-	background: linear-gradient(162.89deg, #4D506C 15.08%, #212339 109.2%),#2B2C42;
+	background: linear-gradient(160deg, #4D506C 15%, #212339 109%), #2B2C42;
 	backdrop-filter: blur(33px);
 	border-radius: 20px;
 	padding: 30px;
 	text-align: center;
 
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.popup__title {
-		font-family: 'FuturaPT';
-		font-weight: 600;
-		margin-bottom: 28px;
-		font-size: 30px;
-}
-
-.popup__text {
-	font-family: 'NeueMachina';
-	font-weight: 400;
-}
 
 .popup__close {
 	position: absolute;
@@ -54,13 +41,14 @@
 	color: #E1E1E1;
 }
 
-.popup-link {
-	font-size: 42px;
-	color: #E1E1E1;
-	text-decoration: none;
+.popup-button {
+	all: unset;
+
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
 	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-size: 42px;
+	color: #E1E1E1;
 }
