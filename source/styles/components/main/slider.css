@@ -11,8 +11,6 @@
 	}
 }
 
-
-
 .slider {
 	position: relative;
 
@@ -20,6 +18,18 @@
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 15px;
+}
+
+.slider .swiper-button {
+	--display: none;
+
+	display: var(--display);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.slider .swiper-button {
+		--display: flex;
+	}
 }
 
 .swiper {
