@@ -39,4 +39,20 @@
 			setRangeValue(nonLinearSlider.noUiSlider.get());
 		}
 	);
+
+	const params = new URLSearchParams(window.location.search);
+	const URLRange = [];
+
+	for (const param of params) {
+		const paramKey = param[0];
+		const paramValue = param[param.length - 1];
+
+		if (paramKey === "time_start" || paramKey === "time_end") {
+			URLRange.push(+paramValue);
+		}
+	}
+
+	if (URLRange.length) {
+		nonLinearSlider.noUiSlider.set(URLRange);
+	}
 })();
