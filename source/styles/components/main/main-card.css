@@ -201,3 +201,7 @@ width: 100%;
 	order: -2;
 	margin-top: 0;
 }
+
+.interesting__content .main-card {
+	justify-content: flex-start;
+}
