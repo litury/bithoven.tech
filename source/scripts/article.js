@@ -6,6 +6,31 @@
 	const disBtnNavDesc = document.querySelector('.content__button-svg--dis');
 	const buttonReply = document.querySelector(".content__button-reply");
 	const contentSuccess = document.querySelector(".content__success");
+	const contentColumn = document.querySelector(".content__column");
+	const contentNav = document.querySelector(".content__nav");
+	const disBtnNav = document.querySelector('.content__nav-button');
+
+	contentColumn.style.setProperty(
+		"--content-nav-height",
+		`${contentNav.offsetHeight}px`
+	);
+
+	window.addEventListener("resize", () => {
+		contentColumn.style.setProperty(
+			"--content-nav-height",
+			`${contentNav.offsetHeight}px`
+		);
+	});
+
+	disBtnNav.addEventListener("click", () => {
+		setTimeout(() => {
+			contentColumn.style.setProperty(
+				"--content-nav-height",
+				`${document.querySelector(".content__nav").offsetHeight}px`
+			);
+		}, 10);
+	});
+	
 
 	function copyToClipboard(text) {
 		if (window.clipboardData && window.clipboardData.setData) {
@@ -58,7 +83,7 @@
 	});
 
 
-	const disBtnNav = document.querySelector('.content__nav-button')
+	
 	const disMenuCont = document.querySelector('.content__menu')
 	const disMenuSoc = document.querySelector('.content__social')
 

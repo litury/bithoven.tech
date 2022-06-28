@@ -25,6 +25,8 @@
 
 
 .content__wrap {
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
 	max-width: 634px;
 
@@ -205,14 +207,19 @@
 		margin-bottom: 25px;
 	}
 
+	.content__column {
+		margin-top: calc(var(--content-nav-height) * -1);
+	}
+
 	.content__nav {
 		--gap: 205px;
 
-		position: absolute;
+		position: sticky;
 		right: 0;
-		top: 0;
+		top: 20px;
 		max-width: 174px;
 		width: 100%;
+		margin-left: auto;
 
 		transform: translateX(calc(100% + var(--gap)));
 	}
@@ -236,7 +243,12 @@
 	.content__text_size_big {
 		font-size: 20px;
 	}
+}
 
+@media (max-width: 1119px) {
+	.content__nav {
+		order: 1;
+	}
 }
 
 .content__box {
