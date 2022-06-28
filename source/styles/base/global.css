@@ -95,9 +95,14 @@
 }
 
 .page__quiz-card {
-  max-width: 676px;
+	max-width: 676px;
 }
 
 .page__quiz-card_state_hidden {
-  display: none !important;
+	display: none !important;
+}
+
+.page__quiz-card_type_primary[hidden],
+.page__quiz-card_type_start[hidden] {
+	display: none;
 }

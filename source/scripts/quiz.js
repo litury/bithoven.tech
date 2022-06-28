@@ -2,6 +2,7 @@
 	"use strict";
 
 	const quizBlock = document.querySelector(".page__quiz-card_type_primary");
+	const quizBlockStart = document.querySelector(".page__quiz-card_type_start");
 	const quizProgressBar = document.querySelector(".page__quiz-card_type_primary .quiz__progress-bar");
 	const quizBlocks = document.querySelectorAll(".page__quiz-card_type_primary .quiz__block");
 	const quizButtons = document.querySelectorAll(".page__quiz-card_type_primary .quiz__main-button");
@@ -13,6 +14,7 @@
 	const quizFinish = document.querySelector(".quiz_type_finish");
 	const quizRestart = document.querySelector(".quiz__restart");
 	const quizReply = document.querySelector(".quiz__result-reply");
+	const quizCatalogMainButton = document.querySelector(".quiz__catalog-main-button");
 
 	localStorage.setItem("correct-answer", JSON.stringify(0));
 
@@ -21,6 +23,13 @@
 		quizStep.classList.add("quiz__progress-bar-step");
 
 		quizProgressBar.appendChild(quizStep);
+	});
+
+	quizCatalogMainButton.addEventListener("click", (event) => {
+		const currentButton = event.currentTarget;
+		const parent = currentButton.closest(".quiz");
+		quizBlock.hidden = false;
+		parent.hidden = true;
 	});
 
 	quizButtons.forEach(quizeButton => quizeButton.addEventListener("click", (event) => {
