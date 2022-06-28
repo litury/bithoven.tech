@@ -22,9 +22,8 @@
 	position: relative;
 
 	padding: 45px;
-	margin: auto;
 	min-height: 200px;
-	max-width: 390px;
+	max-width: 478px;
 	min-width: 200px;
 	width: 100%;
 
@@ -33,6 +32,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
+
 	display: none;
 }
 
