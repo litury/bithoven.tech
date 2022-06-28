@@ -148,19 +148,19 @@
 }
 
 .fieldset__caption {
-	--text-size: 18px;
+	--text-size: 22px;
 	--space-x: 0;
 
 	padding-right: var(--space-x);
 	padding-left: var(--space-x);
 
 	font-size: var(--text-size);
-	font-weight: 600;
+	font-weight: 500;
 }
 
 @media (min-width: 768px) { /* tablet */
 	.fieldset__caption {
-		--text-size: 24px;
+		--text-size: 26px;
 	}
 }
 
