@@ -29,7 +29,6 @@
 		});
 	});
 
-
 	popupOverlay.addEventListener('click', (event) => {
 		if (event.target == popupOverlay) {
 			popupOverlay.classList.remove('overlay--visible');
