@@ -65,14 +65,6 @@
 		}, 1000);
 	});
 
-	disBtnOf.addEventListener('click', () => {
-		disBlock.classList.add('discus-display--non');
-	});
-
-	disBtnNavDesc.addEventListener('click', () => {
-		disBlock.classList.remove('discus-display--non');
-	});
-
 
 	const disBtnTop = document.querySelector('.discus__nav-button')
 	const disMenuBlock = document.querySelector('.discus__menu')
