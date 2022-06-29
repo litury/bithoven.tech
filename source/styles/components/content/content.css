@@ -153,6 +153,8 @@
 .content__social-wrap {
 	display: flex;
 	gap: 25px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .content__button-svg {
@@ -267,4 +269,22 @@
 
 		width: 100%;
 	}
+}
+
+.content__share {
+	--size: 30px;
+
+	display: flex;
+	width: var(--size);
+	height: var(--size);
+}
+
+.content__share-icon {
+	--icon-color: #8f93a4;
+
+	margin: auto;
+}
+
+.content__share:hover .content__share-icon {
+	--icon-color: #ffffff;
 }
