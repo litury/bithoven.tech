@@ -455,12 +455,6 @@
 	cursor: pointer;
 }
 
-@media (min-width: 768px) { /* tablet */
-	.quiz__result-reply {
-		justify-self: end;
-	}
-}
-
 .quiz__button {
 	display: inline-flex;
 	align-items: center;
@@ -585,4 +579,15 @@
 
 .quiz__content-title {
 	font-weight: 500;
+}
+
+.quiz__block-content {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	gap: 20px;
+	padding: 0;
+}
+
+.quiz__block-content .quiz__result-reply {
+	grid-column: 1 / -1;
 }
