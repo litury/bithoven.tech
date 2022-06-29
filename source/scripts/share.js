@@ -12,10 +12,10 @@
 		document.querySelector(".content__share_social_linkedin");
 
 	const setLink = (element, link) =>
-		element.setAttribute("href", `${link}?url=${currentLink}`);
+		element.setAttribute("href", `${link}url=${currentLink}`);
 
-	setLink(shareVK, "https://vk.com/share.php");
-	setLink(shareTelegram, "https://telegram.me/share/url");
-	setLink(shareTwitter, "https://www.twitter.com/share");
-	setLink(shareLinkedin, "https://www.linkedin.com/sharing/share-offsite/");
+	setLink(shareVK, "https://vk.com/share.php?");
+	setLink(shareTelegram, "https://telegram.me/share/url?");
+	setLink(shareTwitter, "https://www.twitter.com/share?");
+	setLink(shareLinkedin, "https://www.linkedin.com/shareArticle?mini=true&");
 })();
