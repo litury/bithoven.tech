@@ -587,7 +587,3 @@
 	gap: 20px;
 	padding: 0;
 }
-
-.quiz__block-content .quiz__result-reply {
-	grid-column: 1 / -1;
-}
