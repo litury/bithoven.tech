@@ -12,7 +12,7 @@
 		if (!text.classList.contains("main-card__text_type_short")) {
 			currentButton.textContent = "Скрыть определение";
 		} else {
-			currentButton.textContent = "Показать полностью";
+			currentButton.textContent = "Полное определение";
 		}
 	}));
 })();
