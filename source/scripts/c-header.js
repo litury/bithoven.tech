@@ -30,32 +30,32 @@
 
 	// mobile search
 	
-	const mobileSearch = document.querySelector(".c-mobile-search");
-	const mobileSearchInput = mobileSearch.querySelector(".c-mobile-search__input");
-	const mobileSearchClose = mobileSearch.querySelector(".c-mobile-search__close");
+	// const mobileSearch = document.querySelector(".c-mobile-search");
+	// const mobileSearchInput = mobileSearch.querySelector(".c-mobile-search__input");
+	// const mobileSearchClose = mobileSearch.querySelector(".c-mobile-search__close");
 
-	const toggleMobileSearch = () => {
-		mobileSearchInput.focus();
+	// const toggleMobileSearch = () => {
+	// 	mobileSearchInput.focus();
 
-		mobileSearchClose.addEventListener("click", () => {
-			document.querySelector(".c-menu__button_type_search").classList.remove("c-menu__button_state_active");
-			mobileSearch.classList.remove("c-mobile-search_state_active");
-		});
-	};
+	// 	mobileSearchClose.addEventListener("click", () => {
+	// 		document.querySelector(".c-menu__button_type_search").classList.remove("c-menu__button_state_active");
+	// 		mobileSearch.classList.remove("c-mobile-search_state_active");
+	// 	});
+	// };
 
-	new toggleElement(
-		document.querySelector(".c-mobile-header__button_type_search"),
-		mobileSearch,
-		"c-mobile-search_state_active",
-		toggleMobileSearch,
-	).init();
+	// new toggleElement(
+	// 	document.querySelector(".c-mobile-header__button_type_search"),
+	// 	mobileSearch,
+	// 	"c-mobile-search_state_active",
+	// 	toggleMobileSearch,
+	// ).init();
 
-	new toggleElement(
-		document.querySelector(".c-menu__button_type_search"),
-		mobileSearch,
-		"c-mobile-search_state_active",
-		toggleMobileSearch,
-	).init();
+	// new toggleElement(
+	// 	document.querySelector(".c-menu__button_type_search"),
+	// 	mobileSearch,
+	// 	"c-mobile-search_state_active",
+	// 	toggleMobileSearch,
+	// ).init();
 
 	// mobile menu
 
