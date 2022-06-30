@@ -11,6 +11,7 @@
 
 .manual__main-card {
 	padding: 25px;
+	align-items: flex-start;
 
 	background-position: right bottom;
 	background-repeat: no-repeat;
