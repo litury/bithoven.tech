@@ -1,9 +1,6 @@
 ;(() => {
 	"use strict";
-
-	const disBtnOf = document.querySelector('.discus__button-off')
-	const disBlock = document.querySelector('.discus')
-	const disBtnNavDesc = document.querySelector('.content__button-svg--dis');
+	
 	const buttonReply = document.querySelector(".content__button-reply");
 	const contentSuccess = document.querySelector(".content__success");
 	const contentColumn = document.querySelector(".content__column");
@@ -51,11 +48,11 @@
 						console.warn("Copy to clipboard failed.", ex);
 						return prompt("Copy to clipboard: Ctrl+C, Enter", text);
 				}
-				finally {
-						document.body.removeChild(textarea);
-				}
-		}
-}
+					finally {
+							document.body.removeChild(textarea);
+					}
+			}
+	}
 
 	buttonReply.addEventListener("click", () => {
 		copyToClipboard(window.location.href);
@@ -64,21 +61,9 @@
 			contentSuccess.classList.remove("content__success_state_active");
 		}, 1000);
 	});
-
-
-	const disBtnTop = document.querySelector('.discus__nav-button')
-	const disMenuBlock = document.querySelector('.discus__menu')
-
-
-	disBtnTop.addEventListener('click', () => {
-		disMenuBlock.classList.toggle('discus__menu--yes');
-	});
-
-
 	
 	const disMenuCont = document.querySelector('.content__menu')
 	const disMenuSoc = document.querySelector('.content__social')
-
 
 	disBtnNav.addEventListener('click', () => {
 		disMenuCont.classList.toggle('content__menu--yes');
