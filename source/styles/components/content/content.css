@@ -213,6 +213,13 @@
 		margin-top: calc(var(--content-nav-height) * -1);
 	}
 
+	.content__column p a {
+		text-decoration: none;
+		color: #f9e531;
+
+		border-bottom: 1px solid currentColor;
+	}
+
 	.content__nav {
 		--gap: 205px;
 
