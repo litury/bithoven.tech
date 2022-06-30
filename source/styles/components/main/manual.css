@@ -9,9 +9,13 @@
 
 }
 
+.event__main-card,
+.manual__main-card {
+	align-items: flex-start;
+}
+
 .manual__main-card {
 	padding: 25px;
-	align-items: flex-start;
 
 	background-position: right bottom;
 	background-repeat: no-repeat;
