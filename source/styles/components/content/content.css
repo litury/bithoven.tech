@@ -220,6 +220,13 @@
 		border-bottom: 1px solid currentColor;
 	}
 
+	.content__column blockquote {
+		margin-left: 0;
+		padding-left: 1em;
+
+		border-left: 0.4em solid white;
+	}
+
 	.content__nav {
 		--gap: 205px;
 
