@@ -65,6 +65,7 @@
 			gap: 30px;
 			justify-content: space-between;
 			flex-direction: row;
+			align-items: stretch;
 		}
 
 		.card__img_media_mobail {

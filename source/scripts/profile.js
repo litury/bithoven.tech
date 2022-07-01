@@ -1,11 +1,11 @@
 ;(() => {
 	"use strict";
 
-	const profile = document.querySelector(".profile");
-	const profileEdit = profile.querySelector(".profile__edit");
-	const profileNickname = profile.querySelector(".profile__nickname");
-	const profileInput = profile.querySelector(".profile__input");
-	const profileBlock = document.querySelector(".profile");
+	const profile = document.querySelector(".profile__avatar-container");
+	const profileBlock = document.querySelector(".profile__block");
+	const profileEdit = document.querySelector(".profile__edit");
+	const profileNickname = document.querySelector(".profile__nickname");
+	const profileInput = document.querySelector(".profile__input");
 	const profileFile = document.querySelector(".profile__avatar-container input");
 
 	const editNickname = () => {
@@ -34,7 +34,7 @@
 	}
 	profileInput.addEventListener("keypress", (event) => {
 		if (event.key === "Enter") {
-			submitForm();
+			profileBlock.submit();
 		}
 	});
 })();

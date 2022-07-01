@@ -49,8 +49,6 @@
 }
 
 .event__button--large {
-	max-width: 191px;
-
 	font-size: 14px;
 	line-height: 14px;
 }
@@ -90,8 +88,6 @@
 	}
 
 	.event__button--large {
-		max-width: 236px;
-
 		font-size: 16px;
 	}
 }

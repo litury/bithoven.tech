@@ -7,8 +7,87 @@
 		<link rel="stylesheet" href="assets/styles/index.css">
 	</head>
 	<body class="page__body">
+				<!-- quiz -->
+		<div class="page__quiz-card page__quiz-card_type_start quiz quiz_type_card container">
+			<header class="quiz__header">
+				<a
+					class="back"
+					href="/"
+				>
+					<svg
+						class="back__icon"
+						width="7"
+						height="10"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<use href="assets/images/svg/sprite.svg#arrow-left"></use>
+					</svg>
+					<span class="visually-hidden">
+						Вернуться на главную страницу
+					</span>
+				</a>
+				<nav
+					class="breadcrumb"
+					aria-label="Хлебные крошки"
+				>
+					<ol class="breadcrumb__list reset-list">
+						<li class="breadcrumb__item">
+							<a
+								class="breadcrumb__link"
+								href="/"
+							>
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumb__item">
+							<a
+								class="breadcrumb__link"
+								href="quiz-catalog.html"
+							>
+								Викторины
+							</a>
+						</li>
+						<li class="breadcrumb__item">
+							<span
+								class="breadcrumb__link"
+								aria-current="page"
+							>
+								Стартовый тест
+							</span>
+						</li>
+					</ol>
+				</nav>
+			</header>
+			<figure class="quiz__card">
+				<img
+					class="quiz__card-image"
+					src="assets/images/quiz/start.png"
+					alt="Стартовый тест"
+				>
+				<figcaption class="quiz__card-info">
+					<span class="quiz__card-text button">
+						13 вопросов
+					</span>
+					<h1 class="quiz__card-text title">
+						Стартовый тест
+					</h1>
+					<p class="quiz__card-text paragraph">
+						Киберпреступники всегда ищут новые способы обмануть пользователей. Оставайся там, САФУ! Проверьте свои знания о фишинге с помощью фишинг-теста Binance Academy.
+					</p>
+					<button
+						class="quiz__catalog-main-button button button_color_yellow"
+						type="button"
+					>
+						Поехали!
+					</button>
+				</figcaption>
+			</figure>
+		</div>
+		<!-- /quiz -->
+		
 		<!-- quiz -->
-		<div class="page__quiz-card page__quiz-card_type_primary quiz quiz_type_single container">
+		<div class="page__quiz-card page__quiz-card_type_primary quiz quiz_type_single container" hidden>
 			<header class="quiz__header">
 				<a
 					class="back"
@@ -194,7 +273,8 @@
 			<div class="quiz__result">
 				<div class="quiz__result-wrapper">
 					<span class="quiz__result-text">
-						<span class="quiz__result-text-correct"></span>/<span class="quiz__result-text-count"></span> ответы правильные
+						<span class="quiz__result-text-correct"></span>/<span class="quiz__result-text-count"></span>
+            ответы правильные
 					</span>
 					<span class="quiz__result-status"></span>
 				</div>
@@ -208,15 +288,89 @@
 					<path d="M44.8847 58.8012H51.6284V85.909H44.8847C44.2885 85.909 43.7167 85.671 43.2951 85.2473C42.8736 84.8237 42.6367 84.2491 42.6367 83.65V61.0601C42.6367 60.461 42.8736 59.8864 43.2951 59.4628C43.7167 59.0392 44.2885 58.8012 44.8847 58.8012ZM56.783 55.8803L71.1697 41.4228C71.3609 41.2301 71.6149 41.1132 71.885 41.0937C72.1552 41.0742 72.4232 41.1534 72.6399 41.3166L74.5573 42.7624C75.0899 43.1641 75.4921 43.7153 75.7134 44.3465C75.9346 44.9777 75.9649 45.6605 75.8005 46.309L73.2086 56.5422H87.5953C88.7877 56.5422 89.9313 57.0182 90.7744 57.8655C91.6175 58.7127 92.0912 59.8619 92.0912 61.0601V65.813C92.0918 66.4035 91.9773 66.9883 91.754 67.5344L84.7967 84.5106C84.627 84.9245 84.3387 85.2784 83.9685 85.5274C83.5983 85.7763 83.1628 85.9091 82.7173 85.909H58.3722C57.7761 85.909 57.2043 85.671 56.7827 85.2473C56.3611 84.8237 56.1243 84.2491 56.1243 83.65V57.4774C56.1244 56.8783 56.3614 56.3038 56.783 55.8803Z" fill="white"/>
 					</svg>
 				</div>
-				<button
-					class="quiz__result-reply"
-					type="button"
-				>
-					<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-						<path d="M10 11.5H8C6.3596 11.4994 4.75023 11.9471 3.34588 12.7949C1.94152 13.6427 0.795601 14.8582 0.0320014 16.31C0.010538 16.0405 -0.000137283 15.7703 1.33261e-06 15.5C1.33261e-06 9.977 4.477 5.5 10 5.5V0L20.5 8.5L10 17V11.5ZM8 9.5H12V12.808L17.321 8.5L12 4.192V7.5H10C8.85025 7.49871 7.71379 7.74582 6.66839 8.22442C5.62299 8.70302 4.69332 9.40182 3.943 10.273C5.23432 9.76122 6.61096 9.49892 8 9.5Z" fill="#8F93A4"/>
-					</svg>
-					Поделиться
-				</button>
+
+				<div class="quiz__block-content content">
+								<a
+						class="content__share content__share_social_twitter"
+						target="_blank"
+					>
+						<svg
+							class="content__share-icon"
+							width="30"
+							height="30"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<use href="assets/images/svg/sprite.svg#share-twitter"></use>
+						</svg>
+						<span class="visually-hidden">
+							Поделиться в твиттере
+						</span>
+					</a>
+
+					<a
+						class="content__share content__share_social_vk"
+						target="_blank"
+					>
+						<svg
+							class="content__share-icon"
+							width="30"
+							height="30"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<use href="assets/images/svg/sprite.svg#share-vk"></use>
+						</svg>
+						<span class="visually-hidden">
+							Поделиться в вконтакте
+						</span>
+					</a>
+
+					<a
+						class="content__share content__share_social_telegram"
+						target="_blank"
+					>
+						<svg
+							class="content__share-icon"
+							width="30"
+							height="30"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<use href="assets/images/svg/sprite.svg#share-telegram"></use>
+						</svg>
+						<span class="visually-hidden">
+							Поделиться в телеграме
+						</span>
+					</a>
+
+					<a
+						class="content__share content__share_social_linkedin"
+						target="_blank"
+					>
+						<svg
+							class="content__share-icon"
+							width="30"
+							height="30"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<use href="assets/images/svg/sprite.svg#share-linkedin"></use>
+						</svg>
+						<span class="visually-hidden">
+							Поделиться в линкедин
+						</span>
+					</a>
+					<button
+						class="quiz__result-reply"
+						type="button"
+					>
+						<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+							<path d="M10 11.5H8C6.3596 11.4994 4.75023 11.9471 3.34588 12.7949C1.94152 13.6427 0.795601 14.8582 0.0320014 16.31C0.010538 16.0405 -0.000137283 15.7703 1.33261e-06 15.5C1.33261e-06 9.977 4.477 5.5 10 5.5V0L20.5 8.5L10 17V11.5ZM8 9.5H12V12.808L17.321 8.5L12 4.192V7.5H10C8.85025 7.49871 7.71379 7.74582 6.66839 8.22442C5.62299 8.70302 4.69332 9.40182 3.943 10.273C5.23432 9.76122 6.61096 9.49892 8 9.5Z" fill="#8F93A4"/>
+						</svg>
+					</button>
+				</div>
+
 				<button
 					class="quiz__button quiz__restart button"
 					type="button"
@@ -233,5 +387,6 @@
 		</div>
 		<!-- /quiz -->
 		<script src="assets/scripts/quiz.js"></script>
+		<script src="assets/scripts/wiki-share.js"></script>
 	</body>
 </html>

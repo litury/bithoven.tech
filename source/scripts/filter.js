@@ -8,6 +8,7 @@
 	const filterLevelInner = document.querySelector(".filter__level-inner");
 	const tags = document.querySelectorAll(".tag__input");
 	const levels = document.querySelectorAll(".filter__level-wrap .tag__input");
+	const categories = document.querySelectorAll(".filter__top [name='category']");
 
 	const params = new URLSearchParams(window.location.search);
 
@@ -17,6 +18,8 @@
 			const paramValue = param[param.length - 1];
 
 			if (paramKey === getValue) {
+				elements.forEach(element => element.checked = false);
+
 				elements.forEach(element => {
 					if (element.value === paramValue) {
 						element.checked = true;
@@ -28,6 +31,7 @@
 
 	checkGETParams(tags, "tag");
 	checkGETParams(levels, "level");
+	checkGETParams(categories, "category");
 
 	filterButtonHide.addEventListener("click", () => {
 		filterButtonHide.classList.toggle("filter__button-hide_state_active");

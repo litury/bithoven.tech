@@ -7,15 +7,16 @@
 		<link rel="stylesheet" href="assets/styles/index.css">
 	</head>
 	<body class="page__body">
-		<form
-			class="profile container"
-			enctype="multipart/form-data"
-			method="post"
-			action=""
-		>
+		<div class="profile container">
 			<div class="profile__background" aria-hidden="true"></div>
 			<figure class="profile__avatar">
-				<div class="profile__avatar-container">
+				<!-- 1. Форма для загрузки изображений -->
+				<form
+					class="profile__avatar-container"
+					enctype="multipart/form-data"
+					method="post"
+					action=""
+				>
 					<label
 						class="profile__avatar-file-text"
 						for="user-image"
@@ -39,7 +40,7 @@
 						height="80"
 						alt="Имя пользователя"
 					> -->
-				</div>
+				</form>
 				<figcaption class="profile__avatar-info">
 					<div class="profile__avatar-info-wrapper">
 						<span class="profile__avatar-status">
@@ -64,7 +65,12 @@
 							</abbr>
 						</span>
 					</div>
-					<div class="profile__block">
+					<!-- 2. Форма для редактирования никнейма -->
+					<form
+						class="profile__block"
+						action=""
+						method="POST"
+					>
 						<a
 							class="profile__nickname"
 							href="#"
@@ -95,7 +101,7 @@
 								Редактировать никнейм
 							</span>
 						</button>
-					</div>
+					</form>
 					<p class="profile__wallet">
 						xF....57C5
 					</p>
@@ -125,8 +131,7 @@
 					</li>
 				</ul>
 			</div>
-
-		</form>
+		</div>
 		<script src="assets/scripts/profile.js"></script>
 	</body>
 </html>

@@ -1,0 +1,82 @@
+.popup-button {
+	all: unset;
+
+	font-size: 42px;
+	color: #E1E1E1;
+	border: 1px solid white;
+	padding: 10px
+}
+
+.popup-button:hover,
+.popup__close:hover {
+	cursor: pointer;
+	color: yellow;
+}
+
+.popup {
+	background: linear-gradient(160deg, #4D506C 15%, #212339 109%), #2B2C42;
+	backdrop-filter: blur(33px);
+	border-radius: 20px;
+	text-align: center;
+
+	position: relative;
+
+	padding: 45px;
+	min-height: 200px;
+	max-width: 478px;
+	min-width: 200px;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+
+	display: none;
+}
+
+.popup__title {
+	font-family: 'FuturaPT';
+	font-weight: 600;
+}
+
+.popup__close {
+	all: unset;
+
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	padding: 15px;
+
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+
+	overflow: auto;
+}
+
+.overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.popup--visible {
+	display: flex;
+}
