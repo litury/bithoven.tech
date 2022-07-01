@@ -29,7 +29,9 @@
 
 	profileEdit.addEventListener("click", editNickname);
 	profileBlock.addEventListener("submit", saveNickname);
-	profileFile.addEventListener("change", submitForm);
+	if (profileFile !== null) {
+		profileFile.addEventListener("change", submitForm);
+	}
 	profileInput.addEventListener("keypress", (event) => {
 		if (event.key === "Enter") {
 			submitForm();
