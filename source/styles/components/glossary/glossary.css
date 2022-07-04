@@ -249,16 +249,10 @@
 
 @media (min-width: 768px) { /* tablet */
 	.glossary__category-wrapper {
-		--columns: min-content 600px;
-		--gap: 55px;
+		--columns: 354px 1fr;
+		--gap: 40px;
 
 		justify-content: space-between;
-	}
-}
-
-@media (min-width: 1200px) { /* desktop */
-	.glossary__category-wrapper {
-		--columns: min-content 828px;
 	}
 }
 
