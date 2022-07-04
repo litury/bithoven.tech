@@ -278,11 +278,17 @@
 @media (min-width: 768px) { /* tablet */
 	.glossary__category-letter {
 		--text-size: 63px;
-		--gap: 20px;
+		--gap: 75px;
 
 		position: sticky;
 		top: calc(var(--search-height) + var(--gap));
 		left: 0;
+	}
+}
+
+@media (min-width: 1200px) { /* desktop */
+	.glossary__category-letter {
+		--gap: 20px;
 	}
 }
 
