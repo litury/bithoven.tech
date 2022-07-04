@@ -44,6 +44,12 @@
 
 .glossary__search {
 	--space-y: 15px;
+	--mobile-header-height: 75px;
+	--position-y: var(--mobile-header-height);
+
+	position: sticky;
+	top: var(--position-y);
+	z-index: 5;
 
 	padding-top: var(--space-y);
 	padding-bottom: var(--space-y);
@@ -54,10 +60,12 @@
 @media (min-width: 768px) { /* tablet */
 	.glossary__search {
 		--space-y: 20px;
+	}
+}
 
-		position: sticky;
-		top: 0;
-		z-index: 5;
+@media (min-width: 1200px) { /* desktop */
+	.glossary__search {
+		--position-y: 0;
 	}
 }
 
