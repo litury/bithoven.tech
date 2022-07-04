@@ -6,16 +6,28 @@
 }
 
 .hero__container {
+	--image: url("../images/hero/hero-mobile-bg.svg");
+
 	position: relative;
 
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	gap: 26px;
+	gap: 16px;
 	justify-content: center;
 	min-height: 100vh;
 
+	background-image: var(--image);
+	background-repeat: no-repeat;
+	background-position: center center;
+
 	text-align: center;
+}
+
+@media (min-width: 1200px) {
+	.hero__container {
+		--image: url("../images/hero/hero-desktop-bg.svg");
+	}
 }
 
 @media (min-width: 1220px) {
@@ -25,12 +37,30 @@
 }
 
 .hero__title {
-	max-width: 330px;
+	--text-size: 34px;
+	--block-width: 330px;
+
+	max-width: var(--block-width);
+
+	font-size: var(--text-size);
+}
+
+@media (min-width: 768px) {
+	.hero__title {
+		--text-size: 45px;
+		--block-width: 600px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero__title {
+		--text-size: 60px;
+	}
 }
 
 @media (min-width: 1220px) {
 	.hero__title {
-		max-width: 934px;
+		--block-width: 934px;
 	}
 }
 
