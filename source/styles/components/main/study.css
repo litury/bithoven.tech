@@ -118,3 +118,13 @@
 		right: 90px;
 	}
 }
+
+@media (min-width: 1220px) {
+	.study__main-card-glossary .study__form {
+		margin-bottom: auto;
+	}
+
+	.study__main-card-glossary .main-card__link-btn--small {
+		margin-top: 5px;
+	}
+}
