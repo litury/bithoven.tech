@@ -71,6 +71,6 @@
 	--text-size: 18px;
 
 	font-size: var(--text-size);
-	word-break: break-all;
 	text-align: left;
+	word-wrap: break-word;
 }
