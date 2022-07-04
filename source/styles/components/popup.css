@@ -1,31 +1,33 @@
-.popup-button {
-	all: unset;
+.popup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
-	font-size: 42px;
-	color: #E1E1E1;
-	border: 1px solid white;
-	padding: 10px
+	display: flex;
 }
 
-.popup-button:hover,
 .popup__close:hover {
 	cursor: pointer;
 	color: yellow;
 }
 
-.popup {
+.popup__body {
 	background: linear-gradient(160deg, #4D506C 15%, #212339 109%), #2B2C42;
 	backdrop-filter: blur(33px);
 	border-radius: 20px;
 	text-align: center;
 
 	position: relative;
+	z-index: 999;
 
 	padding: 45px;
 	min-height: 200px;
 	max-width: 478px;
 	min-width: 200px;
 	width: 100%;
+	margin: auto;
 
 	display: flex;
 	flex-direction: column;
@@ -49,7 +51,7 @@
 	top: 15px;
 }
 
-.overlay {
+.popup__overlay {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -71,12 +73,12 @@
 	overflow: auto;
 }
 
-.overlay--visible {
+.popup__overlay--visible {
 	opacity: 1;
 	visibility: visible;
 	transition: all 0.3s ease-in-out;
 }
 
-.popup--visible {
+.popup__body--visible {
 	display: flex;
 }

@@ -10,28 +10,18 @@
 
 <body class="page__body">
 
-	<button class="popup-button" data-popup-title="Готово!" data-popup-text="Мы свяжемся с вами в ближайшее время ">Окно
-		1</button>
-
-	<button class="popup-button" data-popup-title="Ошибка!"
-		data-popup-text="TextTextTextTextTextTextTextTextTextTextTextText">Окно
-		2</button>
-
-	<button class="popup-button" data-popup-title="Внимание!" data-popup-text="Text 3">Окно
-		3</button>
-
-
-	<div class="overlay">
-		<div class="popup" role="dialog">
+  <div class="popup">
+    <div class="popup__overlay"></div>
+		<div class="popup__body" role="dialog">
 			<button class="popup__close" type="button" aria-label="Закрыть модальное окно">
 					<svg class="popup__svg" width="22" height="22" aria-hidden="true" focusable="false">
 						<use href="assets/images/svg/sprite.svg#close-popup"></use>
 					</svg>
 			</button>
-			<h2 class="title title_size_extra-small popup__title">Ошибка!</h2>
-			<p class="text text_size_small popup__text">Мы свяжемся с вами в ближайшее время</p>
+			<h2 class="title title_size_extra-small popup__title"></h2>
+			<p class="text text_size_small popup__text"></p>
 		</div>
-	</div>
+  </div>
 
 	<script src="assets/scripts/popup.js"></script>
 </body>

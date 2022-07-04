@@ -1,52 +1,30 @@
-;
-(() => {
-	"use strict";
+class Popup {
+	constructor(title, text) {
+		this.title = title;
+		this.text = text;
 
-	const popupBtns = document.querySelectorAll('.popup-button');
-	const popupOverlay = document.querySelector('.overlay');
-	const popup = document.querySelectorAll('.popup');
-	const popuplClose = document.querySelectorAll('.popup__close');
-	let modalTitle = document.querySelector('.popup__title')
-	let modalText = document.querySelector('.popup__text')
+		this._popup = document.querySelector(".popup");
+		this._popupOverlay = this._popup.querySelector(".popup__overlay");
+		this._popupBody = this._popup.querySelector(".popup__body");
+		this._popupTitle = this._popup.querySelector(".popup__title");
+		this._popupText = this._popup.querySelector(".popup__text");
+		this._popupClose = this._popup.querySelector(".popup__close");
 
+		this._togglePopup = this._togglePopup.bind(this);
+	}
 
-	popupBtns.forEach((element) => {
-		element.addEventListener('click', (event) => {
-			let popupTitle = event.currentTarget.getAttribute('data-popup-title');
-			let popupText = event.currentTarget.getAttribute('data-popup-text');
+	_togglePopup() {
+		this._popupOverlay.classList.toggle("popup__overlay--visible");
+		this._popupBody.classList.toggle("popup__body--visible");
+	}
 
-			popup.forEach((element) => {
-				element.classList.remove('popup--visible');
-			});
+	init() {
+		this._popupTitle.textContent = this.title;
+		this._popupText.textContent = this.text;
 
-			modalTitle.textContent = popupTitle
-			modalText.textContent = popupText
+		this._togglePopup();
 
-			popup.forEach((element) => {
-				element.classList.add('popup--visible');
-			});
-			popupOverlay.classList.add('overlay--visible');
-		});
-	});
-
-	popupOverlay.addEventListener('click', (event) => {
-		if (event.target == popupOverlay) {
-			popupOverlay.classList.remove('overlay--visible');
-			popup.forEach((element) => {
-				element.classList.remove('popup--visible');
-			});
-		}
-	});
-
-	popuplClose.forEach((element) => {
-		element.addEventListener('click', () => {
-			popupOverlay.classList.remove('overlay--visible');
-		});
-	});
-
-	document.addEventListener('keydown', function (event) {
-		if (event.key === 'Escape') {
-			popupOverlay.classList.remove('overlay--visible');
-		}
-	});
-})();
+		this._popupOverlay.addEventListener("click", this._togglePopup);
+		this._popupClose.addEventListener("click", this._togglePopup);
+	}
+}
