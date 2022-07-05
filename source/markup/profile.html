@@ -10,20 +10,12 @@
 		<div class="profile container">
 			<div class="profile__background" aria-hidden="true"></div>
 			<figure class="profile__avatar">
-				<!-- 1. Форма для загрузки изображений -->
 				<form
 					class="profile__avatar-container"
 					enctype="multipart/form-data"
 					method="post"
 					action=""
 				>
-					<label
-						class="profile__avatar-file-text"
-						for="user-image"
-					>
-						Загрузить <br>
-						фото
-					</label>
 					<input
 						class="visually-hidden"
 						id="user-image"
@@ -31,6 +23,13 @@
 						name="user_image"
 						accept="image/png, image/jpeg"
 					>
+					<label
+						class="profile__avatar-file-text"
+						for="user-image"
+					>
+						Загрузить <br>
+						фото
+					</label>
 					<!--
 					<label
 						class="profile__avatar-image"
@@ -41,7 +40,8 @@
 							src="https://picsum.photos/140/140"
 							width="80"
 							height="80"
-							alt="Имя пользователя"
+							alt=""
+							aria-hidden="true"
 						>
 					</label> -->
 				</form>
@@ -69,7 +69,6 @@
 							</abbr>
 						</span>
 					</div>
-					<!-- 2. Форма для редактирования никнейма -->
 					<form
 						class="profile__block"
 						action=""
@@ -111,9 +110,7 @@
 					</p>
 				</figcaption>
 			</figure>
-
 			<div class="profile__wrapper">
-
 				<div class="profile__text">
 					<p class="profile__paragraph paragraph">
 						Позравляем со вступелние в наши ряды!
@@ -122,7 +119,6 @@
 						Здесь пока пусто,мы работаем над наполнением. А пока предлогаем почитать наш <a class="profile__link" href="#">глоссарий</a> и <a class="profile__link" href="#">статьи</a> :)
 					</p>
 				</div>
-
 				<ul class="profile__navigation reset-list">
 					<li class="profile__navigation-item">
 						<a class="button" href="#">Глоссарий</a>

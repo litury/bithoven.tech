@@ -16,6 +16,7 @@
 .profile__background {
 	--space-x: 15px;
 	--block-height: 100px;
+	--wallpaper: url("../images/profile/wallpaper-mobile.png");
 
 	position: absolute;
 	top: var(--space-y);
@@ -28,13 +29,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url("https://picsum.photos/200/300");
+	background-image: var(--wallpaper);
 	border-radius: 20px;
 }
 
 @media (min-width: 768px) { /* tablet */
 	.profile__background {
 		--block-height: 220px;
+		--wallpaper: url("../images/profile/wallpaper-desktop.png");
 	}
 }
 
