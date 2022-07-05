@@ -2,6 +2,7 @@
 	"use strict";
 
 	const quizBlock = document.querySelector(".page__quiz-card_type_primary");
+	const quizAuth = document.querySelector(".quiz__auth");
 	const quizBlockStart = document.querySelector(".page__quiz-card_type_start");
 	const quizProgressBar = document.querySelector(".page__quiz-card_type_primary .quiz__progress-bar");
 	const quizBlocks = document.querySelectorAll(".page__quiz-card_type_primary .quiz__block");
@@ -24,6 +25,12 @@
 
 		quizProgressBar.appendChild(quizStep);
 	});
+
+	if (quizAuth) {
+		quizAuth.addEventListener("click", () => {
+			localStorage.setItem("wiki-auth", JSON.stringify(location.href));
+		});
+	}
 
 	quizCatalogMainButton.addEventListener("click", (event) => {
 		const currentButton = event.currentTarget;
