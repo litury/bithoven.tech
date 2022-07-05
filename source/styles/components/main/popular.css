@@ -1,5 +1,5 @@
 .popular {
-	margin-top: 30px;
+	margin-top: 18px;
 	margin-bottom: 30px;
 
 	text-align: left;
@@ -7,6 +7,7 @@
 
 @media (min-width: 1220px) {
 	.popular {
+		margin-top: 18px;
 		margin-bottom: 70px;
 	}
 }
