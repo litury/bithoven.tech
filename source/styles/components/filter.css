@@ -505,15 +505,42 @@
 }
 
 .filter__button-wrap {
+	--space-x: auto;
+
 	display: inline-flex;
 	gap: 15px;
-	margin-right: 69px;
+	margin-right: var(--space-x);
+}
+
+@media (min-width: 1200px) {
+	.filter__button-wrap {
+		--space-x: 69px;
+	}
+}
+
+@media (min-width: 768px) {
+	.filter__bottom-inner {
+		padding-right: 60px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.filter__bottom-inner {
+		padding-right: 0;
+	}
 }
 
 .filter__button-clear {
 	position: relative;
 	padding-left: 22px;
+	padding-right: 20px;
 	color: #A6A7B0;
+}
+
+@media (min-width: 768px) {
+	.filter__button-clear {
+		padding-right: 0;
+	}
 }
 
 .filter__button-clear::before {
@@ -529,8 +556,17 @@
 }
 
 .filter__bottom-inner {
+	--gap: 10px;
+
 	width: 100%;
+	gap: var(--gap);
 	display: flex;
+}
+
+@media (min-width: 1200px) {
+	.filter__bottom-inner {
+		--gap: 0;
+	}
 }
 
 @media (min-width: 1200px) {
