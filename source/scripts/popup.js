@@ -14,6 +14,7 @@ class Popup {
 	}
 
 	_togglePopup() {
+		this._popup.classList.toggle("popup_state_active");
 		this._popupOverlay.classList.toggle("popup__overlay--visible");
 		this._popupBody.classList.toggle("popup__body--visible");
 	}
