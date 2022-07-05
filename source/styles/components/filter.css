@@ -384,6 +384,18 @@
 	}
 }
 
+.filter__button-wrap-sort {
+	--display: none;
+
+	display: var(--display);
+}
+
+@media (min-width: 768px) {
+	.filter__button-wrap-sort {
+		--display: block;
+	}
+}
+
 
 .filter__clock_range_4m {
 	margin-right: 24px;
