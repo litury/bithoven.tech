@@ -7,10 +7,17 @@
 	const quizBlocks = document.querySelectorAll(".page__quiz-card_type_primary .quiz__block");
 	const quizButtons = document.querySelectorAll(".page__quiz-card_type_primary .quiz__main-button");
 	const quizAnswer = document.querySelector(".page__quiz-card_type_primary .quiz__answer");
-	const quizAnswerTitle = quizAnswer.querySelector(".page__quiz-card_type_primary .quiz__answer-title");
+	let quizAnswerTitle = null;
+	let quizAnswerParagraph  = null;
+
+	if (quizAnswer) {
+		quizAnswerTitle = quizAnswer.querySelector(".page__quiz-card_type_primary .quiz__answer-title");
+		quizAnswerParagraph = quizAnswer.querySelector(".page__quiz-card_type_primary .quiz__answer-paragraph");
+	}
+
 	const quizNext = document.querySelector(".page__quiz-card_type_primary .quiz__next");
 	const quizPercent = document.querySelector(".page__quiz-card_type_primary .quiz__progress-status-value");
-	const quizAnswerParagraph = quizAnswer.querySelector(".page__quiz-card_type_primary .quiz__answer-paragraph");
+	
 	const quizFinish = document.querySelector(".quiz_type_finish");
 	const quizRestart = document.querySelector(".quiz__restart");
 	const quizReply = document.querySelector(".quiz__result-reply");
