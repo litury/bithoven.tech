@@ -115,6 +115,10 @@
 	right: 9px;
 }
 
+.radio {
+	display: inline-flex;
+}
+
 .radio__box {
 	--border-color: transparent;
 
