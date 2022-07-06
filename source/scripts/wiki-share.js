@@ -27,7 +27,7 @@
 			) {
 				const wikiSteps = parseLS("steps");
 				const wikiCorrectAnswers = parseLS("correct-answer");
-				const socialText = `Я прошел викторину на ${wikiCorrectAnswers}/${wikiSteps}.`;
+				const socialText = `🧐 Вы понимаете, что такое блокчейн? Почему 21-ый век - век Web 3.0? Зачем нужно DAO? Пройдите тест от BithovenAcademy: https://t.me/+oZsC0qF19z5hZGMy, чтобы подвердить свой уровень знаний и заодно заработать токены проекта! у меня ${wikiCorrectAnswers}/${wikiSteps} 😎`;
 
 				setLink(
 					shareVK,
