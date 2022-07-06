@@ -39,16 +39,24 @@
 	font-family: 'NeueMachina';
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 	.footer {
 		align-items: flex-start;
 	}
 }
 
 .footer__top {
+	--gap: 180px;
+
 	display: flex;
 	justify-content: space-between;
-	gap: 200px;
+	gap: var(--gap);
+}
+
+@media (min-width: 450px) {
+	.footer__top {
+		--gap: 200px;
+	}
 }
 
 .footer__lang {
