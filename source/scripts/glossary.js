@@ -8,18 +8,20 @@
 	const glossaryFilter = glossary.querySelector(".glossary__filter");
 	const glossaryFilterLinks = glossaryFilter.querySelectorAll(".glossary__filter-link");
 	const GLOSARY_FILTER_ACTIVE_CLASS_NAME = "glossary__filter-link_state_active";
+	const glossaryCategories = document.querySelectorAll(".glossary__category");
 
-	glossary.style.setProperty(
-		"--glossary-search-height",
-		`${glossarySearch.offsetHeight}px`
-	);
+	if (window.matchMedia("(min-width: 768px)").matches) {
+		glossaryFilterLinks.forEach(link => link.addEventListener("click", (event) => {
+			const currentLink = event.currentTarget;
+			const glossarySearch = currentLink.closest(".glossary__search");
+			const glossarySearchHeight = glossarySearch.offsetHeight;
 
-	window.addEventListener("resize", () => {
-		glossary.style.setProperty(
-			"--glossary-search-height",
-			`${glossarySearch.offsetHeight}px`
-		);
-	});
+			glossaryCategories.forEach(category => category.style.setProperty(
+				"--glossary-search-height",
+				`${glossarySearchHeight}px`
+			));
+		}));
+	}
 
 	window.addEventListener('load', () => {
 		const categories = document.querySelectorAll(".glossary__category");
@@ -77,6 +79,16 @@
 
 		currentButton.classList.toggle("glossary__search-button_state_active");
 		glossaryFilter.classList.toggle("glossary__filter_state_hidden");
+
+		if (!glossaryFilter.classList.contains("glossary__filter_state_hidden")) {
+			const glossarySearch = currentButton.closest(".glossary__search");
+			const glossarySearchHeight = glossarySearch.offsetHeight;
+
+			glossaryCategories.forEach(category => category.style.setProperty(
+				"--glossary-search-height",
+				`${glossarySearchHeight}px`
+			));
+		}
 
 		if (currentButton.classList.contains("glossary__search-button_state_active")) {
 			a11yText.textContent = "Скрыть фильтр";

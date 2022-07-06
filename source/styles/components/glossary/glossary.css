@@ -233,6 +233,7 @@
 
 .glossary__category {
 	--space-y: 30px;
+	--header-height: 75px;
 
 	padding-top: var(--space-y);
 	padding-bottom: var(--space-y);
@@ -240,9 +241,23 @@
 	border-bottom: 1px solid #31344C;
 }
 
-@media (min-width: 768px) { /* tablet */
-	.glossary__category:target{
-		scroll-margin-top: var(--glossary-search-height);
+@media (min-width: 1200px) { /* desktop */
+	.glossary__category {
+		--header-height: 78px;
+	}
+}
+
+.glossary__category:target{
+	--position: calc(
+		var(--header-height) + var(--glossary-search-height)
+	);
+
+	scroll-margin-top: var(--position);
+}
+
+@media (min-width: 1200px) { /* desktop */
+	.glossary__category:target {
+		--position: var(--glossary-search-height);
 	}
 }
 
