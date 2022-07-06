@@ -389,14 +389,12 @@
 }
 
 .filter__button-wrap-sort {
-	--display: none;
-
-	display: var(--display);
+	visibility: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 	.filter__button-wrap-sort {
-		--display: block;
+		visibility: visible;
 	}
 }
 
