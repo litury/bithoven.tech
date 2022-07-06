@@ -70,20 +70,22 @@
 	).init();
 
 	// auth
-	const menuAuth = document.querySelector(".c-menu__button_type_auth");
-	const blockAuth = document.querySelector(".c-mobile-header-auth");
-	const blockAuthClose = blockAuth.querySelector(".c-mobile-header-auth__close");
-	const toggleAuth = (element) => {
-		closeBlock(element, blockAuthClose);
-	};
+  const menuAuth = document.querySelector(".c-menu__button_type_auth");
+  
+  if (menuAuth) {
+    const blockAuth = document.querySelector(".c-mobile-header-auth");
+    const blockAuthClose = blockAuth.querySelector(".c-mobile-header-auth__close");
+    const toggleAuth = (element) => {
+      closeBlock(element, blockAuthClose);
+    };
 
-	new toggleElement(
-		menuAuth,
-		blockAuth,
-		"c-mobile-header-auth_state_active",
-		toggleAuth,
-	).init();
-
+    new toggleElement(
+      menuAuth,
+      blockAuth,
+      "c-mobile-header-auth_state_active",
+      toggleAuth,
+    ).init();
+  }
 	// language switcher
 	// const languageButton = document.querySelector(".c-mobile-header__button_type_language");
 	// const languageBlock = document.querySelector(".c-mobile-info[data-mobile-info='language']");
