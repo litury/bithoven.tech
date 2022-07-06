@@ -687,3 +687,13 @@
 .filter__button_state_active {
 	--icon-color: #ffffff;
 }
+
+.filter__btn {
+	visibility: hidden;
+}
+
+@media (min-width: 1200px) {
+	.filter__btn {
+		visibility: visible;
+	}
+}
