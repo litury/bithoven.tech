@@ -24,7 +24,7 @@
 		return result;
 	}
 
-	if (findGetParameter("page") === "1") {
+	if (findGetParameter("page") === "1" || !findGetParameter("page")) {
 		prevPage.forEach(button => button.classList.add("education__menu-button_state_hidden"));
 	}
 
