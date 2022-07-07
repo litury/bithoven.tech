@@ -6,9 +6,9 @@
 	const lastPaginationLink =
 		paginationLinks[paginationLinks.length - 1].textContent.trim();
 	const prevPage =
-		document.querySelector(".education__menu-button_prev");
+		document.querySelectorAll(".education__menu-button_prev");
 	const nextPage =
-		document.querySelector(".education__menu-button_next");
+		document.querySelectorAll(".education__menu-button_next");
 
 	function findGetParameter(parameterName) {
 		let result = null,
@@ -25,11 +25,11 @@
 	}
 
 	if (findGetParameter("page") === "1") {
-		prevPage.classList.add("education__menu-button_state_hidden");
+		prevPage.forEach(button => button.classList.add("education__menu-button_state_hidden"));
 	}
 
 	if (findGetParameter("page") === lastPaginationLink) {
-		nextPage.classList.add("education__menu-button_state_hidden");
+		nextPage.forEach(button => button.classList.add("education__menu-button_state_hidden"));
 	}
 
 	function redirectPage(pageNumber) {
@@ -40,16 +40,15 @@
 		location.href = `education?${params.toString()}`;
 	}
 
-	prevPage.addEventListener("click", () => {
+	prevPage.forEach(button => button.addEventListener("click", () => {
 		let currentPageNumber = +findGetParameter("page");
 		redirectPage(--currentPageNumber);
-	});
+	}));
 
-
-	nextPage.addEventListener("click", () => {
+	nextPage.forEach(button => button.addEventListener("click", () => {
 		let currentPageNumber = +findGetParameter("page");
 		redirectPage(++currentPageNumber);
-	});
+	}));
 
 	paginationLinks.forEach(link => link.addEventListener("click", (event) => {
 		event.preventDefault();
