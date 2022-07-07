@@ -187,3 +187,7 @@
 		margin-right: 10px;
 	}
 }
+
+.education__menu-button_state_hidden {
+	display: none;
+}
