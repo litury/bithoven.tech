@@ -1,9 +1,9 @@
-.content h1 {
+.content__column h1 {
 	text-align: left;
 	font-size: 30px;
 }
 
-.content h2 {
+.content__column h2 {
 	text-align: left;
 	margin-bottom: 30px;
 }
@@ -184,11 +184,11 @@
 		position: relative;
 	}
 
-	.content h1 {
+	.content__column h1 {
 		font-size: 48px;
 	}
 
-	.content h2 {
+	.content__column h2 {
 		font-size: 42px;
 		text-align: left;
 	}
