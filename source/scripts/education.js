@@ -46,8 +46,12 @@
 	}));
 
 	nextPage.forEach(button => button.addEventListener("click", () => {
-		let currentPageNumber = +findGetParameter("page");
-		redirectPage(++currentPageNumber);
+		if (!findGetParameter("page")) {
+			redirectPage(2);
+		} else {
+			let currentPageNumber = +findGetParameter("page");
+			redirectPage(++currentPageNumber);
+		}
 	}));
 
 	paginationLinks.forEach(link => link.addEventListener("click", (event) => {
