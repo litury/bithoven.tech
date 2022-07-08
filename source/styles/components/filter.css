@@ -1,12 +1,24 @@
+.tag {
+	--display: inline-flex;
+
+	display: var(--display);
+}
+
+.tag_state_hidden {
+	--display: none;
+}
+
 .tag__box {
 	--bg-color: rgba(166, 167, 176, 1);
 	--text-color: rgba(33, 41, 67, 1);
 
+	font: inherit;
 	padding: 6px 17px;
 	padding-right: 34px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
 	border-radius: 50px;
+	border: none;
 	position: relative;
 
 	opacity: 0.6;
