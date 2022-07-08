@@ -23,7 +23,7 @@
 	const quizReply = document.querySelector(".quiz__result-reply");
 	const quizCatalogMainButton = document.querySelector(".quiz__catalog-main-button");
 
-  function copyToClipboard(text) {
+	function copyToClipboard(text) {
 		if (window.clipboardData && window.clipboardData.setData) {
 				// Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
 				return window.clipboardData.setData("Text", text);
@@ -174,7 +174,12 @@
 	
 	if (quizReply) {
 		quizReply.addEventListener("click", () => {
-			copyToClipboard(window.location.href);
+			const wikiSteps = localStorage.getItem("steps");
+			const wikiCorrectAnswers = localStorage.getItem("correct-answer");
+			const replyText = `🧐 Вы понимаете, что такое блокчейн? Почему 21-ый век - век Web 3.0? Зачем нужно DAO? Пройдите тест от BithovenAcademy: https://t.me/bithovencrypto, чтобы подвердить свой уровень знаний и заодно заработать токены проекта! у меня ${wikiCorrectAnswers}/${wikiSteps} 😎`;
+
+			
+			copyToClipboard(replyText);
 			const quizSuccess = document.querySelector(".quiz__success");
 			quizSuccess.classList.add("quiz__success_state_active");
 
