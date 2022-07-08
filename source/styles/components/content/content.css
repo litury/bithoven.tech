@@ -302,3 +302,17 @@
 .content__share:hover .content__share-icon {
 	--icon-color: #ffffff;
 }
+
+.content__button-wrap {
+	--gap: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.content__button-wrap {
+		--gap: 20px;
+	}
+}
