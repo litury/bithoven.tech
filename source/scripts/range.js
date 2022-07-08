@@ -54,5 +54,6 @@
 
 	if (URLRange.length) {
 		nonLinearSlider.noUiSlider.set(URLRange);
+		setRangeValue(URLRange);
 	}
 })();
