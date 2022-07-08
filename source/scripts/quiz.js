@@ -60,9 +60,7 @@
 	}
 
 	if (quizAuth) {
-		quizAuth.addEventListener("click", (event) => {
-			event.preventDefault();
-			
+		quizAuth.addEventListener("click", () => {
 			localStorage.setItem("wiki-auth", JSON.stringify(location.href));
 			location.href = "/auth";
 		});
