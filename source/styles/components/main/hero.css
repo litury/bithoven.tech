@@ -20,6 +20,7 @@
 	background-image: var(--image);
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: contain;
 
 	text-align: center;
 }
