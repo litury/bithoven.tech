@@ -1,11 +1,5 @@
 .tag {
-	--display: inline-flex;
-
-	display: var(--display);
-}
-
-.tag_state_hidden {
-	--display: none;
+	display: inline-flex;
 }
 
 .tag__box {

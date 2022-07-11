@@ -20,22 +20,22 @@ class ShowMoreTags{
 	}
 
 	showTags() {
-		const hiddenTags = [].slice.call(this.getParentNode().querySelectorAll(".tag_state_hidden"));
+		const hiddenTags = [].slice.call(this.getParentNode().querySelectorAll(".hidden"));
 
 		if (hiddenTags.length === 1) {
-			hiddenTags.forEach(tag => tag.classList.remove("tag_state_hidden"));
+			hiddenTags.forEach(tag => tag.classList.remove("hidden"));
 			this.button.remove();
 		}
 
 		if (hiddenTags.length < this.count) {
-			hiddenTags.forEach(tag => tag.classList.remove("tag_state_hidden"));
+			hiddenTags.forEach(tag => tag.classList.remove("hidden"));
 			this.button.remove();
 		}
 
 		if (hiddenTags.length >= this.count) {
 			hiddenTags.splice(this.count);
 
-			hiddenTags.forEach(tag => tag.classList.remove("tag_state_hidden"));
+			hiddenTags.forEach(tag => tag.classList.remove("hidden"));
 		}
 	}
 
@@ -57,7 +57,7 @@ class ShowMoreTags{
 
 		if (this.getLength(this.elements) > this.count) {
 			this.elements.splice(0, this.count);
-			this.elements.forEach(tag => tag.classList.add("tag_state_hidden"));
+			this.elements.forEach(tag => tag.classList.add("hidden"));
 			
 			const parentNode = this.getParentNode();
 			this.initButton(parentNode);
