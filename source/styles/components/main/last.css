@@ -1,3 +1,7 @@
+.last {
+	padding-top: 30px;
+}
+
 .last__link {
 	display: none;
 }
