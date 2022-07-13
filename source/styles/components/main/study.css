@@ -59,18 +59,28 @@
 }
 
 .study__input {
-	all: unset;
+	--input-height: 50px;
+
+	width: 100%;
+	height: var(--input-height);
+
 	border: 1px solid #8F93A4;
 	backdrop-filter: blur(4px);
 
-	padding: 12px 98px 12px 25px;
+	font: inherit;
+	color: #ffffff;
+	padding: 12px 45px 12px 25px;
 
 	border-radius: 20px;
 	background-color: transparent;
 	border: 1px solid #8f93A4;
-	background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.4157 12.0623L17 15.8323L15.8158 17L12.2324 13.2292C10.8991 14.2832 9.24062 14.8564 7.53175 14.854C3.37422 14.854 0 11.5267 0 7.42702C0 3.32731 3.37422 0 7.53175 0C11.6893 0 15.0635 3.32731 15.0635 7.42702C15.0659 9.11213 14.4846 10.7475 13.4157 12.0623ZM11.737 11.45C12.7991 10.373 13.3922 8.92929 13.3898 7.42702C13.3898 4.23505 10.7679 1.65045 7.53175 1.65045C4.29477 1.65045 1.67372 4.23505 1.67372 7.42702C1.67372 10.6182 4.29477 13.2036 7.53175 13.2036C9.0552 13.206 10.5192 12.6211 11.6114 11.5738L11.737 11.45Z' fill='%238F93A4'/%3E%3C/svg%3E%0A");
-	background-repeat: no-repeat;
-	background-position: right 16px center;
+	box-sizing: border-box;
+}
+
+@media (min-width: 768px) { /* tablet */
+	.study__input {
+		--input-height: 60px;
+	}
 }
 
 .study__form-button {
@@ -144,4 +154,49 @@
 	background-repeat: no-repeat;
 	background-size: 4px 5px;
 	background-position: center right 22px;
+}
+
+.study__search {
+	--size: 19px;
+	--icon: url("data:image/svg+xml,%0A%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.416 12.062 17 15.832 15.816 17l-3.584-3.77a7.565 7.565 0 0 1-4.7 1.624C3.374 14.854 0 11.527 0 7.427S3.374 0 7.532 0c4.157 0 7.531 3.327 7.531 7.427a7.33 7.33 0 0 1-1.647 4.635Zm-1.679-.612a5.716 5.716 0 0 0 1.653-4.023c0-3.192-2.622-5.777-5.858-5.777-3.237 0-5.858 2.585-5.858 5.777 0 3.191 2.62 5.777 5.858 5.777a5.882 5.882 0 0 0 4.08-1.63l.125-.124Z' fill='%23fff'/%3E%3C/svg%3E");
+	--icon-size: 17px;
+
+	position: absolute;
+	top: 50%;
+	right: 22px;
+	z-index: 1;
+
+	display: flex;
+	width: var(--size);
+	height: var(--size);
+	padding: 0;
+
+	background-color: transparent;
+	background-image:var(--icon);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: var(--icon-size);
+	border: none;
+
+	transform: translateY(-50%);
+}
+
+@media (min-width: 768px) { /* tablet */
+	.study__search {
+		--size: 25px;
+		--icon: url("data:image/svg+xml,%0A%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.361 15.61 22 20.49 20.468 22l-4.638-4.88a9.79 9.79 0 0 1-6.083 2.103C4.367 19.223 0 14.917 0 9.61 0 4.306 4.367 0 9.747 0s9.747 4.306 9.747 9.611a9.486 9.486 0 0 1-2.133 6Zm-2.172-.792a7.397 7.397 0 0 0 2.139-5.207c0-4.13-3.393-7.475-7.581-7.475-4.19 0-7.581 3.345-7.581 7.475 0 4.13 3.392 7.476 7.581 7.476a7.612 7.612 0 0 0 5.28-2.11l.162-.16Z' fill='%23fff'/%3E%3C/svg%3E");
+		--icon-size: 22px;
+
+		right: 25px;
+	}
+}
+
+.study__search:hover {
+	cursor: pointer;
+}
+
+.study__search-icon {
+	--search-icon-color: #ffffff;
+
+	margin: auto;
 }
