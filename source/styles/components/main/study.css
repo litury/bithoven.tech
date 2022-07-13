@@ -86,8 +86,18 @@
 }
 
 .main-card__link-btn--active {
+	--button-space-x: 30px;
+
+	padding-right: var(--button-space-x);
+
 	color: rgba(20, 34, 67, 1);
 	background-color: #fff;
+}
+
+@media (min-width: 768px) {
+	.main-card__link-btn--active {
+		--button-space-x: 34px;
+	}
 }
 
 @media (min-width: 1220px) {
@@ -127,4 +137,11 @@
 	.study__main-card-glossary .main-card__link-btn--small {
 		margin-top: 5px;
 	}
+}
+
+.study__button {
+	background-image: url("data:image/svg+xml,%0A%3Csvg width='4' height='5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.546 2.5.459.906A.441.441 0 0 1 .995.205l1.965 1.5a1 1 0 0 1 0 1.59l-1.965 1.5a.441.441 0 0 1-.536-.701L2.546 2.5Z' fill='%23142344'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-size: 4px 5px;
+	background-position: center right 22px;
 }
