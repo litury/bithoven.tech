@@ -200,3 +200,15 @@
 
 	margin: auto;
 }
+
+.study__content .main-card:last-child {
+	--display: none;
+
+	display: var(--display);
+}
+
+@media (min-width: 1200px) { /* desktop */
+	.study__content .main-card:last-child {
+		--display: flex;
+	}
+}
