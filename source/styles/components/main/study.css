@@ -1,9 +1,11 @@
 .study {
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
 @media (min-width: 1220px) {
 	.study {
+		margin-top: 0;
 		margin-bottom: 118px;
 	}
 }
